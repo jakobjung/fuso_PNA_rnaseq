@@ -1,0 +1,1049 @@
+ERROR: Unable to locate a modulefile for 'python'
+Start trimming
+mkdir: created directory '../data/libs'
+../data/fastq/ID_007547_Fnn23_H2O_30_min_A.fq.gz starts trimming nowwwwwww
+ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007547_Fnn23_H2O_30_min_A.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007547_Fnn23_H2O_30_min_A.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.400 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4266m, used=28m
+
+Added 217135 kmers; time: 	2.158 seconds.
+Memory: max=4294m, total=4294m, free=4257m, used=37m
+
+Input is being processed as unpaired
+Started output streams:	0.865 seconds.
+Processing time:   		316.427 seconds.
+
+Input:                  	11332536 reads 		1144586136 bases.
+QTrimmed:               	4635 reads (0.04%) 	16245 bases (0.00%)
+FTrimmed:               	11332536 reads (100.00%) 	135990432 bases (11.88%)
+KTrimmed:               	8606002 reads (75.94%) 	520887048 bases (45.51%)
+Total Removed:          	1643557 reads (14.50%) 	656893725 bases (57.39%)
+Result:                 	9688979 reads (85.50%) 	487692411 bases (42.61%)
+
+Time:                         	319.479 seconds.
+Reads Processed:      11332k 	35.47k reads/sec
+Bases Processed:       1144m 	3.58m bases/sec
+../data/fastq/ID_007548_Fnn23_H2O_30_min_B.fq.gz starts trimming nowwwwwww
+ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007548_Fnn23_H2O_30_min_B.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007548_Fnn23_H2O_30_min_B.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.244 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4268m, used=26m
+
+Added 217135 kmers; time: 	2.075 seconds.
+Memory: max=4294m, total=4294m, free=4259m, used=35m
+
+Input is being processed as unpaired
+Started output streams:	0.269 seconds.
+Processing time:   		293.996 seconds.
+
+Input:                  	10082293 reads 		1018311593 bases.
+QTrimmed:               	4067 reads (0.04%) 	14058 bases (0.00%)
+FTrimmed:               	10082293 reads (100.00%) 	120987516 bases (11.88%)
+KTrimmed:               	6884019 reads (68.28%) 	411531606 bases (40.41%)
+Total Removed:          	1272045 reads (12.62%) 	532533180 bases (52.30%)
+Result:                 	8810248 reads (87.38%) 	485778413 bases (47.70%)
+
+Time:                         	296.371 seconds.
+Reads Processed:      10082k 	34.02k reads/sec
+Bases Processed:       1018m 	3.44m bases/sec
+../data/fastq/ID_007549_Fnn23_H2O_30_min_C.fq.gz starts trimming nowwwwwww
+ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007549_Fnn23_H2O_30_min_C.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007549_Fnn23_H2O_30_min_C.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.263 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4266m, used=28m
+
+Added 217135 kmers; time: 	1.975 seconds.
+Memory: max=4294m, total=4294m, free=4257m, used=37m
+
+Input is being processed as unpaired
+Started output streams:	0.244 seconds.
+Processing time:   		280.072 seconds.
+
+Input:                  	9948904 reads 		1004839304 bases.
+QTrimmed:               	1138 reads (0.01%) 	3788 bases (0.00%)
+FTrimmed:               	9948904 reads (100.00%) 	119386848 bases (11.88%)
+KTrimmed:               	7145843 reads (71.83%) 	454512883 bases (45.23%)
+Total Removed:          	1617043 reads (16.25%) 	573903519 bases (57.11%)
+Result:                 	8331861 reads (83.75%) 	430935785 bases (42.89%)
+
+Time:                         	282.318 seconds.
+Reads Processed:       9948k 	35.24k reads/sec
+Bases Processed:       1004m 	3.56m bases/sec
+../data/fastq/ID_007550_Fnn23_PNA79_30_min_A.fq.gz starts trimming nowwwwwww
+ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007550_Fnn23_PNA79_30_min_A.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007550_Fnn23_PNA79_30_min_A.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.234 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4266m, used=28m
+
+Added 217135 kmers; time: 	1.756 seconds.
+Memory: max=4294m, total=4294m, free=4256m, used=38m
+
+Input is being processed as unpaired
+Started output streams:	0.250 seconds.
+Processing time:   		405.058 seconds.
+
+Input:                  	15998223 reads 		1615820523 bases.
+QTrimmed:               	5179 reads (0.03%) 	18057 bases (0.00%)
+FTrimmed:               	15998223 reads (100.00%) 	191978676 bases (11.88%)
+KTrimmed:               	13877410 reads (86.74%) 	931980833 bases (57.68%)
+Total Removed:          	3942710 reads (24.64%) 	1123977566 bases (69.56%)
+Result:                 	12055513 reads (75.36%) 	491842957 bases (30.44%)
+
+Time:                         	407.096 seconds.
+Reads Processed:      15998k 	39.30k reads/sec
+Bases Processed:       1615m 	3.97m bases/sec
+../data/fastq/ID_007551_Fnn23_PNA79_30_min_B.fq.gz starts trimming nowwwwwww
+ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007551_Fnn23_PNA79_30_min_B.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007551_Fnn23_PNA79_30_min_B.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.301 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4268m, used=26m
+
+Added 217135 kmers; time: 	1.915 seconds.
+Memory: max=4294m, total=4294m, free=4258m, used=36m
+
+Input is being processed as unpaired
+Started output streams:	0.267 seconds.
+Processing time:   		399.983 seconds.
+
+Input:                  	14842165 reads 		1499058665 bases.
+QTrimmed:               	4515 reads (0.03%) 	15830 bases (0.00%)
+FTrimmed:               	14842165 reads (100.00%) 	178105980 bases (11.88%)
+KTrimmed:               	11035182 reads (74.35%) 	738115561 bases (49.24%)
+Total Removed:          	3319802 reads (22.37%) 	916237371 bases (61.12%)
+Result:                 	11522363 reads (77.63%) 	582821294 bases (38.88%)
+
+Time:                         	402.198 seconds.
+Reads Processed:      14842k 	36.90k reads/sec
+Bases Processed:       1499m 	3.73m bases/sec
+../data/fastq/ID_007552_Fnn23_PNA79_30_min_C.fq.gz starts trimming nowwwwwww
+ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007552_Fnn23_PNA79_30_min_C.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007552_Fnn23_PNA79_30_min_C.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.262 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4268m, used=26m
+
+Added 217135 kmers; time: 	1.511 seconds.
+Memory: max=4294m, total=4294m, free=4257m, used=37m
+
+Input is being processed as unpaired
+Started output streams:	0.251 seconds.
+Processing time:   		426.696 seconds.
+
+Input:                  	14449624 reads 		1459412024 bases.
+QTrimmed:               	4484 reads (0.03%) 	15649 bases (0.00%)
+FTrimmed:               	14449624 reads (100.00%) 	173395488 bases (11.88%)
+KTrimmed:               	11952499 reads (82.72%) 	808550983 bases (55.40%)
+Total Removed:          	3561598 reads (24.65%) 	981962120 bases (67.28%)
+Result:                 	10888026 reads (75.35%) 	477449904 bases (32.72%)
+
+Time:                         	428.489 seconds.
+Reads Processed:      14449k 	33.72k reads/sec
+Bases Processed:       1459m 	3.41m bases/sec
+../data/fastq/ID_007553_Fnn23_PNAscr_30_min_A.fq.gz starts trimming nowwwwwww
+ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007553_Fnn23_PNAscr_30_min_A.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007553_Fnn23_PNAscr_30_min_A.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.193 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4268m, used=26m
+
+Added 217135 kmers; time: 	1.732 seconds.
+Memory: max=4294m, total=4294m, free=4258m, used=36m
+
+Input is being processed as unpaired
+Started output streams:	0.271 seconds.
+Processing time:   		593.625 seconds.
+
+Input:                  	22297433 reads 		2252040733 bases.
+QTrimmed:               	6697 reads (0.03%) 	23687 bases (0.00%)
+FTrimmed:               	22297433 reads (100.00%) 	267569196 bases (11.88%)
+KTrimmed:               	18825568 reads (84.43%) 	1282187459 bases (56.93%)
+Total Removed:          	5993276 reads (26.88%) 	1549780342 bases (68.82%)
+Result:                 	16304157 reads (73.12%) 	702260391 bases (31.18%)
+
+Time:                         	595.660 seconds.
+Reads Processed:      22297k 	37.43k reads/sec
+Bases Processed:       2252m 	3.78m bases/sec
+../data/fastq/ID_007554_Fnn23_PNAscr_30_min_B.fq.gz starts trimming nowwwwwww
+ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007554_Fnn23_PNAscr_30_min_B.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007554_Fnn23_PNAscr_30_min_B.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.273 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4266m, used=28m
+
+Added 217135 kmers; time: 	1.339 seconds.
+Memory: max=4294m, total=4294m, free=4256m, used=38m
+
+Input is being processed as unpaired
+Started output streams:	0.270 seconds.
+Processing time:   		335.633 seconds.
+
+Input:                  	12060011 reads 		1218061111 bases.
+QTrimmed:               	3347 reads (0.03%) 	11484 bases (0.00%)
+FTrimmed:               	12060011 reads (100.00%) 	144720132 bases (11.88%)
+KTrimmed:               	10028741 reads (83.16%) 	687234467 bases (56.42%)
+Total Removed:          	3214696 reads (26.66%) 	831966083 bases (68.30%)
+Result:                 	8845315 reads (73.34%) 	386095028 bases (31.70%)
+
+Time:                         	337.274 seconds.
+Reads Processed:      12060k 	35.76k reads/sec
+Bases Processed:       1218m 	3.61m bases/sec
+../data/fastq/ID_007555_Fnn23_PNAscr_30_min_C.fq.gz starts trimming nowwwwwww
+ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007555_Fnn23_PNAscr_30_min_C.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007555_Fnn23_PNAscr_30_min_C.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.243 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4268m, used=26m
+
+Added 217135 kmers; time: 	1.519 seconds.
+Memory: max=4294m, total=4294m, free=4259m, used=35m
+
+Input is being processed as unpaired
+Started output streams:	0.280 seconds.
+Processing time:   		467.128 seconds.
+
+Input:                  	17662828 reads 		1783945628 bases.
+QTrimmed:               	4935 reads (0.03%) 	17318 bases (0.00%)
+FTrimmed:               	17662828 reads (100.00%) 	211953936 bases (11.88%)
+KTrimmed:               	14202849 reads (80.41%) 	955610115 bases (53.57%)
+Total Removed:          	4454972 reads (25.22%) 	1167581369 bases (65.45%)
+Result:                 	13207856 reads (74.78%) 	616364259 bases (34.55%)
+
+Time:                         	468.962 seconds.
+Reads Processed:      17662k 	37.66k reads/sec
+Bases Processed:       1783m 	3.80m bases/sec
+../data/fastq/ID_007556_Fnv_H2O_30_min_A.fq.gz starts trimming nowwwwwww
+ID_007556_Fnv_H2O_30_min_A.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007556_Fnv_H2O_30_min_A.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007556_Fnv_H2O_30_min_A.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007556_Fnv_H2O_30_min_A.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007556_Fnv_H2O_30_min_A.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.221 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4268m, used=26m
+
+Added 217135 kmers; time: 	1.475 seconds.
+Memory: max=4294m, total=4294m, free=4258m, used=36m
+
+Input is being processed as unpaired
+Started output streams:	0.290 seconds.
+Processing time:   		509.322 seconds.
+
+Input:                  	19394907 reads 		1958885607 bases.
+QTrimmed:               	8464 reads (0.04%) 	29222 bases (0.00%)
+FTrimmed:               	19394907 reads (100.00%) 	232738884 bases (11.88%)
+KTrimmed:               	17062215 reads (87.97%) 	1056371169 bases (53.93%)
+Total Removed:          	3497053 reads (18.03%) 	1289139275 bases (65.81%)
+Result:                 	15897854 reads (81.97%) 	669746332 bases (34.19%)
+
+Time:                         	511.119 seconds.
+Reads Processed:      19394k 	37.95k reads/sec
+Bases Processed:       1958m 	3.83m bases/sec
+../data/fastq/ID_007557_Fnv_H2O_30_min_B.fq.gz starts trimming nowwwwwww
+ID_007557_Fnv_H2O_30_min_B.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007557_Fnv_H2O_30_min_B.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007557_Fnv_H2O_30_min_B.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007557_Fnv_H2O_30_min_B.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007557_Fnv_H2O_30_min_B.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.275 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4268m, used=26m
+
+Added 217135 kmers; time: 	1.305 seconds.
+Memory: max=4294m, total=4294m, free=4257m, used=37m
+
+Input is being processed as unpaired
+Started output streams:	0.271 seconds.
+Processing time:   		422.104 seconds.
+
+Input:                  	12913621 reads 		1304275721 bases.
+QTrimmed:               	1782 reads (0.01%) 	6105 bases (0.00%)
+FTrimmed:               	12913621 reads (100.00%) 	154963452 bases (11.88%)
+KTrimmed:               	10691472 reads (82.79%) 	659221299 bases (50.54%)
+Total Removed:          	2185760 reads (16.93%) 	814190856 bases (62.42%)
+Result:                 	10727861 reads (83.07%) 	490084865 bases (37.58%)
+
+Time:                         	423.711 seconds.
+Reads Processed:      12913k 	30.48k reads/sec
+Bases Processed:       1304m 	3.08m bases/sec
+../data/fastq/ID_007558_Fnv_H2O_30_min_C.fq.gz starts trimming nowwwwwww
+ID_007558_Fnv_H2O_30_min_C.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007558_Fnv_H2O_30_min_C.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007558_Fnv_H2O_30_min_C.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007558_Fnv_H2O_30_min_C.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007558_Fnv_H2O_30_min_C.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.236 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4266m, used=28m
+
+Added 217135 kmers; time: 	1.461 seconds.
+Memory: max=4294m, total=4294m, free=4257m, used=37m
+
+Input is being processed as unpaired
+Started output streams:	0.411 seconds.
+Processing time:   		631.861 seconds.
+
+Input:                  	17622769 reads 		1779899669 bases.
+QTrimmed:               	9090 reads (0.05%) 	32250 bases (0.00%)
+FTrimmed:               	17622769 reads (100.00%) 	211473228 bases (11.88%)
+KTrimmed:               	14664400 reads (83.21%) 	861250755 bases (48.39%)
+Total Removed:          	2807454 reads (15.93%) 	1072756233 bases (60.27%)
+Result:                 	14815315 reads (84.07%) 	707143436 bases (39.73%)
+
+Time:                         	633.767 seconds.
+Reads Processed:      17622k 	27.81k reads/sec
+Bases Processed:       1779m 	2.81m bases/sec
+../data/fastq/ID_007559_Fnv_PNA79_30_min_A.fq.gz starts trimming nowwwwwww
+ID_007559_Fnv_PNA79_30_min_A.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007559_Fnv_PNA79_30_min_A.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007559_Fnv_PNA79_30_min_A.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007559_Fnv_PNA79_30_min_A.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007559_Fnv_PNA79_30_min_A.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.256 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4268m, used=26m
+
+Added 217135 kmers; time: 	1.728 seconds.
+Memory: max=4294m, total=4294m, free=4257m, used=37m
+
+Input is being processed as unpaired
+Started output streams:	0.252 seconds.
+Processing time:   		651.830 seconds.
+
+Input:                  	23315852 reads 		2354901052 bases.
+QTrimmed:               	7819 reads (0.03%) 	27172 bases (0.00%)
+FTrimmed:               	23315852 reads (100.00%) 	279790224 bases (11.88%)
+KTrimmed:               	20850778 reads (89.43%) 	1413114622 bases (60.01%)
+Total Removed:          	6607373 reads (28.34%) 	1692932018 bases (71.89%)
+Result:                 	16708479 reads (71.66%) 	661969034 bases (28.11%)
+
+Time:                         	653.840 seconds.
+Reads Processed:      23315k 	35.66k reads/sec
+Bases Processed:       2354m 	3.60m bases/sec
+../data/fastq/ID_007560_Fnv_PNA79_30_min_B.fq.gz starts trimming nowwwwwww
+ID_007560_Fnv_PNA79_30_min_B.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007560_Fnv_PNA79_30_min_B.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007560_Fnv_PNA79_30_min_B.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007560_Fnv_PNA79_30_min_B.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007560_Fnv_PNA79_30_min_B.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.225 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4268m, used=26m
+
+Added 217135 kmers; time: 	1.934 seconds.
+Memory: max=4294m, total=4294m, free=4259m, used=35m
+
+Input is being processed as unpaired
+Started output streams:	0.277 seconds.
+Processing time:   		520.574 seconds.
+
+Input:                  	20420368 reads 		2062457168 bases.
+QTrimmed:               	7278 reads (0.04%) 	25414 bases (0.00%)
+FTrimmed:               	20420368 reads (100.00%) 	245044416 bases (11.88%)
+KTrimmed:               	17406086 reads (85.24%) 	1157671552 bases (56.13%)
+Total Removed:          	5153658 reads (25.24%) 	1402741382 bases (68.01%)
+Result:                 	15266710 reads (74.76%) 	659715786 bases (31.99%)
+
+Time:                         	522.817 seconds.
+Reads Processed:      20420k 	39.06k reads/sec
+Bases Processed:       2062m 	3.94m bases/sec
+../data/fastq/ID_007561_Fnv_PNA79_30_min_C.fq.gz starts trimming nowwwwwww
+ID_007561_Fnv_PNA79_30_min_C.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007561_Fnv_PNA79_30_min_C.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007561_Fnv_PNA79_30_min_C.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007561_Fnv_PNA79_30_min_C.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007561_Fnv_PNA79_30_min_C.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.215 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4268m, used=26m
+
+Added 217135 kmers; time: 	1.553 seconds.
+Memory: max=4294m, total=4294m, free=4258m, used=36m
+
+Input is being processed as unpaired
+Started output streams:	0.249 seconds.
+Processing time:   		699.469 seconds.
+
+Input:                  	27394198 reads 		2766813998 bases.
+QTrimmed:               	10841 reads (0.04%) 	38004 bases (0.00%)
+FTrimmed:               	27394198 reads (100.00%) 	328730376 bases (11.88%)
+KTrimmed:               	24439434 reads (89.21%) 	1598131188 bases (57.76%)
+Total Removed:          	6685918 reads (24.41%) 	1926899568 bases (69.64%)
+Result:                 	20708280 reads (75.59%) 	839914430 bases (30.36%)
+
+Time:                         	701.303 seconds.
+Reads Processed:      27394k 	39.06k reads/sec
+Bases Processed:       2766m 	3.95m bases/sec
+../data/fastq/ID_007562_Fnv_PNAscr_30_min_A.fq.gz starts trimming nowwwwwww
+ID_007562_Fnv_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007562_Fnv_PNAscr_30_min_A.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007562_Fnv_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007562_Fnv_PNAscr_30_min_A.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007562_Fnv_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.417 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4268m, used=26m
+
+Added 217135 kmers; time: 	2.499 seconds.
+Memory: max=4294m, total=4294m, free=4258m, used=36m
+
+Input is being processed as unpaired
+Started output streams:	0.271 seconds.
+Processing time:   		402.798 seconds.
+
+Input:                  	15071888 reads 		1522260688 bases.
+QTrimmed:               	5681 reads (0.04%) 	20111 bases (0.00%)
+FTrimmed:               	15071888 reads (100.00%) 	180862656 bases (11.88%)
+KTrimmed:               	13567373 reads (90.02%) 	896224957 bases (58.87%)
+Total Removed:          	3755578 reads (24.92%) 	1077107724 bases (70.76%)
+Result:                 	11316310 reads (75.08%) 	445152964 bases (29.24%)
+
+Time:                         	405.598 seconds.
+Reads Processed:      15071k 	37.16k reads/sec
+Bases Processed:       1522m 	3.75m bases/sec
+../data/fastq/ID_007563_Fnv_PNAscr_30_min_B.fq.gz starts trimming nowwwwwww
+ID_007563_Fnv_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007563_Fnv_PNAscr_30_min_B.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007563_Fnv_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007563_Fnv_PNAscr_30_min_B.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007563_Fnv_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.229 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4268m, used=26m
+
+Added 217135 kmers; time: 	1.484 seconds.
+Memory: max=4294m, total=4294m, free=4259m, used=35m
+
+Input is being processed as unpaired
+Started output streams:	0.258 seconds.
+Processing time:   		560.608 seconds.
+
+Input:                  	18169350 reads 		1835104350 bases.
+QTrimmed:               	5609 reads (0.03%) 	19536 bases (0.00%)
+FTrimmed:               	18169350 reads (100.00%) 	218032200 bases (11.88%)
+KTrimmed:               	16675929 reads (91.78%) 	1130839925 bases (61.62%)
+Total Removed:          	5051927 reads (27.80%) 	1348891661 bases (73.50%)
+Result:                 	13117423 reads (72.20%) 	486212689 bases (26.50%)
+
+Time:                         	562.381 seconds.
+Reads Processed:      18169k 	32.31k reads/sec
+Bases Processed:       1835m 	3.26m bases/sec
+../data/fastq/ID_007564_Fnv_PNAscr_30_min_C.fq.gz starts trimming nowwwwwww
+ID_007564_Fnv_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007564_Fnv_PNAscr_30_min_C.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007564_Fnv_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007564_Fnv_PNAscr_30_min_C.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007564_Fnv_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.236 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4268m, used=26m
+
+Added 217135 kmers; time: 	1.782 seconds.
+Memory: max=4294m, total=4294m, free=4259m, used=35m
+
+Input is being processed as unpaired
+Started output streams:	0.282 seconds.
+Processing time:   		523.851 seconds.
+
+Input:                  	18792599 reads 		1898052499 bases.
+QTrimmed:               	10573 reads (0.06%) 	37109 bases (0.00%)
+FTrimmed:               	18792599 reads (100.00%) 	225511188 bases (11.88%)
+KTrimmed:               	16582442 reads (88.24%) 	969046347 bases (51.05%)
+Total Removed:          	2515515 reads (13.39%) 	1194594644 bases (62.94%)
+Result:                 	16277084 reads (86.61%) 	703457855 bases (37.06%)
+
+Time:                         	525.945 seconds.
+Reads Processed:      18792k 	35.73k reads/sec
+Bases Processed:       1898m 	3.61m bases/sec
+../data/fastq/ID_007565_Fnn23_H2O_16_h_A.fq.gz starts trimming nowwwwwww
+ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007565_Fnn23_H2O_16_h_A.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007565_Fnn23_H2O_16_h_A.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.280 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4266m, used=28m
+
+Added 217135 kmers; time: 	1.987 seconds.
+Memory: max=4294m, total=4294m, free=4257m, used=37m
+
+Input is being processed as unpaired
+Started output streams:	0.255 seconds.
+Processing time:   		179.227 seconds.
+
+Input:                  	5207254 reads 		525932654 bases.
+QTrimmed:               	198 reads (0.00%) 	843 bases (0.00%)
+FTrimmed:               	5207254 reads (100.00%) 	62487048 bases (11.88%)
+KTrimmed:               	1104202 reads (21.21%) 	67798807 bases (12.89%)
+Total Removed:          	396577 reads (7.62%) 	130286698 bases (24.77%)
+Result:                 	4810677 reads (92.38%) 	395645956 bases (75.23%)
+
+Time:                         	181.499 seconds.
+Reads Processed:       5207k 	28.69k reads/sec
+Bases Processed:        525m 	2.90m bases/sec
+../data/fastq/ID_007566_Fnn23_H2O_16_h_B.fq.gz starts trimming nowwwwwww
+ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007566_Fnn23_H2O_16_h_B.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007566_Fnn23_H2O_16_h_B.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.272 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4268m, used=26m
+
+Added 217135 kmers; time: 	1.862 seconds.
+Memory: max=4294m, total=4294m, free=4258m, used=36m
+
+Input is being processed as unpaired
+Started output streams:	0.262 seconds.
+Processing time:   		270.764 seconds.
+
+Input:                  	8462784 reads 		854741184 bases.
+QTrimmed:               	2279 reads (0.03%) 	8208 bases (0.00%)
+FTrimmed:               	8462784 reads (100.00%) 	101553408 bases (11.88%)
+KTrimmed:               	3661427 reads (43.27%) 	198037612 bases (23.17%)
+Total Removed:          	566511 reads (6.69%) 	299599228 bases (35.05%)
+Result:                 	7896273 reads (93.31%) 	555141956 bases (64.95%)
+
+Time:                         	272.917 seconds.
+Reads Processed:       8462k 	31.01k reads/sec
+Bases Processed:        854m 	3.13m bases/sec
+../data/fastq/ID_007567_Fnn23_H2O_16_h_C.fq.gz starts trimming nowwwwwww
+ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007567_Fnn23_H2O_16_h_C.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007567_Fnn23_H2O_16_h_C.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.222 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4268m, used=26m
+
+Added 217135 kmers; time: 	1.688 seconds.
+Memory: max=4294m, total=4294m, free=4258m, used=36m
+
+Input is being processed as unpaired
+Started output streams:	0.259 seconds.
+Processing time:   		358.254 seconds.
+
+Input:                  	11083892 reads 		1119473092 bases.
+QTrimmed:               	2733 reads (0.02%) 	9927 bases (0.00%)
+FTrimmed:               	11083892 reads (100.00%) 	133006704 bases (11.88%)
+KTrimmed:               	3785475 reads (34.15%) 	204109423 bases (18.23%)
+Total Removed:          	587977 reads (5.30%) 	337126054 bases (30.11%)
+Result:                 	10495915 reads (94.70%) 	782347038 bases (69.89%)
+
+Time:                         	360.233 seconds.
+Reads Processed:      11083k 	30.77k reads/sec
+Bases Processed:       1119m 	3.11m bases/sec
+../data/fastq/ID_007568_Fnn23_PNA79_16_h_A.fq.gz starts trimming nowwwwwww
+ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007568_Fnn23_PNA79_16_h_A.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007568_Fnn23_PNA79_16_h_A.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.255 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4266m, used=28m
+
+Added 217135 kmers; time: 	1.639 seconds.
+Memory: max=4294m, total=4294m, free=4256m, used=38m
+
+Input is being processed as unpaired
+Started output streams:	0.258 seconds.
+Processing time:   		279.662 seconds.
+
+Input:                  	8943247 reads 		903267947 bases.
+QTrimmed:               	1730 reads (0.02%) 	6049 bases (0.00%)
+FTrimmed:               	8943247 reads (100.00%) 	107318964 bases (11.88%)
+KTrimmed:               	3509543 reads (39.24%) 	232867712 bases (25.78%)
+Total Removed:          	1532675 reads (17.14%) 	340192725 bases (37.66%)
+Result:                 	7410572 reads (82.86%) 	563075222 bases (62.34%)
+
+Time:                         	281.588 seconds.
+Reads Processed:       8943k 	31.76k reads/sec
+Bases Processed:        903m 	3.21m bases/sec
+../data/fastq/ID_007569_Fnn23_PNA79_16_h_B.fq.gz starts trimming nowwwwwww
+ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007569_Fnn23_PNA79_16_h_B.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007569_Fnn23_PNA79_16_h_B.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.223 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4268m, used=26m
+
+Added 217135 kmers; time: 	1.485 seconds.
+Memory: max=4294m, total=4294m, free=4258m, used=36m
+
+Input is being processed as unpaired
+Started output streams:	0.262 seconds.
+Processing time:   		394.046 seconds.
+
+Input:                  	9969641 reads 		1006933741 bases.
+QTrimmed:               	1843 reads (0.02%) 	6554 bases (0.00%)
+FTrimmed:               	9969641 reads (100.00%) 	119635692 bases (11.88%)
+KTrimmed:               	3913907 reads (39.26%) 	262127081 bases (26.03%)
+Total Removed:          	1825513 reads (18.31%) 	381769327 bases (37.91%)
+Result:                 	8144128 reads (81.69%) 	625164414 bases (62.09%)
+
+Time:                         	395.822 seconds.
+Reads Processed:       9969k 	25.19k reads/sec
+Bases Processed:       1006m 	2.54m bases/sec
+../data/fastq/ID_007570_Fnn23_PNA79_16_h_C.fq.gz starts trimming nowwwwwww
+ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007570_Fnn23_PNA79_16_h_C.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007570_Fnn23_PNA79_16_h_C.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.241 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4268m, used=26m
+
+Added 217135 kmers; time: 	1.831 seconds.
+Memory: max=4294m, total=4294m, free=4259m, used=35m
+
+Input is being processed as unpaired
+Started output streams:	0.274 seconds.
+Processing time:   		190.859 seconds.
+
+Input:                  	5539649 reads 		559504549 bases.
+QTrimmed:               	1135 reads (0.02%) 	3985 bases (0.00%)
+FTrimmed:               	5539649 reads (100.00%) 	66475788 bases (11.88%)
+KTrimmed:               	1827768 reads (32.99%) 	107445480 bases (19.20%)
+Total Removed:          	516895 reads (9.33%) 	173925253 bases (31.09%)
+Result:                 	5022754 reads (90.67%) 	385579296 bases (68.91%)
+
+Time:                         	192.993 seconds.
+Reads Processed:       5539k 	28.70k reads/sec
+Bases Processed:        559m 	2.90m bases/sec
+../data/fastq/ID_007571_Fnn23_PNAscr_16_h_A.fq.gz starts trimming nowwwwwww
+ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007571_Fnn23_PNAscr_16_h_A.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007571_Fnn23_PNAscr_16_h_A.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.240 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4266m, used=28m
+
+Added 217135 kmers; time: 	1.473 seconds.
+Memory: max=4294m, total=4294m, free=4257m, used=37m
+
+Input is being processed as unpaired
+Started output streams:	0.367 seconds.
+Processing time:   		295.140 seconds.
+
+Input:                  	9163517 reads 		925515217 bases.
+QTrimmed:               	2233 reads (0.02%) 	7951 bases (0.00%)
+FTrimmed:               	9163517 reads (100.00%) 	109962204 bases (11.88%)
+KTrimmed:               	5397256 reads (58.90%) 	333178801 bases (36.00%)
+Total Removed:          	1412868 reads (15.42%) 	443148956 bases (47.88%)
+Result:                 	7750649 reads (84.58%) 	482366261 bases (52.12%)
+
+Time:                         	297.012 seconds.
+Reads Processed:       9163k 	30.85k reads/sec
+Bases Processed:        925m 	3.12m bases/sec
+../data/fastq/ID_007572_Fnn23_PNAscr_16_h_B.fq.gz starts trimming nowwwwwww
+ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007572_Fnn23_PNAscr_16_h_B.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007572_Fnn23_PNAscr_16_h_B.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.184 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4268m, used=26m
+
+Added 217135 kmers; time: 	1.632 seconds.
+Memory: max=4294m, total=4294m, free=4258m, used=36m
+
+Input is being processed as unpaired
+Started output streams:	0.273 seconds.
+Processing time:   		311.683 seconds.
+
+Input:                  	10090219 reads 		1019112119 bases.
+QTrimmed:               	2454 reads (0.02%) 	8723 bases (0.00%)
+FTrimmed:               	10090219 reads (100.00%) 	121082628 bases (11.88%)
+KTrimmed:               	5142656 reads (50.97%) 	312167267 bases (30.63%)
+Total Removed:          	1328876 reads (13.17%) 	433258618 bases (42.51%)
+Result:                 	8761343 reads (86.83%) 	585853501 bases (57.49%)
+
+Time:                         	313.620 seconds.
+Reads Processed:      10090k 	32.17k reads/sec
+Bases Processed:       1019m 	3.25m bases/sec
+../data/fastq/ID_007573_Fnn23_PNAscr_16_h_C.fq.gz starts trimming nowwwwwww
+ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007573_Fnn23_PNAscr_16_h_C.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007573_Fnn23_PNAscr_16_h_C.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.234 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4268m, used=26m
+
+Added 217135 kmers; time: 	1.515 seconds.
+Memory: max=4294m, total=4294m, free=4258m, used=36m
+
+Input is being processed as unpaired
+Started output streams:	0.256 seconds.
+Processing time:   		289.971 seconds.
+
+Input:                  	9644720 reads 		974116720 bases.
+QTrimmed:               	592 reads (0.01%) 	2038 bases (0.00%)
+FTrimmed:               	9644720 reads (100.00%) 	115736640 bases (11.88%)
+KTrimmed:               	5508853 reads (57.12%) 	364251946 bases (37.39%)
+Total Removed:          	1818375 reads (18.85%) 	479990624 bases (49.27%)
+Result:                 	7826345 reads (81.15%) 	494126096 bases (50.73%)
+
+Time:                         	291.772 seconds.
+Reads Processed:       9644k 	33.06k reads/sec
+Bases Processed:        974m 	3.34m bases/sec
+../data/fastq/ID_007574_Fnv_H2O_16_h_A.fq.gz starts trimming nowwwwwww
+ID_007574_Fnv_H2O_16_h_A.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007574_Fnv_H2O_16_h_A.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007574_Fnv_H2O_16_h_A.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007574_Fnv_H2O_16_h_A.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007574_Fnv_H2O_16_h_A.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.262 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4266m, used=28m
+
+Added 217135 kmers; time: 	1.408 seconds.
+Memory: max=4294m, total=4294m, free=4257m, used=37m
+
+Input is being processed as unpaired
+Started output streams:	0.264 seconds.
+Processing time:   		334.697 seconds.
+
+Input:                  	10420877 reads 		1052508577 bases.
+QTrimmed:               	716 reads (0.01%) 	2773 bases (0.00%)
+FTrimmed:               	10420877 reads (100.00%) 	125050524 bases (11.88%)
+KTrimmed:               	1460739 reads (14.02%) 	73683794 bases (7.00%)
+Total Removed:          	297536 reads (2.86%) 	198737091 bases (18.88%)
+Result:                 	10123341 reads (97.14%) 	853771486 bases (81.12%)
+
+Time:                         	336.398 seconds.
+Reads Processed:      10420k 	30.98k reads/sec
+Bases Processed:       1052m 	3.13m bases/sec
+../data/fastq/ID_007575_Fnv_H2O_16_h_B.fq.gz starts trimming nowwwwwww
+ID_007575_Fnv_H2O_16_h_B.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007575_Fnv_H2O_16_h_B.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007575_Fnv_H2O_16_h_B.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007575_Fnv_H2O_16_h_B.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007575_Fnv_H2O_16_h_B.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.263 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4268m, used=26m
+
+Added 217135 kmers; time: 	1.514 seconds.
+Memory: max=4294m, total=4294m, free=4258m, used=36m
+
+Input is being processed as unpaired
+Started output streams:	0.249 seconds.
+Processing time:   		405.604 seconds.
+
+Input:                  	12652273 reads 		1277879573 bases.
+QTrimmed:               	1163 reads (0.01%) 	4259 bases (0.00%)
+FTrimmed:               	12652273 reads (100.00%) 	151827276 bases (11.88%)
+KTrimmed:               	2469823 reads (19.52%) 	121349952 bases (9.50%)
+Total Removed:          	445544 reads (3.52%) 	273181487 bases (21.38%)
+Result:                 	12206729 reads (96.48%) 	1004698086 bases (78.62%)
+
+Time:                         	407.398 seconds.
+Reads Processed:      12652k 	31.06k reads/sec
+Bases Processed:       1277m 	3.14m bases/sec
+../data/fastq/ID_007576_Fnv_H2O_16_h_C.fq.gz starts trimming nowwwwwww
+ID_007576_Fnv_H2O_16_h_C.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007576_Fnv_H2O_16_h_C.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007576_Fnv_H2O_16_h_C.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007576_Fnv_H2O_16_h_C.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007576_Fnv_H2O_16_h_C.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.234 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4268m, used=26m
+
+Added 217135 kmers; time: 	1.415 seconds.
+Memory: max=4294m, total=4294m, free=4259m, used=35m
+
+Input is being processed as unpaired
+Started output streams:	0.368 seconds.
+Processing time:   		495.985 seconds.
+
+Input:                  	12916277 reads 		1304543977 bases.
+QTrimmed:               	1030 reads (0.01%) 	4157 bases (0.00%)
+FTrimmed:               	12916277 reads (100.00%) 	154995324 bases (11.88%)
+KTrimmed:               	2452423 reads (18.99%) 	112784694 bases (8.65%)
+Total Removed:          	424298 reads (3.28%) 	267784175 bases (20.53%)
+Result:                 	12491979 reads (96.72%) 	1036759802 bases (79.47%)
+
+Time:                         	497.797 seconds.
+Reads Processed:      12916k 	25.95k reads/sec
+Bases Processed:       1304m 	2.62m bases/sec
+../data/fastq/ID_007577_Fnv_PNA79_16_h_A.fq.gz starts trimming nowwwwwww
+ID_007577_Fnv_PNA79_16_h_A.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007577_Fnv_PNA79_16_h_A.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007577_Fnv_PNA79_16_h_A.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007577_Fnv_PNA79_16_h_A.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007577_Fnv_PNA79_16_h_A.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.264 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4266m, used=28m
+
+Added 217135 kmers; time: 	1.602 seconds.
+Memory: max=4294m, total=4294m, free=4256m, used=38m
+
+Input is being processed as unpaired
+Started output streams:	0.411 seconds.
+Processing time:   		503.027 seconds.
+
+Input:                  	12953683 reads 		1308321983 bases.
+QTrimmed:               	1007 reads (0.01%) 	3999 bases (0.00%)
+FTrimmed:               	12953683 reads (100.00%) 	155444196 bases (11.88%)
+KTrimmed:               	2233077 reads (17.24%) 	120242860 bases (9.19%)
+Total Removed:          	555130 reads (4.29%) 	275691055 bases (21.07%)
+Result:                 	12398553 reads (95.71%) 	1032630928 bases (78.93%)
+
+Time:                         	505.071 seconds.
+Reads Processed:      12953k 	25.65k reads/sec
+Bases Processed:       1308m 	2.59m bases/sec
+../data/fastq/ID_007578_Fnv_PNA79_16_h_B.fq.gz starts trimming nowwwwwww
+ID_007578_Fnv_PNA79_16_h_B.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007578_Fnv_PNA79_16_h_B.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007578_Fnv_PNA79_16_h_B.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007578_Fnv_PNA79_16_h_B.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007578_Fnv_PNA79_16_h_B.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.274 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4266m, used=28m
+
+Added 217135 kmers; time: 	1.479 seconds.
+Memory: max=4294m, total=4294m, free=4257m, used=37m
+
+Input is being processed as unpaired
+Started output streams:	0.260 seconds.
+Processing time:   		312.585 seconds.
+
+Input:                  	8072653 reads 		815337953 bases.
+QTrimmed:               	595 reads (0.01%) 	2270 bases (0.00%)
+FTrimmed:               	8072653 reads (100.00%) 	96871836 bases (11.88%)
+KTrimmed:               	1352503 reads (16.75%) 	73081670 bases (8.96%)
+Total Removed:          	343629 reads (4.26%) 	169955776 bases (20.84%)
+Result:                 	7729024 reads (95.74%) 	645382177 bases (79.16%)
+
+Time:                         	314.353 seconds.
+Reads Processed:       8072k 	25.68k reads/sec
+Bases Processed:        815m 	2.59m bases/sec
+../data/fastq/ID_007579_Fnv_PNA79_16_h_C.fq.gz starts trimming nowwwwwww
+ID_007579_Fnv_PNA79_16_h_C.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007579_Fnv_PNA79_16_h_C.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007579_Fnv_PNA79_16_h_C.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007579_Fnv_PNA79_16_h_C.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007579_Fnv_PNA79_16_h_C.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.193 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4268m, used=26m
+
+Added 217135 kmers; time: 	1.577 seconds.
+Memory: max=4294m, total=4294m, free=4259m, used=35m
+
+Input is being processed as unpaired
+Started output streams:	0.251 seconds.
+Processing time:   		265.722 seconds.
+
+Input:                  	8525035 reads 		861028535 bases.
+QTrimmed:               	582 reads (0.01%) 	2244 bases (0.00%)
+FTrimmed:               	8525035 reads (100.00%) 	102300420 bases (11.88%)
+KTrimmed:               	2149463 reads (25.21%) 	133437483 bases (15.50%)
+Total Removed:          	742422 reads (8.71%) 	235740147 bases (27.38%)
+Result:                 	7782613 reads (91.29%) 	625288388 bases (72.62%)
+
+Time:                         	267.580 seconds.
+Reads Processed:       8525k 	31.86k reads/sec
+Bases Processed:        861m 	3.22m bases/sec
+../data/fastq/ID_007580_Fnv_PNAscr_16_h_A.fq.gz starts trimming nowwwwwww
+ID_007580_Fnv_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007580_Fnv_PNAscr_16_h_A.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007580_Fnv_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007580_Fnv_PNAscr_16_h_A.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007580_Fnv_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.275 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4266m, used=28m
+
+Added 217135 kmers; time: 	1.413 seconds.
+Memory: max=4294m, total=4294m, free=4257m, used=37m
+
+Input is being processed as unpaired
+Started output streams:	0.246 seconds.
+Processing time:   		330.865 seconds.
+
+Input:                  	10521897 reads 		1062711597 bases.
+QTrimmed:               	610 reads (0.01%) 	2308 bases (0.00%)
+FTrimmed:               	10521897 reads (100.00%) 	126262764 bases (11.88%)
+KTrimmed:               	2324820 reads (22.10%) 	128683015 bases (12.11%)
+Total Removed:          	706615 reads (6.72%) 	254948087 bases (23.99%)
+Result:                 	9815282 reads (93.28%) 	807763510 bases (76.01%)
+
+Time:                         	332.554 seconds.
+Reads Processed:      10521k 	31.64k reads/sec
+Bases Processed:       1062m 	3.20m bases/sec
+../data/fastq/ID_007581_Fnv_PNAscr_16_h_B.fq.gz starts trimming nowwwwwww
+ID_007581_Fnv_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007581_Fnv_PNAscr_16_h_B.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007581_Fnv_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007581_Fnv_PNAscr_16_h_B.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007581_Fnv_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.274 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4268m, used=26m
+
+Added 217135 kmers; time: 	1.664 seconds.
+Memory: max=4294m, total=4294m, free=4257m, used=37m
+
+Input is being processed as unpaired
+Started output streams:	0.256 seconds.
+Processing time:   		337.051 seconds.
+
+Input:                  	10838123 reads 		1094650423 bases.
+QTrimmed:               	255 reads (0.00%) 	1045 bases (0.00%)
+FTrimmed:               	10838123 reads (100.00%) 	130057476 bases (11.88%)
+KTrimmed:               	2133042 reads (19.68%) 	128502436 bases (11.74%)
+Total Removed:          	705921 reads (6.51%) 	258560957 bases (23.62%)
+Result:                 	10132202 reads (93.49%) 	836089466 bases (76.38%)
+
+Time:                         	339.000 seconds.
+Reads Processed:      10838k 	31.97k reads/sec
+Bases Processed:       1094m 	3.23m bases/sec
+../data/fastq/ID_007582_Fnv_PNAscr_16_h_C.fq.gz starts trimming nowwwwwww
+ID_007582_Fnv_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx4g -Xms4g -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ jgi.BBDukF in=../data/fastq/ID_007582_Fnv_PNAscr_16_h_C.fq.gz ref=../data/reference_sequences/adapters.fa -Xmx4g t=20 out=../data/libs/ID_007582_Fnv_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz ktrim=r k=23 mink=11 hdist=1 qtrim=r trimq=10 ftl=12
+Executing jgi.BBDukF [in=../data/fastq/ID_007582_Fnv_PNAscr_16_h_C.fq.gz, ref=../data/reference_sequences/adapters.fa, -Xmx4g, t=20, out=../data/libs/ID_007582_Fnv_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz, ktrim=r, k=23, mink=11, hdist=1, qtrim=r, trimq=10, ftl=12]
+Version 38.18
+
+Set threads to 20
+maskMiddle was disabled because useShortKmers=true
+0.222 seconds.
+Initial:
+Memory: max=4294m, total=4294m, free=4266m, used=28m
+
+Added 217135 kmers; time: 	1.748 seconds.
+Memory: max=4294m, total=4294m, free=4258m, used=36m
+
+Input is being processed as unpaired
+Started output streams:	0.265 seconds.
+Processing time:   		392.838 seconds.
+
+Input:                  	10249145 reads 		1035163645 bases.
+QTrimmed:               	672 reads (0.01%) 	2524 bases (0.00%)
+FTrimmed:               	10249145 reads (100.00%) 	122989740 bases (11.88%)
+KTrimmed:               	1900965 reads (18.55%) 	96523022 bases (9.32%)
+Total Removed:          	453835 reads (4.43%) 	219515286 bases (21.21%)
+Result:                 	9795310 reads (95.57%) 	815648359 bases (78.79%)
+
+Time:                         	394.881 seconds.
+Reads Processed:      10249k 	25.96k reads/sec
+Bases Processed:       1035m 	2.62m bases/sec
+Trimming done. Start mapping
+Finished mapping. Start connecting all tab files

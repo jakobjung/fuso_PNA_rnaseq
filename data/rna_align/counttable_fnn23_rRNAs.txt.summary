@@ -1,0 +1,15 @@
+Status	../data/rna_align/ID_007547_Fnn23_H2O_30_min_A.fq.gz.bam	../data/rna_align/ID_007548_Fnn23_H2O_30_min_B.fq.gz.bam	../data/rna_align/ID_007549_Fnn23_H2O_30_min_C.fq.gz.bam	../data/rna_align/ID_007550_Fnn23_PNA79_30_min_A.fq.gz.bam	../data/rna_align/ID_007551_Fnn23_PNA79_30_min_B.fq.gz.bam	../data/rna_align/ID_007552_Fnn23_PNA79_30_min_C.fq.gz.bam	../data/rna_align/ID_007553_Fnn23_PNAscr_30_min_A.fq.gz.bam	../data/rna_align/ID_007554_Fnn23_PNAscr_30_min_B.fq.gz.bam	../data/rna_align/ID_007555_Fnn23_PNAscr_30_min_C.fq.gz.bam	../data/rna_align/ID_007565_Fnn23_H2O_16_h_A.fq.gz.bam	../data/rna_align/ID_007566_Fnn23_H2O_16_h_B.fq.gz.bam	../data/rna_align/ID_007567_Fnn23_H2O_16_h_C.fq.gz.bam	../data/rna_align/ID_007568_Fnn23_PNA79_16_h_A.fq.gz.bam	../data/rna_align/ID_007569_Fnn23_PNA79_16_h_B.fq.gz.bam	../data/rna_align/ID_007570_Fnn23_PNA79_16_h_C.fq.gz.bam	../data/rna_align/ID_007571_Fnn23_PNAscr_16_h_A.fq.gz.bam	../data/rna_align/ID_007572_Fnn23_PNAscr_16_h_B.fq.gz.bam	../data/rna_align/ID_007573_Fnn23_PNAscr_16_h_C.fq.gz.bam
+Assigned	95210	64724	73635	100267	84021	79043	128851	57294	107601	348783	1277424	2630201	540849	287161	230787	392757	491916	356277
+Unassigned_Unmapped	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Read_Type	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Singleton	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MappingQuality	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MultiMapping	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Secondary	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NonSplit	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NoFeatures	2801522	3376944	2930486	2420134	3959710	2651208	3956150	2248795	3498422	3729856	3996553	4876117	4673141	5598449	3290339	3732891	4511537	4035180
+Unassigned_Overlapping_Length	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Ambiguity	32	35	19	29	41	17	32	9	39	88	690	1593	123	59	64	106	147	81

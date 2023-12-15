@@ -1,0 +1,2850 @@
+ERROR: Unable to locate a modulefile for 'python'
+Start trimming
+Trimming done. Start mapping
+Starting mapping for sample: ID_007547_Fnn23_H2O_30_min_A.fq.gz
+../data/libs/ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx27114m -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ align2.BBMap build=1 overwrite=true fastareadlen=500 in=../data/libs/ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz trimreaddescription=t t=20 ref=../data/reference_sequences/ATCC23726_ncbi.fasta k=12 outm=../data/rna_align/ID_007547_Fnn23_H2O_30_min_A.fq.gz.sam
+Executing align2.BBMap [build=1, overwrite=true, fastareadlen=500, in=../data/libs/ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz, trimreaddescription=t, t=20, ref=../data/reference_sequences/ATCC23726_ncbi.fasta, k=12, outm=../data/rna_align/ID_007547_Fnn23_H2O_30_min_A.fq.gz.sam]
+Version 38.18
+
+Set threads to 20
+Retaining first best site only for ambiguous mappings.
+NOTE:	Deleting contents of ref/genome/1 because reference is specified and overwrite=true
+NOTE:	Deleting contents of ref/index/1 because reference is specified and overwrite=true
+Writing reference.
+Executing dna.FastaToChromArrays2 [../data/reference_sequences/ATCC23726_ncbi.fasta, 1, writeinthread=false, genscaffoldinfo=true, retain, waitforwriting=false, gz=true, maxlen=536670912, writechroms=true, minscaf=1, midpad=300, startpad=8000, stoppad=8000, nodisk=false]
+
+Set genScaffoldInfo=true
+Writing chunk 1
+Set genome to 1
+
+Loaded Reference:	0.004 seconds.
+Loading index for chunk 1-1, build 1
+No index available; generating from reference genome: /home/jakob_jung/fuso_RNAseq/scripts/ref/index/1/chr1_index_k12_c9_b1.block
+Indexing threads started for block 0-1
+Indexing threads finished for block 0-1
+Generated Index:	0.663 seconds.
+Analyzed Index:   	0.676 seconds.
+Started output stream:	0.443 seconds.
+Cleared Memory:    	0.111 seconds.
+Processing reads in single-ended mode.
+Started read stream.
+Started 20 mapping threads.
+Detecting finished threads: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+
+   ------------------   Results   ------------------   
+
+Genome:                	1
+Key Length:            	12
+Max Indel:             	16000
+Minimum Score Ratio:  	0.56
+Mapping Mode:         	normal
+Reads Used:           	9688979	(487692411 bases)
+
+Mapping:          	92.575 seconds.
+Reads/sec:       	104661.00
+kBases/sec:      	5268.09
+
+
+Read 1 data:      	pct reads	num reads 	pct bases	   num bases
+
+mapped:          	 29.8975% 	  2896764 	 47.6636% 	   232451726
+unambiguous:     	 26.6615% 	  2583231 	 44.1733% 	   215429851
+ambiguous:       	  3.2360% 	   313533 	  3.4903% 	    17021875
+low-Q discards:  	  0.0000% 	        2 	  0.0000% 	          36
+
+perfect best site:	 24.1463% 	  2339532 	 40.2004% 	   196054313
+semiperfect site:	 24.1464% 	  2339535 	 40.2005% 	   196054580
+
+Match Rate:      	      NA 	       NA 	 86.0334% 	   230384752
+Error Rate:      	 13.3000% 	   542093 	 13.9600% 	    37382934
+Sub Rate:        	 12.1669% 	   495908 	  0.6787% 	     1817548
+Del Rate:        	  1.3661% 	    55681 	 13.1947% 	    35333592
+Ins Rate:        	  1.7253% 	    70320 	  0.0866% 	      231794
+N Rate:          	  0.4278% 	    17435 	  0.0066% 	       17632
+
+Total time:     	94.751 seconds.
+[bam_sort_core] merging from 0 files and 40 in-memory blocks...
+bamFilesList: ['../data/rna_align/ID_007547_Fnn23_H2O_30_min_A.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: forward
+Offset: [1, -1]
+bamFilesList: ['../data/rna_align/ID_007547_Fnn23_H2O_30_min_A.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: reverse
+Offset: [1, -1]
+Started analysis of ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 5% complete for ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 10% complete for ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 15% complete for ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 20% complete for ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 25% complete for ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 30% complete for ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 35% complete for ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 40% complete for ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 45% complete for ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 50% complete for ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 55% complete for ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 60% complete for ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 65% complete for ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 70% complete for ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 75% complete for ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 80% complete for ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 85% complete for ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 90% complete for ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 95% complete for ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz
+Analysis complete for ID_007547_Fnn23_H2O_30_min_A.fq.gz_trimmed.fastq.gz
+Starting mapping for sample: ID_007548_Fnn23_H2O_30_min_B.fq.gz
+../data/libs/ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx27114m -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ align2.BBMap build=1 overwrite=true fastareadlen=500 in=../data/libs/ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz trimreaddescription=t t=20 ref=../data/reference_sequences/ATCC23726_ncbi.fasta k=12 outm=../data/rna_align/ID_007548_Fnn23_H2O_30_min_B.fq.gz.sam
+Executing align2.BBMap [build=1, overwrite=true, fastareadlen=500, in=../data/libs/ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz, trimreaddescription=t, t=20, ref=../data/reference_sequences/ATCC23726_ncbi.fasta, k=12, outm=../data/rna_align/ID_007548_Fnn23_H2O_30_min_B.fq.gz.sam]
+Version 38.18
+
+Set threads to 20
+Retaining first best site only for ambiguous mappings.
+NOTE:	Ignoring reference file because it already appears to have been processed.
+NOTE:	If you wish to regenerate the index, please manually delete ref/genome/1/summary.txt
+Set genome to 1
+
+Loaded Reference:	0.042 seconds.
+Loading index for chunk 1-1, build 1
+Generated Index:	0.174 seconds.
+Analyzed Index:   	0.780 seconds.
+Started output stream:	0.036 seconds.
+Cleared Memory:    	0.112 seconds.
+Processing reads in single-ended mode.
+Started read stream.
+Started 20 mapping threads.
+Detecting finished threads: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+
+   ------------------   Results   ------------------   
+
+Genome:                	1
+Key Length:            	12
+Max Indel:             	16000
+Minimum Score Ratio:  	0.56
+Mapping Mode:         	normal
+Reads Used:           	8810248	(485778413 bases)
+
+Mapping:          	109.701 seconds.
+Reads/sec:       	80311.35
+kBases/sec:      	4428.20
+
+
+Read 1 data:      	pct reads	num reads 	pct bases	   num bases
+
+mapped:          	 39.0648% 	  3441703 	 58.1793% 	   282622354
+unambiguous:     	 36.1006% 	  3180553 	 55.2326% 	   268307970
+ambiguous:       	  2.9642% 	   261150 	  2.9467% 	    14314384
+low-Q discards:  	  0.0001% 	        5 	  0.0000% 	          89
+
+perfect best site:	 32.0010% 	  2819368 	 49.0038% 	   238050040
+semiperfect site:	 32.0011% 	  2819375 	 49.0040% 	   238050615
+
+Match Rate:      	      NA 	       NA 	 82.3268% 	   280241222
+Error Rate:      	 13.7768% 	   604310 	 17.6670% 	    60138641
+Sub Rate:        	 12.3727% 	   542722 	  0.6039% 	     2055608
+Del Rate:        	  1.7232% 	    75586 	 16.9737% 	    57778770
+Ins Rate:        	  2.1333% 	    93575 	  0.0894% 	      304263
+N Rate:          	  0.4801% 	    21059 	  0.0062% 	       21261
+
+Total time:     	110.949 seconds.
+[bam_sort_core] merging from 0 files and 40 in-memory blocks...
+bamFilesList: ['../data/rna_align/ID_007548_Fnn23_H2O_30_min_B.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: forward
+Offset: [1, -1]
+bamFilesList: ['../data/rna_align/ID_007548_Fnn23_H2O_30_min_B.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: reverse
+Offset: [1, -1]
+Started analysis of ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 5% complete for ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 10% complete for ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 15% complete for ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 20% complete for ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 25% complete for ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 30% complete for ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 35% complete for ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 40% complete for ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 45% complete for ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 50% complete for ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 55% complete for ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 60% complete for ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 65% complete for ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 70% complete for ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 75% complete for ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 80% complete for ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 85% complete for ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 90% complete for ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 95% complete for ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz
+Analysis complete for ID_007548_Fnn23_H2O_30_min_B.fq.gz_trimmed.fastq.gz
+Starting mapping for sample: ID_007549_Fnn23_H2O_30_min_C.fq.gz
+../data/libs/ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx27114m -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ align2.BBMap build=1 overwrite=true fastareadlen=500 in=../data/libs/ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz trimreaddescription=t t=20 ref=../data/reference_sequences/ATCC23726_ncbi.fasta k=12 outm=../data/rna_align/ID_007549_Fnn23_H2O_30_min_C.fq.gz.sam
+Executing align2.BBMap [build=1, overwrite=true, fastareadlen=500, in=../data/libs/ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz, trimreaddescription=t, t=20, ref=../data/reference_sequences/ATCC23726_ncbi.fasta, k=12, outm=../data/rna_align/ID_007549_Fnn23_H2O_30_min_C.fq.gz.sam]
+Version 38.18
+
+Set threads to 20
+Retaining first best site only for ambiguous mappings.
+NOTE:	Ignoring reference file because it already appears to have been processed.
+NOTE:	If you wish to regenerate the index, please manually delete ref/genome/1/summary.txt
+Set genome to 1
+
+Loaded Reference:	0.034 seconds.
+Loading index for chunk 1-1, build 1
+Generated Index:	0.151 seconds.
+Analyzed Index:   	0.712 seconds.
+Started output stream:	0.027 seconds.
+Cleared Memory:    	0.110 seconds.
+Processing reads in single-ended mode.
+Started read stream.
+Started 20 mapping threads.
+Detecting finished threads: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+
+   ------------------   Results   ------------------   
+
+Genome:                	1
+Key Length:            	12
+Max Indel:             	16000
+Minimum Score Ratio:  	0.56
+Mapping Mode:         	normal
+Reads Used:           	8331861	(430935785 bases)
+
+Mapping:          	85.451 seconds.
+Reads/sec:       	97504.54
+kBases/sec:      	5043.07
+
+
+Read 1 data:      	pct reads	num reads 	pct bases	   num bases
+
+mapped:          	 36.0561% 	  3004140 	 57.0831% 	   245991375
+unambiguous:     	 33.1787% 	  2764400 	 54.1832% 	   233494873
+ambiguous:       	  2.8774% 	   239740 	  2.8999% 	    12496502
+low-Q discards:  	  0.0000% 	        3 	  0.0000% 	          50
+
+perfect best site:	 29.2947% 	  2440790 	 48.2061% 	   207737301
+semiperfect site:	 29.2947% 	  2440797 	 48.2062% 	   207737924
+
+Match Rate:      	      NA 	       NA 	 83.6670% 	   243883412
+Error Rate:      	 13.9568% 	   552781 	 16.3288% 	    47597210
+Sub Rate:        	 12.6374% 	   500524 	  0.6308% 	     1838786
+Del Rate:        	  1.5983% 	    63302 	 15.6099% 	    45501701
+Ins Rate:        	  2.0002% 	    79219 	  0.0881% 	      256723
+N Rate:          	  0.3123% 	    12370 	  0.0043% 	       12454
+
+Total time:     	86.567 seconds.
+[bam_sort_core] merging from 0 files and 40 in-memory blocks...
+bamFilesList: ['../data/rna_align/ID_007549_Fnn23_H2O_30_min_C.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: forward
+Offset: [1, -1]
+bamFilesList: ['../data/rna_align/ID_007549_Fnn23_H2O_30_min_C.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: reverse
+Offset: [1, -1]
+Started analysis of ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 5% complete for ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 10% complete for ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 15% complete for ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 20% complete for ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 25% complete for ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 30% complete for ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 35% complete for ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 40% complete for ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 45% complete for ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 50% complete for ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 55% complete for ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 60% complete for ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 65% complete for ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 70% complete for ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 75% complete for ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 80% complete for ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 85% complete for ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 90% complete for ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 95% complete for ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz
+Analysis complete for ID_007549_Fnn23_H2O_30_min_C.fq.gz_trimmed.fastq.gz
+Starting mapping for sample: ID_007550_Fnn23_PNA79_30_min_A.fq.gz
+../data/libs/ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx27114m -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ align2.BBMap build=1 overwrite=true fastareadlen=500 in=../data/libs/ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz trimreaddescription=t t=20 ref=../data/reference_sequences/ATCC23726_ncbi.fasta k=12 outm=../data/rna_align/ID_007550_Fnn23_PNA79_30_min_A.fq.gz.sam
+Executing align2.BBMap [build=1, overwrite=true, fastareadlen=500, in=../data/libs/ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz, trimreaddescription=t, t=20, ref=../data/reference_sequences/ATCC23726_ncbi.fasta, k=12, outm=../data/rna_align/ID_007550_Fnn23_PNA79_30_min_A.fq.gz.sam]
+Version 38.18
+
+Set threads to 20
+Retaining first best site only for ambiguous mappings.
+NOTE:	Ignoring reference file because it already appears to have been processed.
+NOTE:	If you wish to regenerate the index, please manually delete ref/genome/1/summary.txt
+Set genome to 1
+
+Loaded Reference:	0.043 seconds.
+Loading index for chunk 1-1, build 1
+Generated Index:	0.176 seconds.
+Analyzed Index:   	0.869 seconds.
+Started output stream:	0.038 seconds.
+Cleared Memory:    	0.110 seconds.
+Processing reads in single-ended mode.
+Started read stream.
+Started 20 mapping threads.
+Detecting finished threads: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+
+   ------------------   Results   ------------------   
+
+Genome:                	1
+Key Length:            	12
+Max Indel:             	16000
+Minimum Score Ratio:  	0.56
+Mapping Mode:         	normal
+Reads Used:           	12055513	(491842957 bases)
+
+Mapping:          	95.595 seconds.
+Reads/sec:       	126110.51
+kBases/sec:      	5145.08
+
+
+Read 1 data:      	pct reads	num reads 	pct bases	   num bases
+
+mapped:          	 20.9069% 	  2520430 	 38.2551% 	   188154795
+unambiguous:     	 17.4630% 	  2105260 	 34.1313% 	   167872466
+ambiguous:       	  3.4438% 	   415170 	  4.1237% 	    20282329
+low-Q discards:  	  0.0000% 	        6 	  0.0000% 	         106
+
+perfect best site:	 15.7747% 	  1901726 	 31.5243% 	   155049900
+semiperfect site:	 15.7747% 	  1901726 	 31.5243% 	   155049900
+
+Match Rate:      	      NA 	       NA 	 88.0524% 	   185992785
+Error Rate:      	 15.4475% 	   606528 	 11.9408% 	    25222558
+Sub Rate:        	 14.4775% 	   568442 	  0.9325% 	     1969621
+Del Rate:        	  1.1767% 	    46202 	 10.9241% 	    23074885
+Ins Rate:        	  1.4083% 	    55295 	  0.0843% 	      178052
+N Rate:          	  0.3642% 	    14299 	  0.0068% 	       14337
+
+Total time:     	96.936 seconds.
+[bam_sort_core] merging from 0 files and 40 in-memory blocks...
+bamFilesList: ['../data/rna_align/ID_007550_Fnn23_PNA79_30_min_A.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: forward
+Offset: [1, -1]
+bamFilesList: ['../data/rna_align/ID_007550_Fnn23_PNA79_30_min_A.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: reverse
+Offset: [1, -1]
+Started analysis of ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 5% complete for ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 10% complete for ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 15% complete for ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 20% complete for ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 25% complete for ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 30% complete for ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 35% complete for ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 40% complete for ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 45% complete for ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 50% complete for ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 55% complete for ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 60% complete for ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 65% complete for ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 70% complete for ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 75% complete for ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 80% complete for ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 85% complete for ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 90% complete for ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 95% complete for ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz
+Analysis complete for ID_007550_Fnn23_PNA79_30_min_A.fq.gz_trimmed.fastq.gz
+Starting mapping for sample: ID_007551_Fnn23_PNA79_30_min_B.fq.gz
+../data/libs/ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx27114m -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ align2.BBMap build=1 overwrite=true fastareadlen=500 in=../data/libs/ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz trimreaddescription=t t=20 ref=../data/reference_sequences/ATCC23726_ncbi.fasta k=12 outm=../data/rna_align/ID_007551_Fnn23_PNA79_30_min_B.fq.gz.sam
+Executing align2.BBMap [build=1, overwrite=true, fastareadlen=500, in=../data/libs/ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz, trimreaddescription=t, t=20, ref=../data/reference_sequences/ATCC23726_ncbi.fasta, k=12, outm=../data/rna_align/ID_007551_Fnn23_PNA79_30_min_B.fq.gz.sam]
+Version 38.18
+
+Set threads to 20
+Retaining first best site only for ambiguous mappings.
+NOTE:	Ignoring reference file because it already appears to have been processed.
+NOTE:	If you wish to regenerate the index, please manually delete ref/genome/1/summary.txt
+Set genome to 1
+
+Loaded Reference:	0.038 seconds.
+Loading index for chunk 1-1, build 1
+Generated Index:	0.159 seconds.
+Analyzed Index:   	0.726 seconds.
+Started output stream:	0.032 seconds.
+Cleared Memory:    	0.130 seconds.
+Processing reads in single-ended mode.
+Started read stream.
+Started 20 mapping threads.
+Detecting finished threads: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+
+   ------------------   Results   ------------------   
+
+Genome:                	1
+Key Length:            	12
+Max Indel:             	16000
+Minimum Score Ratio:  	0.56
+Mapping Mode:         	normal
+Reads Used:           	11522363	(582821294 bases)
+
+Mapping:          	113.917 seconds.
+Reads/sec:       	101146.98
+kBases/sec:      	5116.19
+
+
+Read 1 data:      	pct reads	num reads 	pct bases	   num bases
+
+mapped:          	 35.0950% 	  4043772 	 56.3645% 	   328504180
+unambiguous:     	 32.2544% 	  3716472 	 53.5012% 	   311816376
+ambiguous:       	  2.8406% 	   327300 	  2.8633% 	    16687804
+low-Q discards:  	  0.0001% 	        6 	  0.0000% 	         103
+
+perfect best site:	 28.1113% 	  3239085 	 47.0553% 	   274248194
+semiperfect site:	 28.1114% 	  3239096 	 47.0554% 	   274249173
+
+Match Rate:      	      NA 	       NA 	 81.5157% 	   325373060
+Error Rate:      	 15.1368% 	   784157 	 18.4782% 	    73756348
+Sub Rate:        	 13.7407% 	   711834 	  0.6806% 	     2716449
+Del Rate:        	  1.7979% 	    93139 	 17.6998% 	    70649574
+Ins Rate:        	  2.2261% 	   115324 	  0.0978% 	      390325
+N Rate:          	  0.4655% 	    24117 	  0.0061% 	       24346
+
+Total time:     	115.097 seconds.
+[bam_sort_core] merging from 0 files and 40 in-memory blocks...
+bamFilesList: ['../data/rna_align/ID_007551_Fnn23_PNA79_30_min_B.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: forward
+Offset: [1, -1]
+bamFilesList: ['../data/rna_align/ID_007551_Fnn23_PNA79_30_min_B.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: reverse
+Offset: [1, -1]
+Started analysis of ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 5% complete for ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 10% complete for ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 15% complete for ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 20% complete for ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 25% complete for ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 30% complete for ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 35% complete for ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 40% complete for ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 45% complete for ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 50% complete for ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 55% complete for ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 60% complete for ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 65% complete for ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 70% complete for ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 75% complete for ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 80% complete for ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 85% complete for ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 90% complete for ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 95% complete for ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz
+Analysis complete for ID_007551_Fnn23_PNA79_30_min_B.fq.gz_trimmed.fastq.gz
+Starting mapping for sample: ID_007552_Fnn23_PNA79_30_min_C.fq.gz
+../data/libs/ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx27114m -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ align2.BBMap build=1 overwrite=true fastareadlen=500 in=../data/libs/ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz trimreaddescription=t t=20 ref=../data/reference_sequences/ATCC23726_ncbi.fasta k=12 outm=../data/rna_align/ID_007552_Fnn23_PNA79_30_min_C.fq.gz.sam
+Executing align2.BBMap [build=1, overwrite=true, fastareadlen=500, in=../data/libs/ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz, trimreaddescription=t, t=20, ref=../data/reference_sequences/ATCC23726_ncbi.fasta, k=12, outm=../data/rna_align/ID_007552_Fnn23_PNA79_30_min_C.fq.gz.sam]
+Version 38.18
+
+Set threads to 20
+Retaining first best site only for ambiguous mappings.
+NOTE:	Ignoring reference file because it already appears to have been processed.
+NOTE:	If you wish to regenerate the index, please manually delete ref/genome/1/summary.txt
+Set genome to 1
+
+Loaded Reference:	0.041 seconds.
+Loading index for chunk 1-1, build 1
+Generated Index:	0.188 seconds.
+Analyzed Index:   	0.833 seconds.
+Started output stream:	0.034 seconds.
+Cleared Memory:    	0.167 seconds.
+Processing reads in single-ended mode.
+Started read stream.
+Started 20 mapping threads.
+Detecting finished threads: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+
+   ------------------   Results   ------------------   
+
+Genome:                	1
+Key Length:            	12
+Max Indel:             	16000
+Minimum Score Ratio:  	0.56
+Mapping Mode:         	normal
+Reads Used:           	10888026	(477449904 bases)
+
+Mapping:          	86.905 seconds.
+Reads/sec:       	125286.87
+kBases/sec:      	5493.94
+
+
+Read 1 data:      	pct reads	num reads 	pct bases	   num bases
+
+mapped:          	 25.0759% 	  2730268 	 44.6008% 	   212946469
+unambiguous:     	 21.9275% 	  2387475 	 41.0532% 	   196008530
+ambiguous:       	  3.1483% 	   342793 	  3.5476% 	    16937939
+low-Q discards:  	  0.0001% 	       11 	  0.0000% 	         195
+
+perfect best site:	 19.4221% 	  2114687 	 37.0454% 	   176873225
+semiperfect site:	 19.4222% 	  2114696 	 37.0456% 	   176874026
+
+Match Rate:      	      NA 	       NA 	 86.5052% 	   210695009
+Error Rate:      	 15.3863% 	   602282 	 13.4883% 	    32852655
+Sub Rate:        	 14.2172% 	   556517 	  0.8238% 	     2006500
+Del Rate:        	  1.3939% 	    54561 	 12.5704% 	    30616891
+Ins Rate:        	  1.7523% 	    68590 	  0.0941% 	      229264
+N Rate:          	  0.3948% 	    15453 	  0.0064% 	       15696
+
+Total time:     	88.273 seconds.
+[bam_sort_core] merging from 0 files and 40 in-memory blocks...
+bamFilesList: ['../data/rna_align/ID_007552_Fnn23_PNA79_30_min_C.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: forward
+Offset: [1, -1]
+bamFilesList: ['../data/rna_align/ID_007552_Fnn23_PNA79_30_min_C.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: reverse
+Offset: [1, -1]
+Started analysis of ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 5% complete for ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 10% complete for ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 15% complete for ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 20% complete for ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 25% complete for ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 30% complete for ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 35% complete for ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 40% complete for ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 45% complete for ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 50% complete for ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 55% complete for ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 60% complete for ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 65% complete for ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 70% complete for ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 75% complete for ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 80% complete for ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 85% complete for ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 90% complete for ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 95% complete for ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz
+Analysis complete for ID_007552_Fnn23_PNA79_30_min_C.fq.gz_trimmed.fastq.gz
+Starting mapping for sample: ID_007553_Fnn23_PNAscr_30_min_A.fq.gz
+../data/libs/ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx27114m -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ align2.BBMap build=1 overwrite=true fastareadlen=500 in=../data/libs/ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz trimreaddescription=t t=20 ref=../data/reference_sequences/ATCC23726_ncbi.fasta k=12 outm=../data/rna_align/ID_007553_Fnn23_PNAscr_30_min_A.fq.gz.sam
+Executing align2.BBMap [build=1, overwrite=true, fastareadlen=500, in=../data/libs/ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz, trimreaddescription=t, t=20, ref=../data/reference_sequences/ATCC23726_ncbi.fasta, k=12, outm=../data/rna_align/ID_007553_Fnn23_PNAscr_30_min_A.fq.gz.sam]
+Version 38.18
+
+Set threads to 20
+Retaining first best site only for ambiguous mappings.
+NOTE:	Ignoring reference file because it already appears to have been processed.
+NOTE:	If you wish to regenerate the index, please manually delete ref/genome/1/summary.txt
+Set genome to 1
+
+Loaded Reference:	0.037 seconds.
+Loading index for chunk 1-1, build 1
+Generated Index:	0.160 seconds.
+Analyzed Index:   	0.712 seconds.
+Started output stream:	0.031 seconds.
+Cleared Memory:    	0.149 seconds.
+Processing reads in single-ended mode.
+Started read stream.
+Started 20 mapping threads.
+Detecting finished threads: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+
+   ------------------   Results   ------------------   
+
+Genome:                	1
+Key Length:            	12
+Max Indel:             	16000
+Minimum Score Ratio:  	0.56
+Mapping Mode:         	normal
+Reads Used:           	16304157	(702260391 bases)
+
+Mapping:          	127.065 seconds.
+Reads/sec:       	128313.70
+kBases/sec:      	5526.79
+
+
+Read 1 data:      	pct reads	num reads 	pct bases	   num bases
+
+mapped:          	 25.0552% 	  4085033 	 44.5899% 	   313136859
+unambiguous:     	 21.6669% 	  3532610 	 40.7592% 	   286235558
+ambiguous:       	  3.3882% 	   552423 	  3.8307% 	    26901301
+low-Q discards:  	  0.0000% 	        5 	  0.0000% 	          86
+
+perfect best site:	 19.2211% 	  3133844 	 36.7630% 	   258172037
+semiperfect site:	 19.2212% 	  3133851 	 36.7631% 	   258172616
+
+Match Rate:      	      NA 	       NA 	 85.2295% 	   309691727
+Error Rate:      	 15.6451% 	   931197 	 14.7640% 	    53646770
+Sub Rate:        	 14.5446% 	   865694 	  0.8513% 	     3093226
+Del Rate:        	  1.3950% 	    83029 	 13.8224% 	    50225446
+Ins Rate:        	  1.6718% 	    99503 	  0.0903% 	      328098
+N Rate:          	  0.3969% 	    23625 	  0.0066% 	       23808
+
+Total time:     	128.247 seconds.
+[bam_sort_core] merging from 0 files and 40 in-memory blocks...
+bamFilesList: ['../data/rna_align/ID_007553_Fnn23_PNAscr_30_min_A.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: forward
+Offset: [1, -1]
+bamFilesList: ['../data/rna_align/ID_007553_Fnn23_PNAscr_30_min_A.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: reverse
+Offset: [1, -1]
+Started analysis of ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 5% complete for ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 10% complete for ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 15% complete for ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 20% complete for ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 25% complete for ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 30% complete for ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 35% complete for ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 40% complete for ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 45% complete for ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 50% complete for ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 55% complete for ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 60% complete for ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 65% complete for ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 70% complete for ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 75% complete for ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 80% complete for ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 85% complete for ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 90% complete for ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz
+Approx 95% complete for ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz
+Analysis complete for ID_007553_Fnn23_PNAscr_30_min_A.fq.gz_trimmed.fastq.gz
+Starting mapping for sample: ID_007554_Fnn23_PNAscr_30_min_B.fq.gz
+../data/libs/ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx27114m -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ align2.BBMap build=1 overwrite=true fastareadlen=500 in=../data/libs/ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz trimreaddescription=t t=20 ref=../data/reference_sequences/ATCC23726_ncbi.fasta k=12 outm=../data/rna_align/ID_007554_Fnn23_PNAscr_30_min_B.fq.gz.sam
+Executing align2.BBMap [build=1, overwrite=true, fastareadlen=500, in=../data/libs/ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz, trimreaddescription=t, t=20, ref=../data/reference_sequences/ATCC23726_ncbi.fasta, k=12, outm=../data/rna_align/ID_007554_Fnn23_PNAscr_30_min_B.fq.gz.sam]
+Version 38.18
+
+Set threads to 20
+Retaining first best site only for ambiguous mappings.
+NOTE:	Ignoring reference file because it already appears to have been processed.
+NOTE:	If you wish to regenerate the index, please manually delete ref/genome/1/summary.txt
+Set genome to 1
+
+Loaded Reference:	0.041 seconds.
+Loading index for chunk 1-1, build 1
+Generated Index:	0.170 seconds.
+Analyzed Index:   	0.765 seconds.
+Started output stream:	0.037 seconds.
+Cleared Memory:    	0.115 seconds.
+Processing reads in single-ended mode.
+Started read stream.
+Started 20 mapping threads.
+Detecting finished threads: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+
+   ------------------   Results   ------------------   
+
+Genome:                	1
+Key Length:            	12
+Max Indel:             	16000
+Minimum Score Ratio:  	0.56
+Mapping Mode:         	normal
+Reads Used:           	8845315	(386095028 bases)
+
+Mapping:          	84.696 seconds.
+Reads/sec:       	104435.61
+kBases/sec:      	4558.58
+
+
+Read 1 data:      	pct reads	num reads 	pct bases	   num bases
+
+mapped:          	 26.0714% 	  2306098 	 46.3350% 	   178896972
+unambiguous:     	 22.8444% 	  2020661 	 42.8382% 	   165396225
+ambiguous:       	  3.2270% 	   285437 	  3.4967% 	    13500747
+low-Q discards:  	  0.0000% 	        2 	  0.0000% 	          35
+
+perfect best site:	 20.2648% 	  1792486 	 38.5604% 	   148879709
+semiperfect site:	 20.2649% 	  1792491 	 38.5605% 	   148880154
+
+Match Rate:      	      NA 	       NA 	 84.9862% 	   177064933
+Error Rate:      	 15.3520% 	   502463 	 15.0075% 	    31267543
+Sub Rate:        	 14.1657% 	   463636 	  0.7869% 	     1639553
+Del Rate:        	  1.4286% 	    46757 	 14.1345% 	    29448541
+Ins Rate:        	  1.7149% 	    56128 	  0.0861% 	      179449
+N Rate:          	  0.3949% 	    12926 	  0.0063% 	       13037
+
+Total time:     	85.927 seconds.
+[bam_sort_core] merging from 0 files and 40 in-memory blocks...
+bamFilesList: ['../data/rna_align/ID_007554_Fnn23_PNAscr_30_min_B.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: forward
+Offset: [1, -1]
+bamFilesList: ['../data/rna_align/ID_007554_Fnn23_PNAscr_30_min_B.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: reverse
+Offset: [1, -1]
+Started analysis of ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 5% complete for ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 10% complete for ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 15% complete for ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 20% complete for ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 25% complete for ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 30% complete for ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 35% complete for ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 40% complete for ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 45% complete for ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 50% complete for ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 55% complete for ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 60% complete for ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 65% complete for ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 70% complete for ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 75% complete for ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 80% complete for ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 85% complete for ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 90% complete for ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz
+Approx 95% complete for ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz
+Analysis complete for ID_007554_Fnn23_PNAscr_30_min_B.fq.gz_trimmed.fastq.gz
+Starting mapping for sample: ID_007555_Fnn23_PNAscr_30_min_C.fq.gz
+../data/libs/ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx27114m -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ align2.BBMap build=1 overwrite=true fastareadlen=500 in=../data/libs/ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz trimreaddescription=t t=20 ref=../data/reference_sequences/ATCC23726_ncbi.fasta k=12 outm=../data/rna_align/ID_007555_Fnn23_PNAscr_30_min_C.fq.gz.sam
+Executing align2.BBMap [build=1, overwrite=true, fastareadlen=500, in=../data/libs/ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz, trimreaddescription=t, t=20, ref=../data/reference_sequences/ATCC23726_ncbi.fasta, k=12, outm=../data/rna_align/ID_007555_Fnn23_PNAscr_30_min_C.fq.gz.sam]
+Version 38.18
+
+Set threads to 20
+Retaining first best site only for ambiguous mappings.
+NOTE:	Ignoring reference file because it already appears to have been processed.
+NOTE:	If you wish to regenerate the index, please manually delete ref/genome/1/summary.txt
+Set genome to 1
+
+Loaded Reference:	0.036 seconds.
+Loading index for chunk 1-1, build 1
+Generated Index:	0.149 seconds.
+Analyzed Index:   	0.690 seconds.
+Started output stream:	0.030 seconds.
+Cleared Memory:    	0.111 seconds.
+Processing reads in single-ended mode.
+Started read stream.
+Started 20 mapping threads.
+Detecting finished threads: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+
+   ------------------   Results   ------------------   
+
+Genome:                	1
+Key Length:            	12
+Max Indel:             	16000
+Minimum Score Ratio:  	0.56
+Mapping Mode:         	normal
+Reads Used:           	13207856	(616364259 bases)
+
+Mapping:          	97.329 seconds.
+Reads/sec:       	135702.81
+kBases/sec:      	6332.77
+
+
+Read 1 data:      	pct reads	num reads 	pct bases	   num bases
+
+mapped:          	 27.3024% 	  3606062 	 46.4957% 	   286582706
+unambiguous:     	 23.8258% 	  3146880 	 42.4878% 	   261879885
+ambiguous:       	  3.4766% 	   459182 	  4.0078% 	    24702821
+low-Q discards:  	  0.0000% 	        2 	  0.0000% 	          34
+
+perfect best site:	 21.8900% 	  2891200 	 39.4765% 	   243318998
+semiperfect site:	 21.8900% 	  2891200 	 39.4765% 	   243318998
+
+Match Rate:      	      NA 	       NA 	 90.6669% 	   284151499
+Error Rate:      	 14.0037% 	   696561 	  9.3263% 	    29228831
+Sub Rate:        	 12.8994% 	   641634 	  0.7009% 	     2196647
+Del Rate:        	  1.1662% 	    58010 	  8.5573% 	    26818794
+Ins Rate:        	  1.4260% 	    70930 	  0.0681% 	      213390
+N Rate:          	  0.4228% 	    21031 	  0.0068% 	       21170
+
+Total time:     	98.435 seconds.
+[bam_sort_core] merging from 0 files and 40 in-memory blocks...
+bamFilesList: ['../data/rna_align/ID_007555_Fnn23_PNAscr_30_min_C.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: forward
+Offset: [1, -1]
+bamFilesList: ['../data/rna_align/ID_007555_Fnn23_PNAscr_30_min_C.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: reverse
+Offset: [1, -1]
+Started analysis of ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 5% complete for ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 10% complete for ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 15% complete for ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 20% complete for ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 25% complete for ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 30% complete for ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 35% complete for ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 40% complete for ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 45% complete for ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 50% complete for ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 55% complete for ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 60% complete for ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 65% complete for ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 70% complete for ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 75% complete for ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 80% complete for ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 85% complete for ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 90% complete for ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz
+Approx 95% complete for ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz
+Analysis complete for ID_007555_Fnn23_PNAscr_30_min_C.fq.gz_trimmed.fastq.gz
+Starting mapping for sample: ID_007565_Fnn23_H2O_16_h_A.fq.gz
+../data/libs/ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx27114m -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ align2.BBMap build=1 overwrite=true fastareadlen=500 in=../data/libs/ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz trimreaddescription=t t=20 ref=../data/reference_sequences/ATCC23726_ncbi.fasta k=12 outm=../data/rna_align/ID_007565_Fnn23_H2O_16_h_A.fq.gz.sam
+Executing align2.BBMap [build=1, overwrite=true, fastareadlen=500, in=../data/libs/ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz, trimreaddescription=t, t=20, ref=../data/reference_sequences/ATCC23726_ncbi.fasta, k=12, outm=../data/rna_align/ID_007565_Fnn23_H2O_16_h_A.fq.gz.sam]
+Version 38.18
+
+Set threads to 20
+Retaining first best site only for ambiguous mappings.
+NOTE:	Ignoring reference file because it already appears to have been processed.
+NOTE:	If you wish to regenerate the index, please manually delete ref/genome/1/summary.txt
+Set genome to 1
+
+Loaded Reference:	0.034 seconds.
+Loading index for chunk 1-1, build 1
+Generated Index:	0.155 seconds.
+Analyzed Index:   	0.737 seconds.
+Started output stream:	0.027 seconds.
+Cleared Memory:    	0.112 seconds.
+Processing reads in single-ended mode.
+Started read stream.
+Started 20 mapping threads.
+Detecting finished threads: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+
+   ------------------   Results   ------------------   
+
+Genome:                	1
+Key Length:            	12
+Max Indel:             	16000
+Minimum Score Ratio:  	0.56
+Mapping Mode:         	normal
+Reads Used:           	4810677	(395645956 bases)
+
+Mapping:          	81.808 seconds.
+Reads/sec:       	58804.72
+kBases/sec:      	4836.29
+
+
+Read 1 data:      	pct reads	num reads 	pct bases	   num bases
+
+mapped:          	 84.7849% 	  4078727 	 89.3141% 	   353367729
+unambiguous:     	 76.6579% 	  3687762 	 81.2323% 	   321392323
+ambiguous:       	  8.1270% 	   390965 	  8.0818% 	    31975406
+low-Q discards:  	  0.0000% 	        0 	  0.0000% 	           0
+
+perfect best site:	 73.2151% 	  3522141 	 77.1623% 	   305289705
+semiperfect site:	 73.2163% 	  3522202 	 77.1637% 	   305295086
+
+Match Rate:      	      NA 	       NA 	 80.5052% 	   351199613
+Error Rate:      	 12.7890% 	   541406 	 19.4904% 	    85025776
+Sub Rate:        	 11.4058% 	   482847 	  0.4159% 	     1814260
+Del Rate:        	  1.8498% 	    78310 	 18.9978% 	    82877040
+Ins Rate:        	  2.2939% 	    97109 	  0.0767% 	      334476
+N Rate:          	  0.4151% 	    17572 	  0.0044% 	       19380
+
+Total time:     	82.955 seconds.
+[bam_sort_core] merging from 0 files and 40 in-memory blocks...
+bamFilesList: ['../data/rna_align/ID_007565_Fnn23_H2O_16_h_A.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: forward
+Offset: [1, -1]
+bamFilesList: ['../data/rna_align/ID_007565_Fnn23_H2O_16_h_A.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: reverse
+Offset: [1, -1]
+Started analysis of ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 5% complete for ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 10% complete for ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 15% complete for ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 20% complete for ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 25% complete for ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 30% complete for ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 35% complete for ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 40% complete for ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 45% complete for ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 50% complete for ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 55% complete for ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 60% complete for ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 65% complete for ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 70% complete for ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 75% complete for ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 80% complete for ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 85% complete for ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 90% complete for ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 95% complete for ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz
+Analysis complete for ID_007565_Fnn23_H2O_16_h_A.fq.gz_trimmed.fastq.gz
+Starting mapping for sample: ID_007566_Fnn23_H2O_16_h_B.fq.gz
+../data/libs/ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx27114m -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ align2.BBMap build=1 overwrite=true fastareadlen=500 in=../data/libs/ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz trimreaddescription=t t=20 ref=../data/reference_sequences/ATCC23726_ncbi.fasta k=12 outm=../data/rna_align/ID_007566_Fnn23_H2O_16_h_B.fq.gz.sam
+Executing align2.BBMap [build=1, overwrite=true, fastareadlen=500, in=../data/libs/ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz, trimreaddescription=t, t=20, ref=../data/reference_sequences/ATCC23726_ncbi.fasta, k=12, outm=../data/rna_align/ID_007566_Fnn23_H2O_16_h_B.fq.gz.sam]
+Version 38.18
+
+Set threads to 20
+Retaining first best site only for ambiguous mappings.
+NOTE:	Ignoring reference file because it already appears to have been processed.
+NOTE:	If you wish to regenerate the index, please manually delete ref/genome/1/summary.txt
+Set genome to 1
+
+Loaded Reference:	0.036 seconds.
+Loading index for chunk 1-1, build 1
+Generated Index:	0.147 seconds.
+Analyzed Index:   	0.702 seconds.
+Started output stream:	0.030 seconds.
+Cleared Memory:    	0.132 seconds.
+Processing reads in single-ended mode.
+Started read stream.
+Started 20 mapping threads.
+Detecting finished threads: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+
+   ------------------   Results   ------------------   
+
+Genome:                	1
+Key Length:            	12
+Max Indel:             	16000
+Minimum Score Ratio:  	0.56
+Mapping Mode:         	normal
+Reads Used:           	7896273	(555141956 bases)
+
+Mapping:          	103.127 seconds.
+Reads/sec:       	76568.55
+kBases/sec:      	5383.10
+
+
+Read 1 data:      	pct reads	num reads 	pct bases	   num bases
+
+mapped:          	 66.7995% 	  5274667 	 79.4159% 	   440870964
+unambiguous:     	 48.8789% 	  3859613 	 59.2924% 	   329156971
+ambiguous:       	 17.9205% 	  1415054 	 20.1235% 	   111713993
+low-Q discards:  	  0.0000% 	        2 	  0.0000% 	          34
+
+perfect best site:	 56.8741% 	  4490934 	 67.9375% 	   377149745
+semiperfect site:	 56.8748% 	  4490990 	 67.9384% 	   377154651
+
+Match Rate:      	      NA 	       NA 	 86.5001% 	   437750301
+Error Rate:      	 13.1454% 	   754594 	 13.4930% 	    68283699
+Sub Rate:        	 12.1371% 	   696712 	  0.5284% 	     2673937
+Del Rate:        	  1.4732% 	    84565 	 12.8833% 	    65198338
+Ins Rate:        	  1.8935% 	   108693 	  0.0813% 	      411424
+N Rate:          	  0.5872% 	    33708 	  0.0070% 	       35302
+
+Total time:     	104.263 seconds.
+[bam_sort_core] merging from 0 files and 40 in-memory blocks...
+bamFilesList: ['../data/rna_align/ID_007566_Fnn23_H2O_16_h_B.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: forward
+Offset: [1, -1]
+bamFilesList: ['../data/rna_align/ID_007566_Fnn23_H2O_16_h_B.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: reverse
+Offset: [1, -1]
+Started analysis of ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 5% complete for ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 10% complete for ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 15% complete for ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 20% complete for ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 25% complete for ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 30% complete for ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 35% complete for ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 40% complete for ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 45% complete for ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 50% complete for ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 55% complete for ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 60% complete for ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 65% complete for ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 70% complete for ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 75% complete for ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 80% complete for ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 85% complete for ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 90% complete for ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 95% complete for ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz
+Analysis complete for ID_007566_Fnn23_H2O_16_h_B.fq.gz_trimmed.fastq.gz
+Starting mapping for sample: ID_007567_Fnn23_H2O_16_h_C.fq.gz
+../data/libs/ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx27114m -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ align2.BBMap build=1 overwrite=true fastareadlen=500 in=../data/libs/ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz trimreaddescription=t t=20 ref=../data/reference_sequences/ATCC23726_ncbi.fasta k=12 outm=../data/rna_align/ID_007567_Fnn23_H2O_16_h_C.fq.gz.sam
+Executing align2.BBMap [build=1, overwrite=true, fastareadlen=500, in=../data/libs/ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz, trimreaddescription=t, t=20, ref=../data/reference_sequences/ATCC23726_ncbi.fasta, k=12, outm=../data/rna_align/ID_007567_Fnn23_H2O_16_h_C.fq.gz.sam]
+Version 38.18
+
+Set threads to 20
+Retaining first best site only for ambiguous mappings.
+NOTE:	Ignoring reference file because it already appears to have been processed.
+NOTE:	If you wish to regenerate the index, please manually delete ref/genome/1/summary.txt
+Set genome to 1
+
+Loaded Reference:	0.045 seconds.
+Loading index for chunk 1-1, build 1
+Generated Index:	0.187 seconds.
+Analyzed Index:   	0.960 seconds.
+Started output stream:	0.037 seconds.
+Cleared Memory:    	0.110 seconds.
+Processing reads in single-ended mode.
+Started read stream.
+Started 20 mapping threads.
+Detecting finished threads: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+
+   ------------------   Results   ------------------   
+
+Genome:                	1
+Key Length:            	12
+Max Indel:             	16000
+Minimum Score Ratio:  	0.56
+Mapping Mode:         	normal
+Reads Used:           	10495915	(782347038 bases)
+
+Mapping:          	160.214 seconds.
+Reads/sec:       	65511.88
+kBases/sec:      	4883.14
+
+
+Read 1 data:      	pct reads	num reads 	pct bases	   num bases
+
+mapped:          	 71.5317% 	  7507911 	 82.0063% 	   641573592
+unambiguous:     	 48.6218% 	  5103301 	 56.3447% 	   440811040
+ambiguous:       	 22.9100% 	  2404610 	 25.6616% 	   200762552
+low-Q discards:  	  0.0000% 	        1 	  0.0000% 	          18
+
+perfect best site:	 61.4689% 	  6451720 	 70.7463% 	   553481387
+semiperfect site:	 61.4699% 	  6451828 	 70.7475% 	   553490913
+
+Match Rate:      	      NA 	       NA 	 85.4101% 	   637363905
+Error Rate:      	 12.5653% 	  1013196 	 14.5828% 	   108823001
+Sub Rate:        	 11.5958% 	   935017 	  0.4803% 	     3584046
+Del Rate:        	  1.4212% 	   114598 	 14.0258% 	   104666278
+Ins Rate:        	  1.8756% 	   151238 	  0.0767% 	      572677
+N Rate:          	  0.6145% 	    49546 	  0.0071% 	       52964
+
+Total time:     	161.664 seconds.
+[bam_sort_core] merging from 0 files and 40 in-memory blocks...
+bamFilesList: ['../data/rna_align/ID_007567_Fnn23_H2O_16_h_C.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: forward
+Offset: [1, -1]
+bamFilesList: ['../data/rna_align/ID_007567_Fnn23_H2O_16_h_C.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: reverse
+Offset: [1, -1]
+Started analysis of ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 5% complete for ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 10% complete for ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 15% complete for ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 20% complete for ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 25% complete for ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 30% complete for ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 35% complete for ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 40% complete for ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 45% complete for ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 50% complete for ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 55% complete for ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 60% complete for ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 65% complete for ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 70% complete for ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 75% complete for ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 80% complete for ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 85% complete for ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 90% complete for ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 95% complete for ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz
+Analysis complete for ID_007567_Fnn23_H2O_16_h_C.fq.gz_trimmed.fastq.gz
+Starting mapping for sample: ID_007568_Fnn23_PNA79_16_h_A.fq.gz
+../data/libs/ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx27114m -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ align2.BBMap build=1 overwrite=true fastareadlen=500 in=../data/libs/ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz trimreaddescription=t t=20 ref=../data/reference_sequences/ATCC23726_ncbi.fasta k=12 outm=../data/rna_align/ID_007568_Fnn23_PNA79_16_h_A.fq.gz.sam
+Executing align2.BBMap [build=1, overwrite=true, fastareadlen=500, in=../data/libs/ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz, trimreaddescription=t, t=20, ref=../data/reference_sequences/ATCC23726_ncbi.fasta, k=12, outm=../data/rna_align/ID_007568_Fnn23_PNA79_16_h_A.fq.gz.sam]
+Version 38.18
+
+Set threads to 20
+Retaining first best site only for ambiguous mappings.
+NOTE:	Ignoring reference file because it already appears to have been processed.
+NOTE:	If you wish to regenerate the index, please manually delete ref/genome/1/summary.txt
+Set genome to 1
+
+Loaded Reference:	0.034 seconds.
+Loading index for chunk 1-1, build 1
+Generated Index:	0.173 seconds.
+Analyzed Index:   	0.716 seconds.
+Started output stream:	0.027 seconds.
+Cleared Memory:    	0.158 seconds.
+Processing reads in single-ended mode.
+Started read stream.
+Started 20 mapping threads.
+Detecting finished threads: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+
+   ------------------   Results   ------------------   
+
+Genome:                	1
+Key Length:            	12
+Max Indel:             	16000
+Minimum Score Ratio:  	0.56
+Mapping Mode:         	normal
+Reads Used:           	7410572	(563075222 bases)
+
+Mapping:          	123.447 seconds.
+Reads/sec:       	60030.63
+kBases/sec:      	4561.29
+
+
+Read 1 data:      	pct reads	num reads 	pct bases	   num bases
+
+mapped:          	 70.3605% 	  5214113 	 79.3070% 	   446558041
+unambiguous:     	 61.4822% 	  4556186 	 69.9590% 	   393921568
+ambiguous:       	  8.8782% 	   657927 	  9.3480% 	    52636473
+low-Q discards:  	  0.0000% 	        1 	  0.0000% 	          18
+
+perfect best site:	 60.1340% 	  4456276 	 67.9834% 	   382797483
+semiperfect site:	 60.1343% 	  4456293 	 67.9836% 	   382798979
+
+Match Rate:      	      NA 	       NA 	 84.6546% 	   443809586
+Error Rate:      	 13.2433% 	   729895 	 15.3392% 	    80417060
+Sub Rate:        	 11.4301% 	   629962 	  0.4419% 	     2316767
+Del Rate:        	  1.8150% 	   100032 	 14.8212% 	    77701467
+Ins Rate:        	  2.3062% 	   127104 	  0.0761% 	      398826
+N Rate:          	  0.5881% 	    32410 	  0.0063% 	       32862
+
+Total time:     	124.641 seconds.
+[bam_sort_core] merging from 0 files and 40 in-memory blocks...
+bamFilesList: ['../data/rna_align/ID_007568_Fnn23_PNA79_16_h_A.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: forward
+Offset: [1, -1]
+bamFilesList: ['../data/rna_align/ID_007568_Fnn23_PNA79_16_h_A.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: reverse
+Offset: [1, -1]
+Started analysis of ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 5% complete for ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 10% complete for ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 15% complete for ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 20% complete for ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 25% complete for ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 30% complete for ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 35% complete for ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 40% complete for ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 45% complete for ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 50% complete for ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 55% complete for ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 60% complete for ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 65% complete for ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 70% complete for ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 75% complete for ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 80% complete for ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 85% complete for ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 90% complete for ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 95% complete for ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz
+Analysis complete for ID_007568_Fnn23_PNA79_16_h_A.fq.gz_trimmed.fastq.gz
+Starting mapping for sample: ID_007569_Fnn23_PNA79_16_h_B.fq.gz
+../data/libs/ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx27114m -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ align2.BBMap build=1 overwrite=true fastareadlen=500 in=../data/libs/ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz trimreaddescription=t t=20 ref=../data/reference_sequences/ATCC23726_ncbi.fasta k=12 outm=../data/rna_align/ID_007569_Fnn23_PNA79_16_h_B.fq.gz.sam
+Executing align2.BBMap [build=1, overwrite=true, fastareadlen=500, in=../data/libs/ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz, trimreaddescription=t, t=20, ref=../data/reference_sequences/ATCC23726_ncbi.fasta, k=12, outm=../data/rna_align/ID_007569_Fnn23_PNA79_16_h_B.fq.gz.sam]
+Version 38.18
+
+Set threads to 20
+Retaining first best site only for ambiguous mappings.
+NOTE:	Ignoring reference file because it already appears to have been processed.
+NOTE:	If you wish to regenerate the index, please manually delete ref/genome/1/summary.txt
+Set genome to 1
+
+Loaded Reference:	0.035 seconds.
+Loading index for chunk 1-1, build 1
+Generated Index:	0.155 seconds.
+Analyzed Index:   	0.715 seconds.
+Started output stream:	0.032 seconds.
+Cleared Memory:    	0.147 seconds.
+Processing reads in single-ended mode.
+Started read stream.
+Started 20 mapping threads.
+Detecting finished threads: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+
+   ------------------   Results   ------------------   
+
+Genome:                	1
+Key Length:            	12
+Max Indel:             	16000
+Minimum Score Ratio:  	0.56
+Mapping Mode:         	normal
+Reads Used:           	8144128	(625164414 bases)
+
+Mapping:          	134.512 seconds.
+Reads/sec:       	60545.68
+kBases/sec:      	4647.64
+
+
+Read 1 data:      	pct reads	num reads 	pct bases	   num bases
+
+mapped:          	 72.2689% 	  5885669 	 80.3192% 	   502126838
+unambiguous:     	 67.1867% 	  5471768 	 75.2953% 	   470719424
+ambiguous:       	  5.0822% 	   413901 	  5.0239% 	    31407414
+low-Q discards:  	  0.0000% 	        0 	  0.0000% 	           0
+
+perfect best site:	 61.5787% 	  5015047 	 68.5786% 	   428728771
+semiperfect site:	 61.5788% 	  5015059 	 68.5787% 	   428729839
+
+Match Rate:      	      NA 	       NA 	 81.7416% 	   498822240
+Error Rate:      	 13.5054% 	   839106 	 18.2523% 	   111383559
+Sub Rate:        	 11.6302% 	   722595 	  0.4547% 	     2775056
+Del Rate:        	  2.0063% 	   124651 	 17.7169% 	   108115846
+Ins Rate:        	  2.4944% 	   154980 	  0.0807% 	      492657
+N Rate:          	  0.5875% 	    36499 	  0.0060% 	       36885
+
+Total time:     	135.682 seconds.
+[bam_sort_core] merging from 0 files and 40 in-memory blocks...
+bamFilesList: ['../data/rna_align/ID_007569_Fnn23_PNA79_16_h_B.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: forward
+Offset: [1, -1]
+bamFilesList: ['../data/rna_align/ID_007569_Fnn23_PNA79_16_h_B.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: reverse
+Offset: [1, -1]
+Started analysis of ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 5% complete for ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 10% complete for ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 15% complete for ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 20% complete for ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 25% complete for ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 30% complete for ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 35% complete for ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 40% complete for ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 45% complete for ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 50% complete for ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 55% complete for ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 60% complete for ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 65% complete for ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 70% complete for ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 75% complete for ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 80% complete for ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 85% complete for ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 90% complete for ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 95% complete for ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz
+Analysis complete for ID_007569_Fnn23_PNA79_16_h_B.fq.gz_trimmed.fastq.gz
+Starting mapping for sample: ID_007570_Fnn23_PNA79_16_h_C.fq.gz
+../data/libs/ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx27114m -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ align2.BBMap build=1 overwrite=true fastareadlen=500 in=../data/libs/ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz trimreaddescription=t t=20 ref=../data/reference_sequences/ATCC23726_ncbi.fasta k=12 outm=../data/rna_align/ID_007570_Fnn23_PNA79_16_h_C.fq.gz.sam
+Executing align2.BBMap [build=1, overwrite=true, fastareadlen=500, in=../data/libs/ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz, trimreaddescription=t, t=20, ref=../data/reference_sequences/ATCC23726_ncbi.fasta, k=12, outm=../data/rna_align/ID_007570_Fnn23_PNA79_16_h_C.fq.gz.sam]
+Version 38.18
+
+Set threads to 20
+Retaining first best site only for ambiguous mappings.
+NOTE:	Ignoring reference file because it already appears to have been processed.
+NOTE:	If you wish to regenerate the index, please manually delete ref/genome/1/summary.txt
+Set genome to 1
+
+Loaded Reference:	0.044 seconds.
+Loading index for chunk 1-1, build 1
+Generated Index:	0.201 seconds.
+Analyzed Index:   	0.893 seconds.
+Started output stream:	0.038 seconds.
+Cleared Memory:    	0.110 seconds.
+Processing reads in single-ended mode.
+Started read stream.
+Started 20 mapping threads.
+Detecting finished threads: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+
+   ------------------   Results   ------------------   
+
+Genome:                	1
+Key Length:            	12
+Max Indel:             	16000
+Minimum Score Ratio:  	0.56
+Mapping Mode:         	normal
+Reads Used:           	5022754	(385579296 bases)
+
+Mapping:          	100.539 seconds.
+Reads/sec:       	49958.27
+kBases/sec:      	3835.12
+
+
+Read 1 data:      	pct reads	num reads 	pct bases	   num bases
+
+mapped:          	 70.1048% 	  3521190 	 78.5099% 	   302717835
+unambiguous:     	 64.1171% 	  3220444 	 72.3997% 	   279158147
+ambiguous:       	  5.9877% 	   300746 	  6.1102% 	    23559688
+low-Q discards:  	  0.0000% 	        0 	  0.0000% 	           0
+
+perfect best site:	 59.2807% 	  2977523 	 66.5511% 	   256607071
+semiperfect site:	 59.2811% 	  2977545 	 66.5515% 	   256608945
+
+Match Rate:      	      NA 	       NA 	 79.4396% 	   300507086
+Error Rate:      	 14.0045% 	   524846 	 20.5544% 	    77754020
+Sub Rate:        	 12.3100% 	   461343 	  0.4860% 	     1838379
+Del Rate:        	  2.0767% 	    77830 	 19.9760% 	    75565759
+Ins Rate:        	  2.6805% 	   100456 	  0.0925% 	      349882
+N Rate:          	  0.5865% 	    21980 	  0.0059% 	       22488
+
+Total time:     	101.933 seconds.
+[bam_sort_core] merging from 0 files and 40 in-memory blocks...
+bamFilesList: ['../data/rna_align/ID_007570_Fnn23_PNA79_16_h_C.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: forward
+Offset: [1, -1]
+bamFilesList: ['../data/rna_align/ID_007570_Fnn23_PNA79_16_h_C.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: reverse
+Offset: [1, -1]
+Started analysis of ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 5% complete for ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 10% complete for ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 15% complete for ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 20% complete for ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 25% complete for ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 30% complete for ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 35% complete for ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 40% complete for ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 45% complete for ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 50% complete for ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 55% complete for ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 60% complete for ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 65% complete for ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 70% complete for ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 75% complete for ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 80% complete for ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 85% complete for ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 90% complete for ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 95% complete for ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz
+Analysis complete for ID_007570_Fnn23_PNA79_16_h_C.fq.gz_trimmed.fastq.gz
+Starting mapping for sample: ID_007571_Fnn23_PNAscr_16_h_A.fq.gz
+../data/libs/ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx27114m -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ align2.BBMap build=1 overwrite=true fastareadlen=500 in=../data/libs/ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz trimreaddescription=t t=20 ref=../data/reference_sequences/ATCC23726_ncbi.fasta k=12 outm=../data/rna_align/ID_007571_Fnn23_PNAscr_16_h_A.fq.gz.sam
+Executing align2.BBMap [build=1, overwrite=true, fastareadlen=500, in=../data/libs/ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz, trimreaddescription=t, t=20, ref=../data/reference_sequences/ATCC23726_ncbi.fasta, k=12, outm=../data/rna_align/ID_007571_Fnn23_PNAscr_16_h_A.fq.gz.sam]
+Version 38.18
+
+Set threads to 20
+Retaining first best site only for ambiguous mappings.
+NOTE:	Ignoring reference file because it already appears to have been processed.
+NOTE:	If you wish to regenerate the index, please manually delete ref/genome/1/summary.txt
+Set genome to 1
+
+Loaded Reference:	0.034 seconds.
+Loading index for chunk 1-1, build 1
+Generated Index:	0.166 seconds.
+Analyzed Index:   	0.696 seconds.
+Started output stream:	0.026 seconds.
+Cleared Memory:    	0.110 seconds.
+Processing reads in single-ended mode.
+Started read stream.
+Started 20 mapping threads.
+Detecting finished threads: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+
+   ------------------   Results   ------------------   
+
+Genome:                	1
+Key Length:            	12
+Max Indel:             	16000
+Minimum Score Ratio:  	0.56
+Mapping Mode:         	normal
+Reads Used:           	7750649	(482366261 bases)
+
+Mapping:          	107.356 seconds.
+Reads/sec:       	72195.86
+kBases/sec:      	4493.15
+
+
+Read 1 data:      	pct reads	num reads 	pct bases	   num bases
+
+mapped:          	 53.2311% 	  4125754 	 69.4752% 	   335124783
+unambiguous:     	 42.5995% 	  3301734 	 57.6602% 	   278133136
+ambiguous:       	 10.6316% 	   824020 	 11.8150% 	    56991647
+low-Q discards:  	  0.0000% 	        0 	  0.0000% 	           0
+
+perfect best site:	 44.1585% 	  3422573 	 58.3127% 	   281280660
+semiperfect site:	 44.1587% 	  3422585 	 58.3129% 	   281281728
+
+Match Rate:      	      NA 	       NA 	 84.5098% 	   332491143
+Error Rate:      	 14.4452% 	   681759 	 15.4837% 	    60918442
+Sub Rate:        	 13.0471% 	   615773 	  0.5757% 	     2264847
+Del Rate:        	  1.6767% 	    79136 	 14.8208% 	    58310411
+Ins Rate:        	  2.1134% 	    99745 	  0.0872% 	      343184
+N Rate:          	  0.5357% 	    25281 	  0.0065% 	       25609
+
+Total time:     	108.469 seconds.
+[bam_sort_core] merging from 0 files and 40 in-memory blocks...
+bamFilesList: ['../data/rna_align/ID_007571_Fnn23_PNAscr_16_h_A.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: forward
+Offset: [1, -1]
+bamFilesList: ['../data/rna_align/ID_007571_Fnn23_PNAscr_16_h_A.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: reverse
+Offset: [1, -1]
+Started analysis of ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 5% complete for ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 10% complete for ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 15% complete for ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 20% complete for ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 25% complete for ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 30% complete for ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 35% complete for ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 40% complete for ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 45% complete for ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 50% complete for ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 55% complete for ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 60% complete for ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 65% complete for ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 70% complete for ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 75% complete for ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 80% complete for ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 85% complete for ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 90% complete for ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz
+Approx 95% complete for ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz
+Analysis complete for ID_007571_Fnn23_PNAscr_16_h_A.fq.gz_trimmed.fastq.gz
+Starting mapping for sample: ID_007572_Fnn23_PNAscr_16_h_B.fq.gz
+../data/libs/ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx27114m -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ align2.BBMap build=1 overwrite=true fastareadlen=500 in=../data/libs/ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz trimreaddescription=t t=20 ref=../data/reference_sequences/ATCC23726_ncbi.fasta k=12 outm=../data/rna_align/ID_007572_Fnn23_PNAscr_16_h_B.fq.gz.sam
+Executing align2.BBMap [build=1, overwrite=true, fastareadlen=500, in=../data/libs/ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz, trimreaddescription=t, t=20, ref=../data/reference_sequences/ATCC23726_ncbi.fasta, k=12, outm=../data/rna_align/ID_007572_Fnn23_PNAscr_16_h_B.fq.gz.sam]
+Version 38.18
+
+Set threads to 20
+Retaining first best site only for ambiguous mappings.
+NOTE:	Ignoring reference file because it already appears to have been processed.
+NOTE:	If you wish to regenerate the index, please manually delete ref/genome/1/summary.txt
+Set genome to 1
+
+Loaded Reference:	0.037 seconds.
+Loading index for chunk 1-1, build 1
+Generated Index:	0.186 seconds.
+Analyzed Index:   	0.770 seconds.
+Started output stream:	0.031 seconds.
+Cleared Memory:    	0.110 seconds.
+Processing reads in single-ended mode.
+Started read stream.
+Started 20 mapping threads.
+Detecting finished threads: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+
+   ------------------   Results   ------------------   
+
+Genome:                	1
+Key Length:            	12
+Max Indel:             	16000
+Minimum Score Ratio:  	0.56
+Mapping Mode:         	normal
+Reads Used:           	8761343	(585853501 bases)
+
+Mapping:          	147.473 seconds.
+Reads/sec:       	59409.63
+kBases/sec:      	3972.60
+
+
+Read 1 data:      	pct reads	num reads 	pct bases	   num bases
+
+mapped:          	 57.1100% 	  5003600 	 71.1005% 	   416544592
+unambiguous:     	 46.9217% 	  4110971 	 60.0469% 	   351786643
+ambiguous:       	 10.1883% 	   892629 	 11.0536% 	    64757949
+low-Q discards:  	  0.0000% 	        2 	  0.0000% 	          36
+
+perfect best site:	 47.9251% 	  4198883 	 60.2181% 	   352789955
+semiperfect site:	 47.9253% 	  4198898 	 60.2183% 	   352791279
+
+Match Rate:      	      NA 	       NA 	 89.4226% 	   413959693
+Error Rate:      	 13.8314% 	   778510 	 10.5705% 	    48933521
+Sub Rate:        	 12.5372% 	   705667 	  0.4854% 	     2247183
+Del Rate:        	  1.3451% 	    75709 	 10.0190% 	    46380695
+Ins Rate:        	  1.6907% 	    95163 	  0.0660% 	      305643
+N Rate:          	  0.5604% 	    31545 	  0.0069% 	       32073
+
+Total time:     	148.697 seconds.
+[bam_sort_core] merging from 0 files and 40 in-memory blocks...
+bamFilesList: ['../data/rna_align/ID_007572_Fnn23_PNAscr_16_h_B.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: forward
+Offset: [1, -1]
+bamFilesList: ['../data/rna_align/ID_007572_Fnn23_PNAscr_16_h_B.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: reverse
+Offset: [1, -1]
+Started analysis of ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 5% complete for ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 10% complete for ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 15% complete for ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 20% complete for ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 25% complete for ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 30% complete for ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 35% complete for ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 40% complete for ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 45% complete for ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 50% complete for ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 55% complete for ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 60% complete for ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 65% complete for ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 70% complete for ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 75% complete for ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 80% complete for ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 85% complete for ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 90% complete for ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz
+Approx 95% complete for ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz
+Analysis complete for ID_007572_Fnn23_PNAscr_16_h_B.fq.gz_trimmed.fastq.gz
+Starting mapping for sample: ID_007573_Fnn23_PNAscr_16_h_C.fq.gz
+../data/libs/ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz
+java -Djava.library.path=/home/jakob_jung/miniconda3/opt/bbmap-38.18/jni/ -ea -Xmx27114m -cp /home/jakob_jung/miniconda3/opt/bbmap-38.18/current/ align2.BBMap build=1 overwrite=true fastareadlen=500 in=../data/libs/ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz trimreaddescription=t t=20 ref=../data/reference_sequences/ATCC23726_ncbi.fasta k=12 outm=../data/rna_align/ID_007573_Fnn23_PNAscr_16_h_C.fq.gz.sam
+Executing align2.BBMap [build=1, overwrite=true, fastareadlen=500, in=../data/libs/ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz, trimreaddescription=t, t=20, ref=../data/reference_sequences/ATCC23726_ncbi.fasta, k=12, outm=../data/rna_align/ID_007573_Fnn23_PNAscr_16_h_C.fq.gz.sam]
+Version 38.18
+
+Set threads to 20
+Retaining first best site only for ambiguous mappings.
+NOTE:	Ignoring reference file because it already appears to have been processed.
+NOTE:	If you wish to regenerate the index, please manually delete ref/genome/1/summary.txt
+Set genome to 1
+
+Loaded Reference:	0.036 seconds.
+Loading index for chunk 1-1, build 1
+Generated Index:	0.169 seconds.
+Analyzed Index:   	0.745 seconds.
+Started output stream:	0.028 seconds.
+Cleared Memory:    	0.109 seconds.
+Processing reads in single-ended mode.
+Started read stream.
+Started 20 mapping threads.
+Detecting finished threads: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+
+   ------------------   Results   ------------------   
+
+Genome:                	1
+Key Length:            	12
+Max Indel:             	16000
+Minimum Score Ratio:  	0.56
+Mapping Mode:         	normal
+Reads Used:           	7826345	(494126096 bases)
+
+Mapping:          	106.408 seconds.
+Reads/sec:       	73550.59
+kBases/sec:      	4643.71
+
+
+Read 1 data:      	pct reads	num reads 	pct bases	   num bases
+
+mapped:          	 56.1122% 	  4391538 	 73.4152% 	   362763628
+unambiguous:     	 46.7719% 	  3660529 	 63.1470% 	   312025612
+ambiguous:       	  9.3404% 	   731009 	 10.2682% 	    50738016
+low-Q discards:  	  0.0000% 	        0 	  0.0000% 	           0
+
+perfect best site:	 47.2171% 	  3695375 	 62.6058% 	   309351590
+semiperfect site:	 47.2174% 	  3695395 	 62.6062% 	   309353370
+
+Match Rate:      	      NA 	       NA 	 86.0937% 	   360345076
+Error Rate:      	 13.8441% 	   681693 	 13.9021% 	    58187170
+Sub Rate:        	 12.2616% 	   603774 	  0.4996% 	     2091210
+Del Rate:        	  1.5707% 	    77342 	 13.3284% 	    55786170
+Ins Rate:        	  2.0583% 	   101354 	  0.0740% 	      309790
+N Rate:          	  0.3452% 	    16999 	  0.0042% 	       17552
+
+Total time:     	107.582 seconds.
+[bam_sort_core] merging from 0 files and 40 in-memory blocks...
+bamFilesList: ['../data/rna_align/ID_007573_Fnn23_PNAscr_16_h_C.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: forward
+Offset: [1, -1]
+bamFilesList: ['../data/rna_align/ID_007573_Fnn23_PNAscr_16_h_C.fq.gz.bam']
+binLength: 1
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 1
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+filter_strand: reverse
+Offset: [1, -1]
+Started analysis of ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 5% complete for ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 10% complete for ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 15% complete for ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 20% complete for ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 25% complete for ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 30% complete for ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 35% complete for ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 40% complete for ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 45% complete for ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 50% complete for ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 55% complete for ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 60% complete for ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 65% complete for ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 70% complete for ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 75% complete for ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 80% complete for ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 85% complete for ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 90% complete for ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz
+Approx 95% complete for ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz
+Analysis complete for ID_007573_Fnn23_PNAscr_16_h_C.fq.gz_trimmed.fastq.gz
+Finished mapping. Start connecting all tab files
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.1
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 18 BAM files                                     ||
+||                           o ID_007547_Fnn23_H2O_30_min_A.fq.gz.bam         ||
+||                           o ID_007548_Fnn23_H2O_30_min_B.fq.gz.bam         ||
+||                           o ID_007549_Fnn23_H2O_30_min_C.fq.gz.bam         ||
+||                           o ID_007550_Fnn23_PNA79_30_min_A.fq.gz.bam       ||
+||                           o ID_007551_Fnn23_PNA79_30_min_B.fq.gz.bam       ||
+||                           o ID_007552_Fnn23_PNA79_30_min_C.fq.gz.bam       ||
+||                           o ID_007553_Fnn23_PNAscr_30_min_A.fq.gz.bam      ||
+||                           o ID_007554_Fnn23_PNAscr_30_min_B.fq.gz.bam      ||
+||                           o ID_007555_Fnn23_PNAscr_30_min_C.fq.gz.bam      ||
+||                           o ID_007565_Fnn23_H2O_16_h_A.fq.gz.bam           ||
+||                           o ID_007566_Fnn23_H2O_16_h_B.fq.gz.bam           ||
+||                           o ID_007567_Fnn23_H2O_16_h_C.fq.gz.bam           ||
+||                           o ID_007568_Fnn23_PNA79_16_h_A.fq.gz.bam         ||
+||                           o ID_007569_Fnn23_PNA79_16_h_B.fq.gz.bam         ||
+||                           o ID_007570_Fnn23_PNA79_16_h_C.fq.gz.bam         ||
+||                           o ID_007571_Fnn23_PNAscr_16_h_A.fq.gz.bam        ||
+||                           o ID_007572_Fnn23_PNAscr_16_h_B.fq.gz.bam        ||
+||                           o ID_007573_Fnn23_PNAscr_16_h_C.fq.gz.bam        ||
+||                                                                            ||
+||             Output file : counttable_fnn23.txt                             ||
+||                 Summary : counttable_fnn23.txt.summary                     ||
+||              Annotation : ATCC23726_updated2023.gff (GTF)                  ||
+||      Dir for temp files : ../data/rna_align                                ||
+||                                                                            ||
+||                 Threads : 5                                                ||
+||                   Level : meta-feature level                               ||
+||              Paired-end : no                                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file ATCC23726_updated2023.gff ...                         ||
+
+ERROR: failed to find the gene identifier attribute in the 9th column of the provided GTF file.
+The specified gene identifier attribute is 'ID' 
+An example of attributes included in your GTF annotation is 'id=cds-C4N14_00010;Name=C4N14_00010;product=rod shape-determining protein MreC;description= likely homolog to FN1496' 
+The program has to terminate.
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.1
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 18 BAM files                                     ||
+||                           o ID_007547_Fnn23_H2O_30_min_A.fq.gz.bam         ||
+||                           o ID_007548_Fnn23_H2O_30_min_B.fq.gz.bam         ||
+||                           o ID_007549_Fnn23_H2O_30_min_C.fq.gz.bam         ||
+||                           o ID_007550_Fnn23_PNA79_30_min_A.fq.gz.bam       ||
+||                           o ID_007551_Fnn23_PNA79_30_min_B.fq.gz.bam       ||
+||                           o ID_007552_Fnn23_PNA79_30_min_C.fq.gz.bam       ||
+||                           o ID_007553_Fnn23_PNAscr_30_min_A.fq.gz.bam      ||
+||                           o ID_007554_Fnn23_PNAscr_30_min_B.fq.gz.bam      ||
+||                           o ID_007555_Fnn23_PNAscr_30_min_C.fq.gz.bam      ||
+||                           o ID_007565_Fnn23_H2O_16_h_A.fq.gz.bam           ||
+||                           o ID_007566_Fnn23_H2O_16_h_B.fq.gz.bam           ||
+||                           o ID_007567_Fnn23_H2O_16_h_C.fq.gz.bam           ||
+||                           o ID_007568_Fnn23_PNA79_16_h_A.fq.gz.bam         ||
+||                           o ID_007569_Fnn23_PNA79_16_h_B.fq.gz.bam         ||
+||                           o ID_007570_Fnn23_PNA79_16_h_C.fq.gz.bam         ||
+||                           o ID_007571_Fnn23_PNAscr_16_h_A.fq.gz.bam        ||
+||                           o ID_007572_Fnn23_PNAscr_16_h_B.fq.gz.bam        ||
+||                           o ID_007573_Fnn23_PNAscr_16_h_C.fq.gz.bam        ||
+||                                                                            ||
+||             Output file : counttable_fnn23_rRNAs.txt                       ||
+||                 Summary : counttable_fnn23_rRNAs.txt.summary               ||
+||              Annotation : ATCC23726_updated2023.gff (GTF)                  ||
+||      Dir for temp files : ../data/rna_align                                ||
+||                                                                            ||
+||                 Threads : 5                                                ||
+||                   Level : meta-feature level                               ||
+||              Paired-end : no                                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file ATCC23726_updated2023.gff ...                         ||
+||    Features : 15                                                           ||
+||    Meta-features : 15                                                      ||
+||    Chromosomes/contigs : 1                                                 ||
+||                                                                            ||
+|| Process BAM file ID_007547_Fnn23_H2O_30_min_A.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2896764                                              ||
+||    Successfully assigned alignments : 95210 (3.3%)                         ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007548_Fnn23_H2O_30_min_B.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 3441703                                              ||
+||    Successfully assigned alignments : 64724 (1.9%)                         ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007549_Fnn23_H2O_30_min_C.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 3004140                                              ||
+||    Successfully assigned alignments : 73635 (2.5%)                         ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007550_Fnn23_PNA79_30_min_A.fq.gz.bam...               ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2520430                                              ||
+||    Successfully assigned alignments : 100267 (4.0%)                        ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007551_Fnn23_PNA79_30_min_B.fq.gz.bam...               ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4043772                                              ||
+||    Successfully assigned alignments : 84021 (2.1%)                         ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007552_Fnn23_PNA79_30_min_C.fq.gz.bam...               ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2730268                                              ||
+||    Successfully assigned alignments : 79043 (2.9%)                         ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007553_Fnn23_PNAscr_30_min_A.fq.gz.bam...              ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4085033                                              ||
+||    Successfully assigned alignments : 128851 (3.2%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007554_Fnn23_PNAscr_30_min_B.fq.gz.bam...              ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2306098                                              ||
+||    Successfully assigned alignments : 57294 (2.5%)                         ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007555_Fnn23_PNAscr_30_min_C.fq.gz.bam...              ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 3606062                                              ||
+||    Successfully assigned alignments : 107601 (3.0%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007565_Fnn23_H2O_16_h_A.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4078727                                              ||
+||    Successfully assigned alignments : 348783 (8.6%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007566_Fnn23_H2O_16_h_B.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 5274667                                              ||
+||    Successfully assigned alignments : 1277424 (24.2%)                      ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007567_Fnn23_H2O_16_h_C.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 7507911                                              ||
+||    Successfully assigned alignments : 2630201 (35.0%)                      ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007568_Fnn23_PNA79_16_h_A.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 5214113                                              ||
+||    Successfully assigned alignments : 540849 (10.4%)                       ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007569_Fnn23_PNA79_16_h_B.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 5885669                                              ||
+||    Successfully assigned alignments : 287161 (4.9%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007570_Fnn23_PNA79_16_h_C.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 3521190                                              ||
+||    Successfully assigned alignments : 230787 (6.6%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007571_Fnn23_PNAscr_16_h_A.fq.gz.bam...                ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4125754                                              ||
+||    Successfully assigned alignments : 392757 (9.5%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007572_Fnn23_PNAscr_16_h_B.fq.gz.bam...                ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 5003600                                              ||
+||    Successfully assigned alignments : 491916 (9.8%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007573_Fnn23_PNAscr_16_h_C.fq.gz.bam...                ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4391538                                              ||
+||    Successfully assigned alignments : 356277 (8.1%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+|| Summary of counting results can be found in file "../data/rna_align/count  ||
+|| table_fnn23_rRNAs.txt.summary"                                             ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.1
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 18 BAM files                                     ||
+||                           o ID_007547_Fnn23_H2O_30_min_A.fq.gz.bam         ||
+||                           o ID_007548_Fnn23_H2O_30_min_B.fq.gz.bam         ||
+||                           o ID_007549_Fnn23_H2O_30_min_C.fq.gz.bam         ||
+||                           o ID_007550_Fnn23_PNA79_30_min_A.fq.gz.bam       ||
+||                           o ID_007551_Fnn23_PNA79_30_min_B.fq.gz.bam       ||
+||                           o ID_007552_Fnn23_PNA79_30_min_C.fq.gz.bam       ||
+||                           o ID_007553_Fnn23_PNAscr_30_min_A.fq.gz.bam      ||
+||                           o ID_007554_Fnn23_PNAscr_30_min_B.fq.gz.bam      ||
+||                           o ID_007555_Fnn23_PNAscr_30_min_C.fq.gz.bam      ||
+||                           o ID_007565_Fnn23_H2O_16_h_A.fq.gz.bam           ||
+||                           o ID_007566_Fnn23_H2O_16_h_B.fq.gz.bam           ||
+||                           o ID_007567_Fnn23_H2O_16_h_C.fq.gz.bam           ||
+||                           o ID_007568_Fnn23_PNA79_16_h_A.fq.gz.bam         ||
+||                           o ID_007569_Fnn23_PNA79_16_h_B.fq.gz.bam         ||
+||                           o ID_007570_Fnn23_PNA79_16_h_C.fq.gz.bam         ||
+||                           o ID_007571_Fnn23_PNAscr_16_h_A.fq.gz.bam        ||
+||                           o ID_007572_Fnn23_PNAscr_16_h_B.fq.gz.bam        ||
+||                           o ID_007573_Fnn23_PNAscr_16_h_C.fq.gz.bam        ||
+||                                                                            ||
+||             Output file : counttable_fnn23_tRNAs.txt                       ||
+||                 Summary : counttable_fnn23_tRNAs.txt.summary               ||
+||              Annotation : ATCC23726_updated2023.gff (GTF)                  ||
+||      Dir for temp files : ../data/rna_align                                ||
+||                                                                            ||
+||                 Threads : 5                                                ||
+||                   Level : meta-feature level                               ||
+||              Paired-end : no                                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file ATCC23726_updated2023.gff ...                         ||
+||    Features : 47                                                           ||
+||    Meta-features : 47                                                      ||
+||    Chromosomes/contigs : 1                                                 ||
+||                                                                            ||
+|| Process BAM file ID_007547_Fnn23_H2O_30_min_A.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2896764                                              ||
+||    Successfully assigned alignments : 305985 (10.6%)                       ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007548_Fnn23_H2O_30_min_B.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 3441703                                              ||
+||    Successfully assigned alignments : 269511 (7.8%)                        ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007549_Fnn23_H2O_30_min_C.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 3004140                                              ||
+||    Successfully assigned alignments : 220239 (7.3%)                        ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007550_Fnn23_PNA79_30_min_A.fq.gz.bam...               ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2520430                                              ||
+||    Successfully assigned alignments : 422685 (16.8%)                       ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007551_Fnn23_PNA79_30_min_B.fq.gz.bam...               ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4043772                                              ||
+||    Successfully assigned alignments : 309171 (7.6%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007552_Fnn23_PNA79_30_min_C.fq.gz.bam...               ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2730268                                              ||
+||    Successfully assigned alignments : 359300 (13.2%)                       ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007553_Fnn23_PNAscr_30_min_A.fq.gz.bam...              ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4085033                                              ||
+||    Successfully assigned alignments : 555686 (13.6%)                       ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007554_Fnn23_PNAscr_30_min_B.fq.gz.bam...              ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2306098                                              ||
+||    Successfully assigned alignments : 294407 (12.8%)                       ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007555_Fnn23_PNAscr_30_min_C.fq.gz.bam...              ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 3606062                                              ||
+||    Successfully assigned alignments : 559064 (15.5%)                       ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007565_Fnn23_H2O_16_h_A.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4078727                                              ||
+||    Successfully assigned alignments : 34322 (0.8%)                         ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007566_Fnn23_H2O_16_h_B.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 5274667                                              ||
+||    Successfully assigned alignments : 446636 (8.5%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007567_Fnn23_H2O_16_h_C.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 7507911                                              ||
+||    Successfully assigned alignments : 278449 (3.7%)                        ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007568_Fnn23_PNA79_16_h_A.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 5214113                                              ||
+||    Successfully assigned alignments : 187080 (3.6%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007569_Fnn23_PNA79_16_h_B.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 5885669                                              ||
+||    Successfully assigned alignments : 177218 (3.0%)                        ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007570_Fnn23_PNA79_16_h_C.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 3521190                                              ||
+||    Successfully assigned alignments : 100142 (2.8%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007571_Fnn23_PNAscr_16_h_A.fq.gz.bam...                ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4125754                                              ||
+||    Successfully assigned alignments : 711550 (17.2%)                       ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007572_Fnn23_PNAscr_16_h_B.fq.gz.bam...                ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 5003600                                              ||
+||    Successfully assigned alignments : 679041 (13.6%)                       ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007573_Fnn23_PNAscr_16_h_C.fq.gz.bam...                ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4391538                                              ||
+||    Successfully assigned alignments : 632470 (14.4%)                       ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+|| Summary of counting results can be found in file "../data/rna_align/count  ||
+|| table_fnn23_tRNAs.txt.summary"                                             ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.1
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 18 BAM files                                     ||
+||                           o ID_007556_Fnv_H2O_30_min_A.fq.gz.bam           ||
+||                           o ID_007557_Fnv_H2O_30_min_B.fq.gz.bam           ||
+||                           o ID_007558_Fnv_H2O_30_min_C.fq.gz.bam           ||
+||                           o ID_007559_Fnv_PNA79_30_min_A.fq.gz.bam         ||
+||                           o ID_007560_Fnv_PNA79_30_min_B.fq.gz.bam         ||
+||                           o ID_007561_Fnv_PNA79_30_min_C.fq.gz.bam         ||
+||                           o ID_007562_Fnv_PNAscr_30_min_A.fq.gz.bam        ||
+||                           o ID_007563_Fnv_PNAscr_30_min_B.fq.gz.bam        ||
+||                           o ID_007564_Fnv_PNAscr_30_min_C.fq.gz.bam        ||
+||                           o ID_007574_Fnv_H2O_16_h_A.fq.gz.bam             ||
+||                           o ID_007575_Fnv_H2O_16_h_B.fq.gz.bam             ||
+||                           o ID_007576_Fnv_H2O_16_h_C.fq.gz.bam             ||
+||                           o ID_007577_Fnv_PNA79_16_h_A.fq.gz.bam           ||
+||                           o ID_007578_Fnv_PNA79_16_h_B.fq.gz.bam           ||
+||                           o ID_007579_Fnv_PNA79_16_h_C.fq.gz.bam           ||
+||                           o ID_007580_Fnv_PNAscr_16_h_A.fq.gz.bam          ||
+||                           o ID_007581_Fnv_PNAscr_16_h_B.fq.gz.bam          ||
+||                           o ID_007582_Fnv_PNAscr_16_h_C.fq.gz.bam          ||
+||                                                                            ||
+||             Output file : counttable_fnv.txt                               ||
+||                 Summary : counttable_fnv.txt.summary                       ||
+||              Annotation : FNV3_1_36A2.gff (GTF)                            ||
+||      Dir for temp files : ../data/rna_align                                ||
+||                                                                            ||
+||                 Threads : 5                                                ||
+||                   Level : meta-feature level                               ||
+||              Paired-end : no                                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file FNV3_1_36A2.gff ...                                   ||
+
+ERROR: failed to find the gene identifier attribute in the 9th column of the provided GTF file.
+The specified gene identifier attribute is 'id' 
+An example of attributes included in your GTF annotation is 'id=prfB;;product=peptide chain release factor 2;gene=prfB;pseudo=false;protein_ID=N/A' 
+The program has to terminate.
+

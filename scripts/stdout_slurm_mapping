@@ -1,0 +1,1025 @@
+ERROR: Unable to locate a modulefile for 'python'
+/var/spool/slurmd/job126702/slurm_script: line 10: activate: No such file or directory
+Start trimming
+Trimming done. Start mapping
+Finished mapping. Start connecting all tab files
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.3
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 18 BAM files                                     ||
+||                                                                            ||
+||                           ID_007547_Fnn23_H2O_30_min_A.fq.gz.bam           ||
+||                           ID_007548_Fnn23_H2O_30_min_B.fq.gz.bam           ||
+||                           ID_007549_Fnn23_H2O_30_min_C.fq.gz.bam           ||
+||                           ID_007550_Fnn23_PNA79_30_min_A.fq.gz.bam         ||
+||                           ID_007551_Fnn23_PNA79_30_min_B.fq.gz.bam         ||
+||                           ID_007552_Fnn23_PNA79_30_min_C.fq.gz.bam         ||
+||                           ID_007553_Fnn23_PNAscr_30_min_A.fq.gz.bam        ||
+||                           ID_007554_Fnn23_PNAscr_30_min_B.fq.gz.bam        ||
+||                           ID_007555_Fnn23_PNAscr_30_min_C.fq.gz.bam        ||
+||                           ID_007565_Fnn23_H2O_16_h_A.fq.gz.bam             ||
+||                           ID_007566_Fnn23_H2O_16_h_B.fq.gz.bam             ||
+||                           ID_007567_Fnn23_H2O_16_h_C.fq.gz.bam             ||
+||                           ID_007568_Fnn23_PNA79_16_h_A.fq.gz.bam           ||
+||                           ID_007569_Fnn23_PNA79_16_h_B.fq.gz.bam           ||
+||                           ID_007570_Fnn23_PNA79_16_h_C.fq.gz.bam           ||
+||                           ID_007571_Fnn23_PNAscr_16_h_A.fq.gz.bam          ||
+||                           ID_007572_Fnn23_PNAscr_16_h_B.fq.gz.bam          ||
+||                           ID_007573_Fnn23_PNAscr_16_h_C.fq.gz.bam          ||
+||                                                                            ||
+||             Output file : counttable_fnn23.txt                             ||
+||                 Summary : counttable_fnn23.txt.summary                     ||
+||              Paired-end : no                                               ||
+||        Count read pairs : no                                               ||
+||              Annotation : ATCC23726_updated2023.gff (GTF)                  ||
+||      Dir for temp files : ../data/rna_align                                ||
+||                                                                            ||
+||                 Threads : 5                                                ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file ATCC23726_updated2023.gff ...                         ||
+||    Features : 2176                                                         ||
+||    Meta-features : 2173                                                    ||
+||    Chromosomes/contigs : 1                                                 ||
+||                                                                            ||
+|| Process BAM file ID_007547_Fnn23_H2O_30_min_A.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2896764                                              ||
+||    Successfully assigned alignments : 2086567 (72.0%)                      ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007548_Fnn23_H2O_30_min_B.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 3441703                                              ||
+||    Successfully assigned alignments : 2649966 (77.0%)                      ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007549_Fnn23_H2O_30_min_C.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 3004140                                              ||
+||    Successfully assigned alignments : 2277228 (75.8%)                      ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007550_Fnn23_PNA79_30_min_A.fq.gz.bam...               ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2520430                                              ||
+||    Successfully assigned alignments : 1638141 (65.0%)                      ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007551_Fnn23_PNA79_30_min_B.fq.gz.bam...               ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4043772                                              ||
+||    Successfully assigned alignments : 3058312 (75.6%)                      ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007552_Fnn23_PNA79_30_min_C.fq.gz.bam...               ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2730268                                              ||
+||    Successfully assigned alignments : 1855315 (68.0%)                      ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007553_Fnn23_PNAscr_30_min_A.fq.gz.bam...              ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4085033                                              ||
+||    Successfully assigned alignments : 2798849 (68.5%)                      ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007554_Fnn23_PNAscr_30_min_B.fq.gz.bam...              ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2306098                                              ||
+||    Successfully assigned alignments : 1619777 (70.2%)                      ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007555_Fnn23_PNAscr_30_min_C.fq.gz.bam...              ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 3606062                                              ||
+||    Successfully assigned alignments : 2324911 (64.5%)                      ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007565_Fnn23_H2O_16_h_A.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4078727                                              ||
+||    Successfully assigned alignments : 3456425 (84.7%)                      ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007566_Fnn23_H2O_16_h_B.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 5274667                                              ||
+||    Successfully assigned alignments : 3259121 (61.8%)                      ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007567_Fnn23_H2O_16_h_C.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 7507911                                              ||
+||    Successfully assigned alignments : 4226239 (56.3%)                      ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007568_Fnn23_PNA79_16_h_A.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 5214113                                              ||
+||    Successfully assigned alignments : 4048016 (77.6%)                      ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007569_Fnn23_PNA79_16_h_B.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 5885669                                              ||
+||    Successfully assigned alignments : 4908093 (83.4%)                      ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007570_Fnn23_PNA79_16_h_C.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 3521190                                              ||
+||    Successfully assigned alignments : 2897957 (82.3%)                      ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007571_Fnn23_PNAscr_16_h_A.fq.gz.bam...                ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4125754                                              ||
+||    Successfully assigned alignments : 2632946 (63.8%)                      ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007572_Fnn23_PNAscr_16_h_B.fq.gz.bam...                ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 5003600                                              ||
+||    Successfully assigned alignments : 3273929 (65.4%)                      ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007573_Fnn23_PNAscr_16_h_C.fq.gz.bam...                ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4391538                                              ||
+||    Successfully assigned alignments : 2918247 (66.5%)                      ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+|| Summary of counting results can be found in file "../data/rna_align/count  ||
+|| table_fnn23.txt.summary"                                                   ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.3
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 18 BAM files                                     ||
+||                                                                            ||
+||                           ID_007547_Fnn23_H2O_30_min_A.fq.gz.bam           ||
+||                           ID_007548_Fnn23_H2O_30_min_B.fq.gz.bam           ||
+||                           ID_007549_Fnn23_H2O_30_min_C.fq.gz.bam           ||
+||                           ID_007550_Fnn23_PNA79_30_min_A.fq.gz.bam         ||
+||                           ID_007551_Fnn23_PNA79_30_min_B.fq.gz.bam         ||
+||                           ID_007552_Fnn23_PNA79_30_min_C.fq.gz.bam         ||
+||                           ID_007553_Fnn23_PNAscr_30_min_A.fq.gz.bam        ||
+||                           ID_007554_Fnn23_PNAscr_30_min_B.fq.gz.bam        ||
+||                           ID_007555_Fnn23_PNAscr_30_min_C.fq.gz.bam        ||
+||                           ID_007565_Fnn23_H2O_16_h_A.fq.gz.bam             ||
+||                           ID_007566_Fnn23_H2O_16_h_B.fq.gz.bam             ||
+||                           ID_007567_Fnn23_H2O_16_h_C.fq.gz.bam             ||
+||                           ID_007568_Fnn23_PNA79_16_h_A.fq.gz.bam           ||
+||                           ID_007569_Fnn23_PNA79_16_h_B.fq.gz.bam           ||
+||                           ID_007570_Fnn23_PNA79_16_h_C.fq.gz.bam           ||
+||                           ID_007571_Fnn23_PNAscr_16_h_A.fq.gz.bam          ||
+||                           ID_007572_Fnn23_PNAscr_16_h_B.fq.gz.bam          ||
+||                           ID_007573_Fnn23_PNAscr_16_h_C.fq.gz.bam          ||
+||                                                                            ||
+||             Output file : counttable_fnn23_rRNAs.txt                       ||
+||                 Summary : counttable_fnn23_rRNAs.txt.summary               ||
+||              Paired-end : no                                               ||
+||        Count read pairs : no                                               ||
+||              Annotation : ATCC23726_updated2023.gff (GTF)                  ||
+||      Dir for temp files : ../data/rna_align                                ||
+||                                                                            ||
+||                 Threads : 5                                                ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file ATCC23726_updated2023.gff ...                         ||
+||    Features : 15                                                           ||
+||    Meta-features : 15                                                      ||
+||    Chromosomes/contigs : 1                                                 ||
+||                                                                            ||
+|| Process BAM file ID_007547_Fnn23_H2O_30_min_A.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2896764                                              ||
+||    Successfully assigned alignments : 95210 (3.3%)                         ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007548_Fnn23_H2O_30_min_B.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 3441703                                              ||
+||    Successfully assigned alignments : 64724 (1.9%)                         ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007549_Fnn23_H2O_30_min_C.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 3004140                                              ||
+||    Successfully assigned alignments : 73635 (2.5%)                         ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007550_Fnn23_PNA79_30_min_A.fq.gz.bam...               ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2520430                                              ||
+||    Successfully assigned alignments : 100267 (4.0%)                        ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007551_Fnn23_PNA79_30_min_B.fq.gz.bam...               ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4043772                                              ||
+||    Successfully assigned alignments : 84021 (2.1%)                         ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007552_Fnn23_PNA79_30_min_C.fq.gz.bam...               ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2730268                                              ||
+||    Successfully assigned alignments : 79043 (2.9%)                         ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007553_Fnn23_PNAscr_30_min_A.fq.gz.bam...              ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4085033                                              ||
+||    Successfully assigned alignments : 128851 (3.2%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007554_Fnn23_PNAscr_30_min_B.fq.gz.bam...              ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2306098                                              ||
+||    Successfully assigned alignments : 57294 (2.5%)                         ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007555_Fnn23_PNAscr_30_min_C.fq.gz.bam...              ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 3606062                                              ||
+||    Successfully assigned alignments : 107601 (3.0%)                        ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007565_Fnn23_H2O_16_h_A.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4078727                                              ||
+||    Successfully assigned alignments : 348783 (8.6%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007566_Fnn23_H2O_16_h_B.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 5274667                                              ||
+||    Successfully assigned alignments : 1277424 (24.2%)                      ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007567_Fnn23_H2O_16_h_C.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 7507911                                              ||
+||    Successfully assigned alignments : 2630201 (35.0%)                      ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007568_Fnn23_PNA79_16_h_A.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 5214113                                              ||
+||    Successfully assigned alignments : 540849 (10.4%)                       ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007569_Fnn23_PNA79_16_h_B.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 5885669                                              ||
+||    Successfully assigned alignments : 287161 (4.9%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007570_Fnn23_PNA79_16_h_C.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 3521190                                              ||
+||    Successfully assigned alignments : 230787 (6.6%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007571_Fnn23_PNAscr_16_h_A.fq.gz.bam...                ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4125754                                              ||
+||    Successfully assigned alignments : 392757 (9.5%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007572_Fnn23_PNAscr_16_h_B.fq.gz.bam...                ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 5003600                                              ||
+||    Successfully assigned alignments : 491916 (9.8%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007573_Fnn23_PNAscr_16_h_C.fq.gz.bam...                ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4391538                                              ||
+||    Successfully assigned alignments : 356277 (8.1%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+|| Summary of counting results can be found in file "../data/rna_align/count  ||
+|| table_fnn23_rRNAs.txt.summary"                                             ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.3
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 18 BAM files                                     ||
+||                                                                            ||
+||                           ID_007547_Fnn23_H2O_30_min_A.fq.gz.bam           ||
+||                           ID_007548_Fnn23_H2O_30_min_B.fq.gz.bam           ||
+||                           ID_007549_Fnn23_H2O_30_min_C.fq.gz.bam           ||
+||                           ID_007550_Fnn23_PNA79_30_min_A.fq.gz.bam         ||
+||                           ID_007551_Fnn23_PNA79_30_min_B.fq.gz.bam         ||
+||                           ID_007552_Fnn23_PNA79_30_min_C.fq.gz.bam         ||
+||                           ID_007553_Fnn23_PNAscr_30_min_A.fq.gz.bam        ||
+||                           ID_007554_Fnn23_PNAscr_30_min_B.fq.gz.bam        ||
+||                           ID_007555_Fnn23_PNAscr_30_min_C.fq.gz.bam        ||
+||                           ID_007565_Fnn23_H2O_16_h_A.fq.gz.bam             ||
+||                           ID_007566_Fnn23_H2O_16_h_B.fq.gz.bam             ||
+||                           ID_007567_Fnn23_H2O_16_h_C.fq.gz.bam             ||
+||                           ID_007568_Fnn23_PNA79_16_h_A.fq.gz.bam           ||
+||                           ID_007569_Fnn23_PNA79_16_h_B.fq.gz.bam           ||
+||                           ID_007570_Fnn23_PNA79_16_h_C.fq.gz.bam           ||
+||                           ID_007571_Fnn23_PNAscr_16_h_A.fq.gz.bam          ||
+||                           ID_007572_Fnn23_PNAscr_16_h_B.fq.gz.bam          ||
+||                           ID_007573_Fnn23_PNAscr_16_h_C.fq.gz.bam          ||
+||                                                                            ||
+||             Output file : counttable_fnn23_tRNAs.txt                       ||
+||                 Summary : counttable_fnn23_tRNAs.txt.summary               ||
+||              Paired-end : no                                               ||
+||        Count read pairs : no                                               ||
+||              Annotation : ATCC23726_updated2023.gff (GTF)                  ||
+||      Dir for temp files : ../data/rna_align                                ||
+||                                                                            ||
+||                 Threads : 5                                                ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file ATCC23726_updated2023.gff ...                         ||
+||    Features : 47                                                           ||
+||    Meta-features : 47                                                      ||
+||    Chromosomes/contigs : 1                                                 ||
+||                                                                            ||
+|| Process BAM file ID_007547_Fnn23_H2O_30_min_A.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2896764                                              ||
+||    Successfully assigned alignments : 305985 (10.6%)                       ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007548_Fnn23_H2O_30_min_B.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 3441703                                              ||
+||    Successfully assigned alignments : 269511 (7.8%)                        ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007549_Fnn23_H2O_30_min_C.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 3004140                                              ||
+||    Successfully assigned alignments : 220239 (7.3%)                        ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007550_Fnn23_PNA79_30_min_A.fq.gz.bam...               ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2520430                                              ||
+||    Successfully assigned alignments : 422685 (16.8%)                       ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007551_Fnn23_PNA79_30_min_B.fq.gz.bam...               ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4043772                                              ||
+||    Successfully assigned alignments : 309171 (7.6%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007552_Fnn23_PNA79_30_min_C.fq.gz.bam...               ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2730268                                              ||
+||    Successfully assigned alignments : 359300 (13.2%)                       ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007553_Fnn23_PNAscr_30_min_A.fq.gz.bam...              ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4085033                                              ||
+||    Successfully assigned alignments : 555686 (13.6%)                       ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007554_Fnn23_PNAscr_30_min_B.fq.gz.bam...              ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2306098                                              ||
+||    Successfully assigned alignments : 294407 (12.8%)                       ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007555_Fnn23_PNAscr_30_min_C.fq.gz.bam...              ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 3606062                                              ||
+||    Successfully assigned alignments : 559064 (15.5%)                       ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007565_Fnn23_H2O_16_h_A.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4078727                                              ||
+||    Successfully assigned alignments : 34322 (0.8%)                         ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007566_Fnn23_H2O_16_h_B.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 5274667                                              ||
+||    Successfully assigned alignments : 446636 (8.5%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007567_Fnn23_H2O_16_h_C.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 7507911                                              ||
+||    Successfully assigned alignments : 278449 (3.7%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007568_Fnn23_PNA79_16_h_A.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 5214113                                              ||
+||    Successfully assigned alignments : 187080 (3.6%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007569_Fnn23_PNA79_16_h_B.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 5885669                                              ||
+||    Successfully assigned alignments : 177218 (3.0%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007570_Fnn23_PNA79_16_h_C.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 3521190                                              ||
+||    Successfully assigned alignments : 100142 (2.8%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007571_Fnn23_PNAscr_16_h_A.fq.gz.bam...                ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4125754                                              ||
+||    Successfully assigned alignments : 711550 (17.2%)                       ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007572_Fnn23_PNAscr_16_h_B.fq.gz.bam...                ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 5003600                                              ||
+||    Successfully assigned alignments : 679041 (13.6%)                       ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007573_Fnn23_PNAscr_16_h_C.fq.gz.bam...                ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4391538                                              ||
+||    Successfully assigned alignments : 632470 (14.4%)                       ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+|| Summary of counting results can be found in file "../data/rna_align/count  ||
+|| table_fnn23_tRNAs.txt.summary"                                             ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.3
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 18 BAM files                                     ||
+||                                                                            ||
+||                           ID_007556_Fnv_H2O_30_min_A.fq.gz.bam             ||
+||                           ID_007557_Fnv_H2O_30_min_B.fq.gz.bam             ||
+||                           ID_007558_Fnv_H2O_30_min_C.fq.gz.bam             ||
+||                           ID_007559_Fnv_PNA79_30_min_A.fq.gz.bam           ||
+||                           ID_007560_Fnv_PNA79_30_min_B.fq.gz.bam           ||
+||                           ID_007561_Fnv_PNA79_30_min_C.fq.gz.bam           ||
+||                           ID_007562_Fnv_PNAscr_30_min_A.fq.gz.bam          ||
+||                           ID_007563_Fnv_PNAscr_30_min_B.fq.gz.bam          ||
+||                           ID_007564_Fnv_PNAscr_30_min_C.fq.gz.bam          ||
+||                           ID_007574_Fnv_H2O_16_h_A.fq.gz.bam               ||
+||                           ID_007575_Fnv_H2O_16_h_B.fq.gz.bam               ||
+||                           ID_007576_Fnv_H2O_16_h_C.fq.gz.bam               ||
+||                           ID_007577_Fnv_PNA79_16_h_A.fq.gz.bam             ||
+||                           ID_007578_Fnv_PNA79_16_h_B.fq.gz.bam             ||
+||                           ID_007579_Fnv_PNA79_16_h_C.fq.gz.bam             ||
+||                           ID_007580_Fnv_PNAscr_16_h_A.fq.gz.bam            ||
+||                           ID_007581_Fnv_PNAscr_16_h_B.fq.gz.bam            ||
+||                           ID_007582_Fnv_PNAscr_16_h_C.fq.gz.bam            ||
+||                                                                            ||
+||             Output file : counttable_fnv.txt                               ||
+||                 Summary : counttable_fnv.txt.summary                       ||
+||              Paired-end : no                                               ||
+||        Count read pairs : no                                               ||
+||              Annotation : FNV3_1_36A.gff (GTF)                             ||
+||      Dir for temp files : ../data/rna_align                                ||
+||                                                                            ||
+||                 Threads : 5                                                ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file FNV3_1_36A.gff ...                                    ||
+||    Features : 2175                                                         ||
+||    Meta-features : 2153                                                    ||
+||    Chromosomes/contigs : 1                                                 ||
+||                                                                            ||
+|| Process BAM file ID_007556_Fnv_H2O_30_min_A.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2308996                                              ||
+||    Successfully assigned alignments : 1318732 (57.1%)                      ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007557_Fnv_H2O_30_min_B.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2202649                                              ||
+||    Successfully assigned alignments : 1542462 (70.0%)                      ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007558_Fnv_H2O_30_min_C.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2988522                                              ||
+||    Successfully assigned alignments : 1870323 (62.6%)                      ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007559_Fnv_PNA79_30_min_A.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2422646                                              ||
+||    Successfully assigned alignments : 1615601 (66.7%)                      ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007560_Fnv_PNA79_30_min_B.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2791994                                              ||
+||    Successfully assigned alignments : 2013218 (72.1%)                      ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007561_Fnv_PNA79_30_min_C.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2983899                                              ||
+||    Successfully assigned alignments : 1956313 (65.6%)                      ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007562_Fnv_PNAscr_30_min_A.fq.gz.bam...                ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 1450431                                              ||
+||    Successfully assigned alignments : 908750 (62.7%)                       ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007563_Fnv_PNAscr_30_min_B.fq.gz.bam...                ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 1534952                                              ||
+||    Successfully assigned alignments : 955358 (62.2%)                       ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007564_Fnv_PNAscr_30_min_C.fq.gz.bam...                ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 1507617                                              ||
+||    Successfully assigned alignments : 910091 (60.4%)                       ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007574_Fnv_H2O_16_h_A.fq.gz.bam...                     ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 9263909                                              ||
+||    Successfully assigned alignments : 2358835 (25.5%)                      ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007575_Fnv_H2O_16_h_B.fq.gz.bam...                     ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 10675697                                             ||
+||    Successfully assigned alignments : 3541347 (33.2%)                      ||
+||    Running time : 0.06 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007576_Fnv_H2O_16_h_C.fq.gz.bam...                     ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 11213306                                             ||
+||    Successfully assigned alignments : 2456767 (21.9%)                      ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007577_Fnv_PNA79_16_h_A.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 11074292                                             ||
+||    Successfully assigned alignments : 3585348 (32.4%)                      ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007578_Fnv_PNA79_16_h_B.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 6948063                                              ||
+||    Successfully assigned alignments : 2422329 (34.9%)                      ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007579_Fnv_PNA79_16_h_C.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 6707993                                              ||
+||    Successfully assigned alignments : 2111031 (31.5%)                      ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007580_Fnv_PNAscr_16_h_A.fq.gz.bam...                  ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 8847062                                              ||
+||    Successfully assigned alignments : 1721868 (19.5%)                      ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007581_Fnv_PNAscr_16_h_B.fq.gz.bam...                  ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 9118015                                              ||
+||    Successfully assigned alignments : 1551447 (17.0%)                      ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007582_Fnv_PNAscr_16_h_C.fq.gz.bam...                  ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 8947342                                              ||
+||    Successfully assigned alignments : 1800551 (20.1%)                      ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+|| Summary of counting results can be found in file "../data/rna_align/count  ||
+|| table_fnv.txt.summary"                                                     ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.3
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 18 BAM files                                     ||
+||                                                                            ||
+||                           ID_007556_Fnv_H2O_30_min_A.fq.gz.bam             ||
+||                           ID_007557_Fnv_H2O_30_min_B.fq.gz.bam             ||
+||                           ID_007558_Fnv_H2O_30_min_C.fq.gz.bam             ||
+||                           ID_007559_Fnv_PNA79_30_min_A.fq.gz.bam           ||
+||                           ID_007560_Fnv_PNA79_30_min_B.fq.gz.bam           ||
+||                           ID_007561_Fnv_PNA79_30_min_C.fq.gz.bam           ||
+||                           ID_007562_Fnv_PNAscr_30_min_A.fq.gz.bam          ||
+||                           ID_007563_Fnv_PNAscr_30_min_B.fq.gz.bam          ||
+||                           ID_007564_Fnv_PNAscr_30_min_C.fq.gz.bam          ||
+||                           ID_007574_Fnv_H2O_16_h_A.fq.gz.bam               ||
+||                           ID_007575_Fnv_H2O_16_h_B.fq.gz.bam               ||
+||                           ID_007576_Fnv_H2O_16_h_C.fq.gz.bam               ||
+||                           ID_007577_Fnv_PNA79_16_h_A.fq.gz.bam             ||
+||                           ID_007578_Fnv_PNA79_16_h_B.fq.gz.bam             ||
+||                           ID_007579_Fnv_PNA79_16_h_C.fq.gz.bam             ||
+||                           ID_007580_Fnv_PNAscr_16_h_A.fq.gz.bam            ||
+||                           ID_007581_Fnv_PNAscr_16_h_B.fq.gz.bam            ||
+||                           ID_007582_Fnv_PNAscr_16_h_C.fq.gz.bam            ||
+||                                                                            ||
+||             Output file : counttable_fnv_rRNAs.txt                         ||
+||                 Summary : counttable_fnv_rRNAs.txt.summary                 ||
+||              Paired-end : no                                               ||
+||        Count read pairs : no                                               ||
+||              Annotation : FNV3_1_36A.gff (GTF)                             ||
+||      Dir for temp files : ../data/rna_align                                ||
+||                                                                            ||
+||                 Threads : 5                                                ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file FNV3_1_36A.gff ...                                    ||
+||    Features : 15                                                           ||
+||    Meta-features : 15                                                      ||
+||    Chromosomes/contigs : 1                                                 ||
+||                                                                            ||
+|| Process BAM file ID_007556_Fnv_H2O_30_min_A.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2308996                                              ||
+||    Successfully assigned alignments : 176679 (7.7%)                        ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007557_Fnv_H2O_30_min_B.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2202649                                              ||
+||    Successfully assigned alignments : 154404 (7.0%)                        ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007558_Fnv_H2O_30_min_C.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2988522                                              ||
+||    Successfully assigned alignments : 200727 (6.7%)                        ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007559_Fnv_PNA79_30_min_A.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2422646                                              ||
+||    Successfully assigned alignments : 177396 (7.3%)                        ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007560_Fnv_PNA79_30_min_B.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2791994                                              ||
+||    Successfully assigned alignments : 166209 (6.0%)                        ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007561_Fnv_PNA79_30_min_C.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2983899                                              ||
+||    Successfully assigned alignments : 210247 (7.0%)                        ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007562_Fnv_PNAscr_30_min_A.fq.gz.bam...                ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 1450431                                              ||
+||    Successfully assigned alignments : 115928 (8.0%)                        ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007563_Fnv_PNAscr_30_min_B.fq.gz.bam...                ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 1534952                                              ||
+||    Successfully assigned alignments : 113855 (7.4%)                        ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007564_Fnv_PNAscr_30_min_C.fq.gz.bam...                ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 1507617                                              ||
+||    Successfully assigned alignments : 167276 (11.1%)                       ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007574_Fnv_H2O_16_h_A.fq.gz.bam...                     ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 9263909                                              ||
+||    Successfully assigned alignments : 6061092 (65.4%)                      ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007575_Fnv_H2O_16_h_B.fq.gz.bam...                     ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 10675697                                             ||
+||    Successfully assigned alignments : 5681820 (53.2%)                      ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007576_Fnv_H2O_16_h_C.fq.gz.bam...                     ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 11213306                                             ||
+||    Successfully assigned alignments : 7049634 (62.9%)                      ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007577_Fnv_PNA79_16_h_A.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 11074292                                             ||
+||    Successfully assigned alignments : 6297010 (56.9%)                      ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007578_Fnv_PNA79_16_h_B.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 6948063                                              ||
+||    Successfully assigned alignments : 3790318 (54.6%)                      ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007579_Fnv_PNA79_16_h_C.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 6707993                                              ||
+||    Successfully assigned alignments : 3751129 (55.9%)                      ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007580_Fnv_PNAscr_16_h_A.fq.gz.bam...                  ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 8847062                                              ||
+||    Successfully assigned alignments : 5865536 (66.3%)                      ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007581_Fnv_PNAscr_16_h_B.fq.gz.bam...                  ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 9118015                                              ||
+||    Successfully assigned alignments : 6692628 (73.4%)                      ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007582_Fnv_PNAscr_16_h_C.fq.gz.bam...                  ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 8947342                                              ||
+||    Successfully assigned alignments : 5975591 (66.8%)                      ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+|| Summary of counting results can be found in file "../data/rna_align/count  ||
+|| table_fnv_rRNAs.txt.summary"                                               ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.3
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 18 BAM files                                     ||
+||                                                                            ||
+||                           ID_007556_Fnv_H2O_30_min_A.fq.gz.bam             ||
+||                           ID_007557_Fnv_H2O_30_min_B.fq.gz.bam             ||
+||                           ID_007558_Fnv_H2O_30_min_C.fq.gz.bam             ||
+||                           ID_007559_Fnv_PNA79_30_min_A.fq.gz.bam           ||
+||                           ID_007560_Fnv_PNA79_30_min_B.fq.gz.bam           ||
+||                           ID_007561_Fnv_PNA79_30_min_C.fq.gz.bam           ||
+||                           ID_007562_Fnv_PNAscr_30_min_A.fq.gz.bam          ||
+||                           ID_007563_Fnv_PNAscr_30_min_B.fq.gz.bam          ||
+||                           ID_007564_Fnv_PNAscr_30_min_C.fq.gz.bam          ||
+||                           ID_007574_Fnv_H2O_16_h_A.fq.gz.bam               ||
+||                           ID_007575_Fnv_H2O_16_h_B.fq.gz.bam               ||
+||                           ID_007576_Fnv_H2O_16_h_C.fq.gz.bam               ||
+||                           ID_007577_Fnv_PNA79_16_h_A.fq.gz.bam             ||
+||                           ID_007578_Fnv_PNA79_16_h_B.fq.gz.bam             ||
+||                           ID_007579_Fnv_PNA79_16_h_C.fq.gz.bam             ||
+||                           ID_007580_Fnv_PNAscr_16_h_A.fq.gz.bam            ||
+||                           ID_007581_Fnv_PNAscr_16_h_B.fq.gz.bam            ||
+||                           ID_007582_Fnv_PNAscr_16_h_C.fq.gz.bam            ||
+||                                                                            ||
+||             Output file : counttable_fnv_tRNAs.txt                         ||
+||                 Summary : counttable_fnv_tRNAs.txt.summary                 ||
+||              Paired-end : no                                               ||
+||        Count read pairs : no                                               ||
+||              Annotation : FNV3_1_36A.gff (GTF)                             ||
+||      Dir for temp files : ../data/rna_align                                ||
+||                                                                            ||
+||                 Threads : 5                                                ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file FNV3_1_36A.gff ...                                    ||
+||    Features : 47                                                           ||
+||    Meta-features : 47                                                      ||
+||    Chromosomes/contigs : 1                                                 ||
+||                                                                            ||
+|| Process BAM file ID_007556_Fnv_H2O_30_min_A.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2308996                                              ||
+||    Successfully assigned alignments : 578580 (25.1%)                       ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007557_Fnv_H2O_30_min_B.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2202649                                              ||
+||    Successfully assigned alignments : 305511 (13.9%)                       ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007558_Fnv_H2O_30_min_C.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2988522                                              ||
+||    Successfully assigned alignments : 639710 (21.4%)                       ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007559_Fnv_PNA79_30_min_A.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2422646                                              ||
+||    Successfully assigned alignments : 398412 (16.4%)                       ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007560_Fnv_PNA79_30_min_B.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2791994                                              ||
+||    Successfully assigned alignments : 346816 (12.4%)                       ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007561_Fnv_PNA79_30_min_C.fq.gz.bam...                 ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 2983899                                              ||
+||    Successfully assigned alignments : 539201 (18.1%)                       ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007562_Fnv_PNAscr_30_min_A.fq.gz.bam...                ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 1450431                                              ||
+||    Successfully assigned alignments : 286662 (19.8%)                       ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007563_Fnv_PNAscr_30_min_B.fq.gz.bam...                ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 1534952                                              ||
+||    Successfully assigned alignments : 328752 (21.4%)                       ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007564_Fnv_PNAscr_30_min_C.fq.gz.bam...                ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 1507617                                              ||
+||    Successfully assigned alignments : 270835 (18.0%)                       ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007574_Fnv_H2O_16_h_A.fq.gz.bam...                     ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 9263909                                              ||
+||    Successfully assigned alignments : 387628 (4.2%)                        ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007575_Fnv_H2O_16_h_B.fq.gz.bam...                     ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 10675697                                             ||
+||    Successfully assigned alignments : 731672 (6.9%)                        ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007576_Fnv_H2O_16_h_C.fq.gz.bam...                     ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 11213306                                             ||
+||    Successfully assigned alignments : 1059867 (9.5%)                       ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007577_Fnv_PNA79_16_h_A.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 11074292                                             ||
+||    Successfully assigned alignments : 537056 (4.8%)                        ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007578_Fnv_PNA79_16_h_B.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 6948063                                              ||
+||    Successfully assigned alignments : 335471 (4.8%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007579_Fnv_PNA79_16_h_C.fq.gz.bam...                   ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 6707993                                              ||
+||    Successfully assigned alignments : 463857 (6.9%)                        ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007580_Fnv_PNAscr_16_h_A.fq.gz.bam...                  ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 8847062                                              ||
+||    Successfully assigned alignments : 799535 (9.0%)                        ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007581_Fnv_PNAscr_16_h_B.fq.gz.bam...                  ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 9118015                                              ||
+||    Successfully assigned alignments : 474398 (5.2%)                        ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file ID_007582_Fnv_PNAscr_16_h_C.fq.gz.bam...                  ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 8947342                                              ||
+||    Successfully assigned alignments : 708074 (7.9%)                        ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+|| Summary of counting results can be found in file "../data/rna_align/count  ||
+|| table_fnv_tRNAs.txt.summary"                                               ||
+||                                                                            ||
+\\============================================================================//
+

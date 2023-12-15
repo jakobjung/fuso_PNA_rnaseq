@@ -1,0 +1,15 @@
+Status	../data/rna_align/ID_007556_Fnv_H2O_30_min_A.fq.gz.bam	../data/rna_align/ID_007557_Fnv_H2O_30_min_B.fq.gz.bam	../data/rna_align/ID_007558_Fnv_H2O_30_min_C.fq.gz.bam	../data/rna_align/ID_007559_Fnv_PNA79_30_min_A.fq.gz.bam	../data/rna_align/ID_007560_Fnv_PNA79_30_min_B.fq.gz.bam	../data/rna_align/ID_007561_Fnv_PNA79_30_min_C.fq.gz.bam	../data/rna_align/ID_007562_Fnv_PNAscr_30_min_A.fq.gz.bam	../data/rna_align/ID_007563_Fnv_PNAscr_30_min_B.fq.gz.bam	../data/rna_align/ID_007564_Fnv_PNAscr_30_min_C.fq.gz.bam	../data/rna_align/ID_007574_Fnv_H2O_16_h_A.fq.gz.bam	../data/rna_align/ID_007575_Fnv_H2O_16_h_B.fq.gz.bam	../data/rna_align/ID_007576_Fnv_H2O_16_h_C.fq.gz.bam	../data/rna_align/ID_007577_Fnv_PNA79_16_h_A.fq.gz.bam	../data/rna_align/ID_007578_Fnv_PNA79_16_h_B.fq.gz.bam	../data/rna_align/ID_007579_Fnv_PNA79_16_h_C.fq.gz.bam	../data/rna_align/ID_007580_Fnv_PNAscr_16_h_A.fq.gz.bam	../data/rna_align/ID_007581_Fnv_PNAscr_16_h_B.fq.gz.bam	../data/rna_align/ID_007582_Fnv_PNAscr_16_h_C.fq.gz.bam
+Assigned	176679	154404	200727	177396	166209	210247	115928	113855	167276	6061092	5681820	7049634	6297010	3790318	3751129	5865536	6692628	5975591
+Unassigned_Unmapped	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Read_Type	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Singleton	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MappingQuality	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MultiMapping	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Secondary	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NonSplit	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NoFeatures	2132273	2048220	2787731	2245212	2625739	2773591	1334490	1421069	1340255	3201682	4992491	4162209	4775854	3157032	2955894	2980118	2424345	2970625
+Unassigned_Overlapping_Length	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Ambiguity	44	25	64	38	46	61	13	28	86	1135	1386	1463	1428	713	970	1408	1042	1126

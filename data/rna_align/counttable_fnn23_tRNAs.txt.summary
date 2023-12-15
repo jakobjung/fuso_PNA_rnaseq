@@ -1,0 +1,15 @@
+Status	../data/rna_align/ID_007547_Fnn23_H2O_30_min_A.fq.gz.bam	../data/rna_align/ID_007548_Fnn23_H2O_30_min_B.fq.gz.bam	../data/rna_align/ID_007549_Fnn23_H2O_30_min_C.fq.gz.bam	../data/rna_align/ID_007550_Fnn23_PNA79_30_min_A.fq.gz.bam	../data/rna_align/ID_007551_Fnn23_PNA79_30_min_B.fq.gz.bam	../data/rna_align/ID_007552_Fnn23_PNA79_30_min_C.fq.gz.bam	../data/rna_align/ID_007553_Fnn23_PNAscr_30_min_A.fq.gz.bam	../data/rna_align/ID_007554_Fnn23_PNAscr_30_min_B.fq.gz.bam	../data/rna_align/ID_007555_Fnn23_PNAscr_30_min_C.fq.gz.bam	../data/rna_align/ID_007565_Fnn23_H2O_16_h_A.fq.gz.bam	../data/rna_align/ID_007566_Fnn23_H2O_16_h_B.fq.gz.bam	../data/rna_align/ID_007567_Fnn23_H2O_16_h_C.fq.gz.bam	../data/rna_align/ID_007568_Fnn23_PNA79_16_h_A.fq.gz.bam	../data/rna_align/ID_007569_Fnn23_PNA79_16_h_B.fq.gz.bam	../data/rna_align/ID_007570_Fnn23_PNA79_16_h_C.fq.gz.bam	../data/rna_align/ID_007571_Fnn23_PNAscr_16_h_A.fq.gz.bam	../data/rna_align/ID_007572_Fnn23_PNAscr_16_h_B.fq.gz.bam	../data/rna_align/ID_007573_Fnn23_PNAscr_16_h_C.fq.gz.bam
+Assigned	305985	269511	220239	422685	309171	359300	555686	294407	559064	34322	446636	278449	187080	177218	100142	711550	679041	632470
+Unassigned_Unmapped	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Read_Type	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Singleton	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MappingQuality	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MultiMapping	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Secondary	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NonSplit	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NoFeatures	2429319	3052940	2625860	1930553	3539792	2184535	3260359	1885226	2718187	4016522	4742808	7131356	4903535	5611518	3354071	3260344	4042104	3566416
+Unassigned_Overlapping_Length	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Ambiguity	161460	119252	158041	167192	194809	186433	268988	126465	328811	27883	85223	98106	123498	96933	66977	153860	282455	192652

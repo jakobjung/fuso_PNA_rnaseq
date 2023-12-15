@@ -1,0 +1,15 @@
+Status	../data/rna_align/ID_007547_Fnn23_H2O_30_min_A.fq.gz.bam	../data/rna_align/ID_007548_Fnn23_H2O_30_min_B.fq.gz.bam	../data/rna_align/ID_007549_Fnn23_H2O_30_min_C.fq.gz.bam	../data/rna_align/ID_007550_Fnn23_PNA79_30_min_A.fq.gz.bam	../data/rna_align/ID_007551_Fnn23_PNA79_30_min_B.fq.gz.bam	../data/rna_align/ID_007552_Fnn23_PNA79_30_min_C.fq.gz.bam	../data/rna_align/ID_007553_Fnn23_PNAscr_30_min_A.fq.gz.bam	../data/rna_align/ID_007554_Fnn23_PNAscr_30_min_B.fq.gz.bam	../data/rna_align/ID_007555_Fnn23_PNAscr_30_min_C.fq.gz.bam	../data/rna_align/ID_007565_Fnn23_H2O_16_h_A.fq.gz.bam	../data/rna_align/ID_007566_Fnn23_H2O_16_h_B.fq.gz.bam	../data/rna_align/ID_007567_Fnn23_H2O_16_h_C.fq.gz.bam	../data/rna_align/ID_007568_Fnn23_PNA79_16_h_A.fq.gz.bam	../data/rna_align/ID_007569_Fnn23_PNA79_16_h_B.fq.gz.bam	../data/rna_align/ID_007570_Fnn23_PNA79_16_h_C.fq.gz.bam	../data/rna_align/ID_007571_Fnn23_PNAscr_16_h_A.fq.gz.bam	../data/rna_align/ID_007572_Fnn23_PNAscr_16_h_B.fq.gz.bam	../data/rna_align/ID_007573_Fnn23_PNAscr_16_h_C.fq.gz.bam
+Assigned	2086567	2649966	2277228	1638141	3058312	1855315	2798849	1619777	2324911	3456425	3259121	4226239	4048016	4908093	2897957	2632946	3273929	2918247
+Unassigned_Unmapped	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Read_Type	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Singleton	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MappingQuality	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MultiMapping	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Secondary	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NonSplit	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NoFeatures	748295	695222	643272	825533	879606	812872	1190029	632892	1210406	494214	1896087	3119266	1018973	792895	509257	1395015	1607661	1369107
+Unassigned_Overlapping_Length	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Ambiguity	61902	96515	83640	56756	105854	62081	96155	53429	70745	128088	119459	162406	147124	184681	113976	97793	122010	104184

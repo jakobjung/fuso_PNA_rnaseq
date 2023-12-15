@@ -1,0 +1,15 @@
+Status	../data/rna_align/ID_007556_Fnv_H2O_30_min_A.fq.gz.bam	../data/rna_align/ID_007557_Fnv_H2O_30_min_B.fq.gz.bam	../data/rna_align/ID_007558_Fnv_H2O_30_min_C.fq.gz.bam	../data/rna_align/ID_007559_Fnv_PNA79_30_min_A.fq.gz.bam	../data/rna_align/ID_007560_Fnv_PNA79_30_min_B.fq.gz.bam	../data/rna_align/ID_007561_Fnv_PNA79_30_min_C.fq.gz.bam	../data/rna_align/ID_007562_Fnv_PNAscr_30_min_A.fq.gz.bam	../data/rna_align/ID_007563_Fnv_PNAscr_30_min_B.fq.gz.bam	../data/rna_align/ID_007564_Fnv_PNAscr_30_min_C.fq.gz.bam	../data/rna_align/ID_007574_Fnv_H2O_16_h_A.fq.gz.bam	../data/rna_align/ID_007575_Fnv_H2O_16_h_B.fq.gz.bam	../data/rna_align/ID_007576_Fnv_H2O_16_h_C.fq.gz.bam	../data/rna_align/ID_007577_Fnv_PNA79_16_h_A.fq.gz.bam	../data/rna_align/ID_007578_Fnv_PNA79_16_h_B.fq.gz.bam	../data/rna_align/ID_007579_Fnv_PNA79_16_h_C.fq.gz.bam	../data/rna_align/ID_007580_Fnv_PNAscr_16_h_A.fq.gz.bam	../data/rna_align/ID_007581_Fnv_PNAscr_16_h_B.fq.gz.bam	../data/rna_align/ID_007582_Fnv_PNAscr_16_h_C.fq.gz.bam
+Assigned	1318732	1542462	1870323	1615601	2013218	1956313	908750	955358	910091	2358835	3541347	2456767	3585348	2422329	2111031	1721868	1551447	1800551
+Unassigned_Unmapped	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Read_Type	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Singleton	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MappingQuality	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MultiMapping	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Secondary	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NonSplit	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NoFeatures	941274	597574	1038648	747459	693047	949480	506909	546738	569466	6787323	6970048	8634515	7314745	4411826	4509680	7060836	7501954	7079233
+Unassigned_Overlapping_Length	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Ambiguity	48990	62613	79551	59586	85729	78106	34772	32856	28060	117751	164302	122024	174199	113908	87282	64358	64614	67558

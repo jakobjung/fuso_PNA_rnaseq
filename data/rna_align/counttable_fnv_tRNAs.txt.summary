@@ -1,0 +1,15 @@
+Status	../data/rna_align/ID_007556_Fnv_H2O_30_min_A.fq.gz.bam	../data/rna_align/ID_007557_Fnv_H2O_30_min_B.fq.gz.bam	../data/rna_align/ID_007558_Fnv_H2O_30_min_C.fq.gz.bam	../data/rna_align/ID_007559_Fnv_PNA79_30_min_A.fq.gz.bam	../data/rna_align/ID_007560_Fnv_PNA79_30_min_B.fq.gz.bam	../data/rna_align/ID_007561_Fnv_PNA79_30_min_C.fq.gz.bam	../data/rna_align/ID_007562_Fnv_PNAscr_30_min_A.fq.gz.bam	../data/rna_align/ID_007563_Fnv_PNAscr_30_min_B.fq.gz.bam	../data/rna_align/ID_007564_Fnv_PNAscr_30_min_C.fq.gz.bam	../data/rna_align/ID_007574_Fnv_H2O_16_h_A.fq.gz.bam	../data/rna_align/ID_007575_Fnv_H2O_16_h_B.fq.gz.bam	../data/rna_align/ID_007576_Fnv_H2O_16_h_C.fq.gz.bam	../data/rna_align/ID_007577_Fnv_PNA79_16_h_A.fq.gz.bam	../data/rna_align/ID_007578_Fnv_PNA79_16_h_B.fq.gz.bam	../data/rna_align/ID_007579_Fnv_PNA79_16_h_C.fq.gz.bam	../data/rna_align/ID_007580_Fnv_PNAscr_16_h_A.fq.gz.bam	../data/rna_align/ID_007581_Fnv_PNAscr_16_h_B.fq.gz.bam	../data/rna_align/ID_007582_Fnv_PNAscr_16_h_C.fq.gz.bam
+Assigned	578580	305511	639710	398412	346816	539201	286662	328752	270835	387628	731672	1059867	537056	335471	463857	799535	474398	708074
+Unassigned_Unmapped	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Read_Type	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Singleton	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MappingQuality	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MultiMapping	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Secondary	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NonSplit	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NoFeatures	1669225	1864386	2291293	1977094	2400510	2398955	1136317	1179763	1194809	8819564	9839718	10021912	10456970	6563732	6185137	7973951	8597233	8168198
+Unassigned_Overlapping_Length	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Ambiguity	61191	32752	57519	47140	44668	45743	27452	26437	41973	56717	104307	131527	80266	48860	58999	73576	46384	71070
