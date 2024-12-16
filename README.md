@@ -1,20 +1,23 @@
 # Title
 
-- Project name: 
+- Project name: An antisense antibiotic candidate with unexpected bactericidal activity against several different 
+                fusobacteria species 
 
-- Experiments: 
+- Experiments: Valentina Cosi, Linda Popella, Chandradhish Ghosh
 
-- Supervision: 
+- Supervision: Jörg Vogel, Lars Barquist
 
-- Data analysis/algorithm development: 
+- Data analysis/RNA-Seq analysis:  Jakob J. Jung
 
-- Start: 
+- Start: 2022 
 
   
 
 ## Introduction
 
- 
+RNA-Seq analysis of transcriptomes of Fusobacterium nucleatum nucleatum and Fusobacterium nucleatum vincentii treated 
+with the peptide nucleic acid (PNA) PNA-79, scrambed PNA, and untreated control. 2 time points (30 min and 2h) were 
+analyzed, and experiments were done in triplicate, so in total 36 samples were analyzed in total.
 
 ## Directory structure
 
@@ -46,7 +49,7 @@ For running the whole analysis, one needs following packages/tools/software:
 
 - featureCounts (v2.0.1) from Subread package
 
-- bedtools (v2.26.0) 
+- bedtools (v2.27.1) 
 
 - samtools (v1.12)
 
@@ -54,5 +57,8 @@ For running the whole analysis, one needs following packages/tools/software:
 
 
 
-### 2. ...
+### 2. Steps to reproduce the analysis
+
+#### 2.1. Data 
+
 

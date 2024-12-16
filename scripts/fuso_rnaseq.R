@@ -196,12 +196,25 @@ plot_grid(distr_fnn, distr_fnv, ncol = 2, labels = c("FNN", "FNV"), label_size =
           label_fontface = "bold")
 dev.off()
 
+# remove H2O_16h_B fom gwc_fnv
+#gwc_FNV <- gwc_FNV[,!grepl("H2O_16h_B", colnames(gwc_FNV))]
+
 # get test conditions usin gsub to extract the sample names e.g. from
 # "...data.rna_align.ID_007569_Fnn23_PNA79_16_h_B.fq.gz.bam" to "PNA79_16_h"
 test_FNN <- as.factor(gsub("_[ABC]$", "",colnames(gwc_FNN)[-1]))
 test_FNN
 test_FNV <- as.factor(gsub("_[ABC]$", "",colnames(gwc_FNV)[-1]))
 test_FNV
+
+# save gwc_FNV and gwc_FNN as csv. preserve rownames
+# change colnames (add Fnv_ to start of each)
+colnames(gwc_FNN) <- c("Length", paste0("Fnn23_", colnames(gwc_FNN)[-1]))
+colnames(gwc_FNV) <- c("Length", paste0("Fnv_", colnames(gwc_FNV)[-1]))
+
+
+write.csv(gwc_FNN, "./data/GEO_SUBM_2024_12/raw_counts_FNN.csv", row.names = T)
+write.csv(gwc_FNV, "./data/GEO_SUBM_2024_12/raw_counts_FNV.csv", row.names = T)
+
 
 # create DGEList objects
 y_FNN <- DGEList(counts = gwc_FNN[-1], group = test_FNN, genes = gwc_FNN[,1,drop=FALSE])
@@ -221,13 +234,19 @@ colnames(design_matrix) <- levels(test_FNN)
 rownames(design_matrix) <- colnames(y_FNN)
 design_matrix
 
+# create design matrix for FNV
+design_matrix_FNV <- model.matrix(~0+test_FNV)
+colnames(design_matrix_FNV) <- levels(test_FNV)
+rownames(design_matrix_FNV) <- colnames(y_FNV)
+design_matrix_FNV
+
 # do tmm normalization
 y_FNN <- calcNormFactors(y_FNN, method = "TMM")
 y_FNV <- calcNormFactors(y_FNV, method = "TMM")
 
 # estimate dispersion
 y_FNN <- estimateDisp(y_FNN, design_matrix, robust = TRUE)
-y_FNV <- estimateDisp(y_FNV, design_matrix, robust = TRUE)
+y_FNV <- estimateDisp(y_FNV, design_matrix_FNV, robust = TRUE)
 
 
 # create PCA and RLE plots in a nicer way:
@@ -243,29 +262,46 @@ theme <-theme(panel.background = element_blank(),panel.border=element_rect(fill=
              title=element_text(colour="black", size=23),
              axis.text=element_text(colour="black", size=18),axis.ticks=element_line(colour="black"),
              axis.title=element_text(colour="black", size=21),
-             plot.margin=unit(c(1,1,1,1),"line"),legend.position = "none",
+             plot.margin=unit(c(1,1,1,1),"line"),
+              # make legend upper left
+              legend.position = "top",
+              # decrease legend font size
+                legend.text = element_text(size = 15),
+                legend.title = element_text(size = 15),
              plot.title = element_text(size = 23, face = "bold", hjust=0.5),
               # make line of axis thicker
                 axis.line = element_line(size = 1)
               )
 
 # define colors
-mycols <- c("steelblue", "navy", "orange", "darkred", "seagreen3", "seagreen4")
+mycols <- c("black", "red", "grey")
+
 
 # creaate PCA plots and save them as pdf:
-names(logCPMs) <- c("F. nucleatum", "F. nucleatum vincentii")
-ggs_pca <- lapply(names(logCPMs), function(i) {
+names(logCPMs) <- c("FNN23", "FNV")
+tests <- list(test_FNN, test_FNV)
+ggs_pca <- lapply(1:2, function(x) {
+  i <- names(logCPMs)[x]
   pca <- prcomp(t(logCPMs[[i]]))
   pca_df <- as.data.frame(pca$x)
   percentage <- round(pca$sdev / sum(pca$sdev) * 100, 2)
   percentage <- paste( colnames(pca_df), "(", paste( as.character(percentage), "%", ")", sep="") )
-  pca_df$group <-test_FNN
-  p<-ggplot(pca_df,aes(x=PC1,y=PC2,group=group,label=rownames(pca_df), colour=group))
-  p<-p+geom_point(size=3)+ scale_shape_identity()+
-    geom_text_repel(size=7, min.segment.length = 0, seed = 1, box.padding = 0.6, max.overlaps = 20)+
-    theme + xlab(percentage[1]) +
-    ylab(percentage[2])+ scale_color_manual(values = mycols) +
-    ggtitle(bquote(bold(bolditalic(.(as.character(i)))~"after TMM")))
+  pca_df$group <-tests[[x]]
+  pca_df$treatment <- gsub("_.+", "", pca_df$group)
+  pca_df$time <- factor(gsub(".+_", "", pca_df$group), levels = c("30m", "16h"))
+  p<-ggplot(pca_df,aes(x=PC1,y=PC2,label=rownames(pca_df),group=treatment, fill=treatment, shape=time,
+                       colour=treatment))
+  p<-p+geom_point(size=10, alpha=0.7,aes(colour = treatment, shape = time))+
+    theme +
+    xlab(percentage[1]) +
+    ylab(percentage[2])+
+    scale_fill_manual(values = mycols) +
+    scale_color_manual(values = mycols) +
+    scale_shape_manual(values = c(22, 24)) +
+    ggtitle(i) +
+    # make title bold and italic
+    theme(plot.title = element_text(face = "bold", size = 40))
+  p
 
   # gerate file name for pdf. substitute all . and spaces with _. omit __
   file_name <- paste0("PCA_", gsub("\\.+", "_", gsub(" +", "_", i)))
@@ -279,9 +315,12 @@ ggs_pca <- lapply(names(logCPMs), function(i) {
 
 # use cowplot to combine the plots
 pdf("analysis/PCA_both_strains_raw.pdf", width = 20, height = 10)
-plot_grid(ggs_pca[[1]], ggs_pca[[2]], ncol = 2, labels = c("A", "B"), label_size = 25, scale = 0.95)
+plot_grid(ggs_pca[[1]], ggs_pca[[2]], ncol = 2,  scale = 0.95)
 dev.off()
 
+svg("analysis/PCA_both_strains_raw.svg", width = 20, height = 10)
+plot_grid(ggs_pca[[1]], ggs_pca[[2]], ncol = 2,  scale = 0.95)
+dev.off()
 
 # # do ruvseq normalization, RUVs analysis:
 # matrix_y_fnv <- as.matrix(sapply(as.data.frame(cpm(y_FNV)), as.integer))
@@ -365,11 +404,11 @@ contrast_FNN <- makeContrasts(PNA79_16h_vs_H2O_16h = PNA79_16h - H2O_16h,
 contrast_FNV <- makeContrasts(PNA79_16h_vs_H2O_16h = PNA79_16h - H2O_16h,
                                 PNA79_16h_vs_PNAscr_16h = PNA79_16h - PNAscr_16h,
                                 PNAscr_16h_vs_H2O_16h = PNAscr_16h - H2O_16h,
-                                levels = design_matrix)
+                                levels = design_matrix_FNV)
 
 # do DE analysis
 fit_FNN <- glmQLFit(y_FNN, design_matrix, robust = TRUE)
-fit_FNV <- glmQLFit(y_FNV, design_matrix, robust = TRUE)
+fit_FNV <- glmQLFit(y_FNV, design_matrix_FNV, robust = TRUE)
 
 # get results
 res_FNN <- list(# PNA79_16h_vs_H2O_16h
@@ -385,6 +424,8 @@ res_FNV <- list(# PNA79_16h_vs_H2O_16h
                 PNA79_16h_vs_PNAscr_16h = glmQLFTest(fit_FNV, contrast = contrast_FNV[,2]),
                 # PNAscr_16h_vs_H2O_16h
                 PNAscr_16h_vs_H2O_16h = glmQLFTest(fit_FNV, contrast = contrast_FNV[,3]))
+
+#
 
 # apply FDR to all tables
 res_FNN <- lapply(res_FNN, function(r) {
@@ -546,7 +587,7 @@ for (i in names(res_FNN)){
   ttle <- gsub("_", " ", i)
   ttle <- gsub("vs", "vs.", ttle)
   # make volcano plot
-  volc <- do_volcano(restab, pointsize = 2, x_limit = 8, y_limit = 12, show_sig = T,
+  volc <- do_volcano(restab, pointsize = 2, x_limit = 8, y_limit = 13, show_sig = T,
                      alpha = 0.01, color_sig = T, title = ttle,
                      minlogfc = 1.5, add_labels = T,
                      color_threshold_lines = "black") +
@@ -572,7 +613,7 @@ for (i in names(res_FNV)){
   ttle <- gsub("_", " ", i)
   ttle <- gsub("vs", "vs.", ttle)
   # make volcano plot
-  volc <- do_volcano(restab, pointsize = 2, x_limit = 8, y_limit = 12, show_sig = T,
+  volc <- do_volcano(restab, pointsize = 2, x_limit = 8, y_limit = 13, show_sig = T,
                      alpha = 0.01, color_sig = T, title = ttle,
                      minlogfc = 1.5, add_labels = T,
                      color_threshold_lines = "black") +
@@ -595,7 +636,8 @@ volc_grid <- plot_grid(plotlist = volc_list[c(1,3,2)], ncol = 3, nrow = 1,
 ggsave("analysis/volcano_plots_FNV_16h.pdf", volc_grid, width = 35, height = 12, units = "cm")
 
 
-
+# get all significantly regulated genes (log2FC > 1.5 and FDR < 0.01)
+sig_genes_FNN <- lapply(res_FNN, function(x) dim(x$table[x$table$FDR < 0.01 & abs(x$table$logFC) > 1.5,]))
 
 
 ## Now do kegg pathway analysis. First get the gene names of the DE genes:
@@ -692,7 +734,7 @@ l <- length(colnames(contrast_FNN))
 # now run FRY gene set test for all contrasts:
 kegg_fry_FNN <- lapply(1:l, function(x) fry(y_FNN, idx_kegg_FNN, design_matrix, contrast_FNN[,x]))
 names(kegg_fry_FNN) <- colnames(contrast_FNN)
-kegg_fry_FNV <- lapply(1:l, function(x) fry(y_FNV, idx_kegg_FNV, design_matrix, contrast_FNV[,x]))
+kegg_fry_FNV <- lapply(1:l, function(x) fry(y_FNV, idx_kegg_FNV, design_matrix_FNV, contrast_FNV[,x]))
 names(kegg_fry_FNV) <- colnames(contrast_FNV)
 
 # reorder kegg_fry_FNN
@@ -897,12 +939,12 @@ contrasts_FNN_30 <- makeContrasts(PNA79_30m_vs_H2O_30m = PNA79_30m - H2O_30m,
 contrasts_FNV_30 <- makeContrasts(PNA79_30m_vs_H2O_30m = PNA79_30m - H2O_30m,
                                     PNA79_30m_vs_PNAscr_30m = PNA79_30m - PNAscr_30m,
                                     PNAscr_30m_vs_H2O_30m = PNAscr_30m - H2O_30m,
-                                    levels = design_matrix)
+                                    levels = design_matrix_FNV)
 
 
 # do DE analysis
 fit_FNN_30 <- glmQLFit(y_FNN, design_matrix, robust = TRUE)
-fit_FNV_30 <- glmQLFit(y_FNV, design_matrix, robust = TRUE)
+fit_FNV_30 <- glmQLFit(y_FNV, design_matrix_FNV, robust = TRUE)
 
 # get results
 res_FNN_30 <- list(# PNA79_30m_vs_H2O_30m
@@ -994,7 +1036,7 @@ l <- length(colnames(contrasts_FNN_30))
 # now run FRY gene set test for all contrasts:
 kegg_fry_FNN_30 <- lapply(1:l, function(x) fry(y_FNN, idx_kegg_FNN, design_matrix, contrasts_FNN_30[,x]))
 names(kegg_fry_FNN_30) <- colnames(contrasts_FNN_30)
-kegg_fry_FNV_30 <- lapply(1:l, function(x) fry(y_FNV, idx_kegg_FNV, design_matrix, contrasts_FNV_30[,x]))
+kegg_fry_FNV_30 <- lapply(1:l, function(x) fry(y_FNV, idx_kegg_FNV, design_matrix_FNV, contrasts_FNV_30[,x]))
 names(kegg_fry_FNV_30) <- colnames(contrasts_FNV_30)
 
 # reorder kegg_fry_FNN_30
@@ -1194,4 +1236,101 @@ volc
 dev.off()
 
 
+
+
+# get all significant genes up and downreg for FNv 30 min (log2fc > 1.5 & FDR < 0.05)
+t_fnv_30 <- as_tibble(t(sapply(res_FNV_30, function(x) {
+    up <- rownames(x$table[x$table$logFC > 1.5 & x$table$FDR < 0.01,])
+    down <- rownames(x$table[x$table$logFC < -1.5 & x$table$FDR < 0.01,])
+    c(up = length(up), down = length(down))
+})), rownames = "contrast") %>% mutate(organism = "FNV", time = "30m")
+
+# same at 16h
+t_fnv_16 <- as_tibble(t(sapply(res_FNV, function(x) {
+    up <- rownames(x$table[x$table$logFC > 1.5 & x$table$FDR < 0.01,])
+    down <- rownames(x$table[x$table$logFC < -1.5 & x$table$FDR < 0.01,])
+    c(up = length(up), down = length(down))
+})), rownames = "contrast") %>% mutate(organism = "FNV", time = "16h")
+
+# same for fnn
+t_fnn_30 <- as_tibble(t(sapply(res_FNN_30, function(x) {
+    up <- rownames(x$table[x$table$logFC > 1.5 & x$table$FDR < 0.01,])
+    down <- rownames(x$table[x$table$logFC < -1.5 & x$table$FDR < 0.01,])
+    c(up = length(up), down = length(down))
+})), rownames = "contrast") %>% mutate(organism = "FNN", time = "30m")
+
+t_fnn_16 <- as_tibble(t(sapply(res_FNN, function(x) {
+    up <- rownames(x$table[x$table$logFC > 1.5 & x$table$FDR < 0.01,])
+    down <- rownames(x$table[x$table$logFC < -1.5 & x$table$FDR < 0.01,])
+    c(up = length(up), down = length(down))
+})), rownames = "contrast") %>% mutate(organism = "FNN", time = "16h")
+
+# make one table
+t <- rbind(t_fnv_30, t_fnv_16, t_fnn_30, t_fnn_16)
+
+# save as excel...
+write.xlsx(t, "analysis/significant_genes.xlsx", row.names = T, col.names = T)
+
+
+
+# for kegg, make a table with TERM, ngenes, FDR (-log10), Direction, strain for T16
+table_kegg_fnn_pna79_vs_scr <- kegg_fry_FNN$PNA79_16h_vs_PNAscr_16h %>%
+    select(TERM, NGenes, FDR, Direction) %>%
+    mutate(Strain = "FNN23") %>% mutate(FDR = -log10(FDR))%>%
+  # make fdr negative if direction is Down
+    mutate(FDR = ifelse(Direction == "Down", -FDR, FDR))
+
+# same for FNV
+table_kegg_fnv_pna79_vs_scr <- kegg_fry_FNV$PNA79_16h_vs_PNAscr_16h %>%
+    select(TERM, NGenes, FDR, Direction) %>%
+    mutate(Strain = "FNV") %>% mutate(FDR = -log10(FDR)) %>%
+  # make fdr negative if direction is Down
+    mutate(FDR = ifelse(Direction == "Down", -FDR, FDR))
+
+# combine
+table_kegg <- rbind(table_kegg_fnn_pna79_vs_scr, table_kegg_fnv_pna79_vs_scr)
+
+# get sgnificant pathways significant <0.01
+sig_pws <- na.omit(unique(table_kegg$TERM[abs(table_kegg$FDR) > 2 & table_kegg$NGenes > 5]))
+
+table_kegg <- table_kegg[table_kegg$TERM %in% sig_pws,]
+
+# make term a factor ordered by abs(FDR)
+table_kegg$TERM <- factor(table_kegg$TERM, levels = table_kegg[table_kegg$Strain == "FNN23",]$TERM[order(abs(table_kegg[table_kegg$Strain == "FNN23",]$FDR))])
+
+
+# keep only significant pathways
+
+# make a ggplot barplot
+kegg_barplot_16h <- ggplot(table_kegg, aes(x = TERM, y = FDR, fill = Strain)) +
+  geom_bar(stat = "identity", position = "dodge") +
+    coord_flip() +
+    theme_bw() +
+  ylim(-2.5, 7.5)+
+  # remove background
+    theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())+
+  # add a line at 0.05
+    geom_hline(yintercept = -log10(0.05), linetype = "dotted", color = "black") +
+  geom_hline(yintercept = log10(0.05), linetype = "dotted", color = "black") +
+  scale_fill_manual(values = c("FNN23" = viridis(10, option="plasma")[3], "FNV" = viridis(10, option="plasma")[8])) +
+  scale_y_continuous(breaks = c(log10(0.05),0, -log10(0.05)), labels = c("0.05","0", "0.05")) +
+  # change x axis title
+    ylab("FDR-corrected P-value") +
+  # add vertical lines to all bars
+    geom_vline(xintercept = 1:dim(table_kegg)[1], linetype = "dotted", color = "grey", alpha=0.5) +
+    theme(axis.text.x = element_text(size=10),
+          axis.text.y = element_text(size=10),
+          # remove y axis title
+            axis.title.y=element_blank(),
+          # increase font xaxis title
+            axis.title.x = element_text(size = 12),
+    # put legend into lower right of plot
+    legend.position = c(0.85, 0.1),
+          legend.title = element_blank(),
+          legend.box.background = element_rect(colour = "black"),
+    legend.text = element_text(size = 10))
+
+pdf("analysis/KEGG_barplot_16h.pdf", width = 7, height = 7)
+kegg_barplot_16h
+dev.off()
 
