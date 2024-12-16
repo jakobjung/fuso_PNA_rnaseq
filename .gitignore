@@ -13,3 +13,8 @@
 *.zip
 *.gz
 *.html
+*.pdf
+*.svg
+*.csv
+*.xml
+*.xlsx
