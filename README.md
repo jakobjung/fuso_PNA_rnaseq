@@ -60,7 +60,9 @@ For running the whole analysis, one needs following packages/tools/software:
 ### 2. Mapping
 
 All raw FastQ files should be located in the folder [./data/fastq](data/fastq) . Details on samples and setup of the 
-experiment can be found in the methods section of the manuscript. Navigate to 
+experiment can be found in the methods section of the manuscript. Fastq files etc can be found in the GEO repository
+under accession number [GSE284320](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284320) and downloaded.
+Navigate to 
 [quality_stats_by_lib](./data/fastq/2023-12-11_Valentina_Cosi_PR23158_raw_FASTQ/quality_stats_by_lib) to 
 find fastQC quality statistics of the raw reads. 
 To run the mapping, run the bash script [./scripts/trimm_map_BB.sh](./scripts/trimm_map_BB.sh) . 
