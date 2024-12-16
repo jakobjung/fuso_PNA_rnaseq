@@ -1,4 +1,4 @@
-# Title
+# PNA in Fusobacterium nucleatum
 
 - Project name: An antisense antibiotic candidate with unexpected bactericidal activity against several different 
                 fusobacteria species 
@@ -57,8 +57,28 @@ For running the whole analysis, one needs following packages/tools/software:
 
 
 
-### 2. Steps to reproduce the analysis
+### 2. Mapping
 
-#### 2.1. Data 
+All raw FastQ files should be located in the folder [./data/fastq](data/fastq) . Details on samples and setup of the 
+experiment can be found in the methods section of the manuscript. Navigate to 
+[quality_stats_by_lib](./data/fastq/2023-12-11_Valentina_Cosi_PR23158_raw_FASTQ/quality_stats_by_lib) to 
+find fastQC quality statistics of the raw reads. 
+To run the mapping, run the bash script [./scripts/trimm_map_BB.sh](./scripts/trimm_map_BB.sh) . 
+The script loops through the fastq-files, trims off adapters using BBDuk, maps against the reference _Fusobacterium_ genomes 
+(reference fasta and gff files can be found in [./data/reference_sequences/](./data/reference_sequences/)) and counts 
+the reads mapped to coding sequences and sRNAs using featureCounts.
+Trimming, mapping and counting statistics are stored in the log file [./scripts/stdout_slurm_mapping](./scripts/stdout_slurm_mapping) . 
+The directory [./data/rna_align](./data/rna_align) includes all bam-alignment files as well as the count 
+tables [counttable_fnn23.txt](./data/rna_align/counttable_fnn23.txt) and [counttable_fnv.txt](./data/rna_align/counttable_fnv.txt) . 
+These count table are imported into R for Differential expression analysis, as described below.
+
+
+
+### 3. Differential expression analysis
+
+To run the differential expression analysis, run the R  
+script [./scripts/fuso_rnaseq.R](./scripts/fuso_rnaseq.R) . 
+This outputs all figures of the manuscript, which are saved as PDF and/or SVG files to 
+the [./analysis](./analysis) directory. It might take up to 10 minutes to run this script on a low-memory laptop. 
 
 
