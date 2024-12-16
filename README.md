@@ -1,4 +1,4 @@
-# PNA in Fusobacterium nucleatum
+# RNA-Seq analysis of _Fusobacterium nucleatum_ upon PNA treatment
 
 - Project name: An antisense antibiotic candidate with unexpected bactericidal activity against several different 
                 fusobacteria species 
