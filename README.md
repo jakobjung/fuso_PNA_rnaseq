@@ -41,17 +41,21 @@ Here I describe the workflow, which can be followed to fully reproduce the resul
 
 For running the whole analysis, one needs following packages/tools/software:
 
-- BBMap (v38.84) & BBDuk
+- **BBMap** (v38.84) & **BBDuk**
 
-- R (v.4.1.1) along with packages from Bioconductor/CRAN 
+- **R** (v.4.1.1) along with packages from Bioconductor/CRAN 
 
-- Linux shell (we used Ubuntu 20.04) for commands & bash scripts
+- **Linux** shell (we used Ubuntu 20.04) for commands & bash scripts
 
-- featureCounts (v2.0.1) from Subread package
+- **featureCounts** (v2.0.1) from Subread package
 
-- bedtools (v2.27.1) 
+- **bedtools** (v2.27.1) 
 
-- samtools (v1.12)
+- **samtools** (v1.12)
+
+- **mafft**  for multiple sequence alignment 
+- **fasttree**  for phylogenetic tree construction 
+- **barrnap** for 16S rRNA annotation
 
   
 
@@ -83,4 +87,9 @@ script [./scripts/fuso_rnaseq.R](./scripts/fuso_rnaseq.R) .
 This outputs all figures of the manuscript, which are saved as PDF and/or SVG files to 
 the [./analysis](./analysis) directory. It might take up to 10 minutes to run this script on a low-memory laptop. 
 
+
+### 4. Phylogenetic tree construction
+To construct a phylogenetic tree of the _Fusobacterium_ species, run the bash script 
+[./data/phylog_tree/script_to_extract_16s.sh](./data/phylog_tree/script_to_extract_16s.sh).
+Final visualization was done using iTOL.
 
