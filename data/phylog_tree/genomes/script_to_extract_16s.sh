@@ -45,7 +45,7 @@ for fasta in *.fasta; do
     head -n 2 "$out" >> final_fuso_16s.fasta
 
     # Clean up if you want:
-    #rm -f "$bed"
+    rm -f "$bed"
     # remove the single 16s fasta file
     rm -f "$out"
     # remove out .fai
