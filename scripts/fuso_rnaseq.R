@@ -21,7 +21,7 @@ library(circlize)
 library(ComplexHeatmap)
 library(xlsx)
 library(KEGGREST)
-
+library("rtracklayer")
 
 # Mapping statistics
 
@@ -313,6 +313,73 @@ ggs_pca <- lapply(1:2, function(x) {
   p
 })
 
+# do same for PC 1 vs 3 and 2 vs 3
+ggs_pca_1_vs_3 <- lapply(1:2, function(x) {
+  i <- names(logCPMs)[x]
+  pca <- prcomp(t(logCPMs[[i]]))
+  pca_df <- as.data.frame(pca$x)
+  percentage <- round(pca$sdev / sum(pca$sdev) * 100, 2)
+  percentage <- paste( colnames(pca_df), "(", paste( as.character(percentage), "%", ")", sep="") )
+  pca_df$group <-tests[[x]]
+  pca_df$treatment <- gsub("_.+", "", pca_df$group)
+  pca_df$time <- factor(gsub(".+_", "", pca_df$group), levels = c("30m", "16h"))
+  p<-ggplot(pca_df,aes(x=PC1,y=PC3,label=rownames(pca_df),group=treatment, fill=treatment, shape=time,
+                       colour=treatment))
+  p<-p+geom_point(size=10, alpha=0.7,aes(colour = treatment, shape = time))+
+    theme +
+    xlab(percentage[1]) +
+    ylab(percentage[3])+
+    scale_fill_manual(values = mycols) +
+    scale_color_manual(values = mycols) +
+    scale_shape_manual(values = c(22, 24)) +
+    ggtitle(i) +
+    # make title bold and italic
+    theme(plot.title = element_text(face = "bold", size = 40))
+  p
+
+  # gerate file name for pdf. substitute all . and spaces with _. omit __
+  file_name <- paste0("PCA_", gsub("\\.+", "_", gsub(" +", "_", i)))
+  file_name <- gsub("_+", "_", file_name)
+  # save plot as pdf
+  pdf(paste0("analysis/", file_name, "_PC1_vs_PC3"), width = 11, height = 10)
+  print(p)
+  dev.off()
+  p
+})
+
+ggs_pca_2_vs_3 <- lapply(1:2, function(x) {
+  i <- names(logCPMs)[x]
+  pca <- prcomp(t(logCPMs[[i]]))
+  pca_df <- as.data.frame(pca$x)
+  percentage <- round(pca$sdev / sum(pca$sdev) * 100, 2)
+  percentage <- paste( colnames(pca_df), "(", paste( as.character(percentage), "%", ")", sep="") )
+  pca_df$group <-tests[[x]]
+  pca_df$treatment <- gsub("_.+", "", pca_df$group)
+  pca_df$time <- factor(gsub(".+_", "", pca_df$group), levels = c("30m", "16h"))
+  p<-ggplot(pca_df,aes(x=PC2,y=PC3,label=rownames(pca_df),group=treatment, fill=treatment, shape=time,
+                       colour=treatment))
+  p<-p+geom_point(size=10, alpha=0.7,aes(colour = treatment, shape = time))+
+    theme +
+    xlab(percentage[2]) +
+    ylab(percentage[3])+
+    scale_fill_manual(values = mycols) +
+    scale_color_manual(values = mycols) +
+    scale_shape_manual(values = c(22, 24)) +
+    ggtitle(i) +
+    # make title bold and italic
+    theme(plot.title = element_text(face = "bold", size = 40))
+  p
+
+  # gerate file name for pdf. substitute all . and spaces with _. omit __
+  file_name <- paste0("PCA_", gsub("\\.+", "_", gsub(" +", "_", i)))
+  file_name <- gsub("_+", "_", file_name)
+  # save plot as pdf
+  pdf(paste0("analysis/", file_name, "_PC2_vs_PC3"), width = 11, height = 10)
+  print(p)
+  dev.off()
+  p
+})
+
 # use cowplot to combine the plots
 pdf("analysis/PCA_both_strains_raw.pdf", width = 20, height = 10)
 plot_grid(ggs_pca[[1]], ggs_pca[[2]], ncol = 2,  scale = 0.95)
@@ -320,6 +387,16 @@ dev.off()
 
 svg("analysis/PCA_both_strains_raw.svg", width = 20, height = 10)
 plot_grid(ggs_pca[[1]], ggs_pca[[2]], ncol = 2,  scale = 0.95)
+dev.off()
+
+pdf("analysis/PCA_both_strains_raw_PC1_till_3.pdf", width = 20, height = 30)
+plot_grid(ggs_pca[[1]], ggs_pca[[2]], ggs_pca_1_vs_3[[1]], ggs_pca_1_vs_3[[2]], ggs_pca_2_vs_3[[1]], ggs_pca_2_vs_3[[2]], ncol = 2,
+          scale = 0.95, labels = c("A", "", "B", "", "C", ""), label_size = 40)
+dev.off()
+
+svg("analysis/PCA_both_strains_raw_PC1_till_3.svg", width = 20, height = 30)
+plot_grid(ggs_pca[[1]], ggs_pca[[2]], ggs_pca_1_vs_3[[1]], ggs_pca_1_vs_3[[2]], ggs_pca_2_vs_3[[1]], ggs_pca_2_vs_3[[2]], ncol = 2,
+          scale = 0.95, labels = c("A", "", "B", "", "C", ""), label_size = 40)
 dev.off()
 
 # # do ruvseq normalization, RUVs analysis:
@@ -530,7 +607,7 @@ do_volcano <- function(restab, targetgene = NULL, pointsize = 2, x_limit = F, y_
     top_peaks <- na.omit(top_peaks)
 
 
-    g_labels <- c(targetgene, #marked_genes,
+    g_labels <- c(targetgene,"C4N14_09830", #marked_genes,
                   rownames(top_peaks)[!grepl("SA101588_", rownames(top_peaks))])
   }
 
@@ -638,6 +715,94 @@ ggsave("analysis/volcano_plots_FNV_16h.pdf", volc_grid, width = 35, height = 12,
 
 # get all significantly regulated genes (log2FC > 1.5 and FDR < 0.01)
 sig_genes_FNN <- lapply(res_FNN, function(x) dim(x$table[x$table$FDR < 0.01 & abs(x$table$logFC) > 1.5,]))
+
+
+# save tables from res_fnn and res_fnv as excel files. first, use rtracklayer to get
+# first get gff file names:
+gff_FNN <- "./data/reference_sequences/ATCC23726_updated2023.gff"
+gff_FNV <- "./data/reference_sequences/FNV3_1_36A.gff"
+
+# get sgff tags that are interesting, for fnn:
+gff_tags_FNN <- c("id", "Name", "product")
+gff_tags_FNV <- c("id", "locus_tag", "product")
+# get cols that are interesting for both gff files:
+gff_cols <- c("seqid","type","start","end", "strand")
+
+# get filter, for only CDS and ncRNA
+gff_filter <- list(type=c("CDS","ncRNA"))
+
+# load gff_FNN and gff_FNV
+attributes_FNN <- readGFF(gff_FNN, filter = gff_filter, tags = gff_tags_FNN, columns = gff_cols) %>% as_tibble() %>%
+  # change product and description to "sRNA" if the type is ncRNA
+    mutate(product = ifelse(type == "ncRNA", "sRNA", product))
+
+# load gff_FNV
+attributes_FNV <- readGFF(gff_FNV, filter = gff_filter, tags = gff_tags_FNV, columns = gff_cols) %>% as_tibble() %>%
+  # change product and description to "sRNA" if the type is ncRNA
+  mutate(product = ifelse(type == "ncRNA", "sRNA", product),
+  # change locus tag of ncrna to id
+    locus_tag = ifelse(type == "ncRNA", id, locus_tag))
+
+
+
+# get table of res_FNN fot pna97 vs h2o
+res_FNN_PNA79_16h_vs_H2O_16h <- res_FNN$PNA79_16h_vs_H2O_16h$table %>%
+  # change rownames to id column
+    rownames_to_column(var = "id") %>% as_tibble()
+# same for pna79 vs pnascr
+res_FNN_PNA79_16h_vs_PNAscr_16h <- res_FNN$PNA79_16h_vs_PNAscr_16h$table %>%
+  rownames_to_column(var = "id") %>% as_tibble()
+
+
+# combine attributes_FNN with res_FNN_PNA79_16h_vs_H2O_16h
+res_FNN_PNA79_16h_vs_H2O_16h_excel_ready <- inner_join( attributes_FNN, res_FNN_PNA79_16h_vs_H2O_16h, by = "id") %>%
+  # sort by P-value
+    arrange(PValue) %>%
+    # select only id, type, product, logCPM, logFC, PValue, FDR
+    select(id, type, product, logCPM, logFC, PValue, FDR) %>%
+    # remove duplicates
+    distinct()
+
+# same for res_FNN_PNA79_16h_vs_PNAscr_16h
+res_FNN_PNA79_16h_vs_PNAscr_16h_excel_ready <- inner_join( attributes_FNN, res_FNN_PNA79_16h_vs_PNAscr_16h, by = "id") %>%
+  arrange(PValue) %>%
+    # select only id, type, product, logCPM, logFC, PValue, FDR
+        select(id, type, product, logCPM, logFC, PValue, FDR) %>%
+    # remove duplicates
+        distinct()
+
+
+# ok now get the same for FNV
+res_FNV_PNA79_16h_vs_H2O_16h <- res_FNV$PNA79_16h_vs_H2O_16h$table %>%
+  rownames_to_column(var = "id") %>% as_tibble()
+
+res_FNV_PNA79_16h_vs_PNAscr_16h <- res_FNV$PNA79_16h_vs_PNAscr_16h$table %>%
+    rownames_to_column(var = "id") %>% as_tibble()
+
+# combine attributes_FNV with res_FNV_PNA79_16h_vs_H2O_16h
+res_FNV_PNA79_16h_vs_H2O_16h_excel_ready <- inner_join( attributes_FNV, res_FNV_PNA79_16h_vs_H2O_16h, by = "id") %>%
+  arrange(PValue) %>%
+    # select only id, type, product, logCPM, logFC, PValue, FDR
+        select(id, type, product, logCPM, logFC, PValue, FDR) %>%
+    # remove duplicates
+        distinct()
+
+# same for res_FNV_PNA79_16h_vs_PNAscr_16h
+res_FNV_PNA79_16h_vs_PNAscr_16h_excel_ready <- inner_join( attributes_FNV, res_FNV_PNA79_16h_vs_PNAscr_16h, by = "id") %>%
+  arrange(PValue) %>%
+  # select only id, type, product, logCPM, logFC, PValue, FDR
+    select(id, type, product, logCPM, logFC, PValue, FDR) %>%
+  # remove duplicates
+    distinct()
+
+
+# ok now create an excel file, with four sheets, one for each comparison. first show FNN23 FUS79 vs PNAscr 30min,
+# then FNN23 FUS79 vs PNAscr 16h, then FNV FUS79 vs PNAscr 30min, then FNV FUS79 vs PNAscr 16h
+
+library(baizer)
+
+write_excel(res_FNN_PNA79_16h_vs_H2O_16h_excel_ready,"analysis/Supplementary_Data_SD1.xlsx",
+            sheetname = "FNN23 FUS79 vs H2O 16h")
 
 
 ## Now do kegg pathway analysis. First get the gene names of the DE genes:
@@ -1027,6 +1192,106 @@ volc_grid <- plot_grid(plotlist = volc_list[c(1,3,2)], ncol = 3, nrow = 1,
 
 # save the grid as pdf
 ggsave("analysis/volcano_plots_FNV_30.pdf", volc_grid, width = 35, height = 12, units = "cm")
+
+
+
+
+# save tables from res_FNN_30 and res_FNV_30 as excel files
+# start by
+
+# get table of res_FNN_30 fot pna97 vs h2o
+res_FNN_PNA79_30m_vs_H2O_30m <- res_FNN_30$PNA79_30m_vs_H2O_30m$table %>%
+  # change rownames to id column
+  rownames_to_column(var = "id") %>% as_tibble()
+
+# get table of res_FNN_30 fot pna97 vs pnascr
+res_FNN_PNA79_30m_vs_PNAscr_30m <- res_FNN_30$PNA79_30m_vs_PNAscr_30m$table %>%
+  # change rownames to id column
+  rownames_to_column(var = "id") %>% as_tibble()
+
+# combine attributes_FNN with res_FNN_PNA79_30m_vs_H2O_30m
+res_FNN_PNA79_30m_vs_H2O_30m_excel_ready <- inner_join( attributes_FNN, res_FNN_PNA79_30m_vs_H2O_30m, by = "id") %>%
+  # sort by P-value
+  arrange(PValue) %>%
+  # select only id, type, product, logCPM, logFC, PValue, FDR
+  select(id, type, product, logCPM, logFC, PValue, FDR) %>%
+  # remove duplicates
+  distinct()
+
+# combine attributes_FNN with res_FNN_PNA79_30m_vs_PNAscr_30m
+res_FNN_PNA79_30m_vs_PNAscr_30m_excel_ready <- inner_join( attributes_FNN, res_FNN_PNA79_30m_vs_PNAscr_30m, by = "id") %>%
+  # sort by P-value
+  arrange(PValue) %>%
+  # select only id, type, product, logCPM, logFC, PValue, FDR
+  select(id, type, product, logCPM, logFC, PValue, FDR) %>%
+  # remove duplicates
+  distinct()
+
+
+# ok now get the same for FNV
+res_FNV_PNA79_30m_vs_H2O_30m <- res_FNV_30$PNA79_30m_vs_H2O_30m$table %>%
+  rownames_to_column(var = "id") %>% as_tibble()
+
+res_FNV_PNA79_30m_vs_PNAscr_30m <- res_FNV_30$PNA79_30m_vs_PNAscr_30m$table %>%
+    rownames_to_column(var = "id") %>% as_tibble()
+
+# combine attributes_FNV with res_FNV_PNA79_30m_vs_H2O_30m
+res_FNV_PNA79_30m_vs_H2O_30m_excel_ready <- inner_join( attributes_FNV, res_FNV_PNA79_30m_vs_H2O_30m, by = "id") %>%
+  arrange(PValue) %>%
+  # select only id, type, product, logCPM, logFC, PValue, FDR
+  select(id, type, product, logCPM, logFC, PValue, FDR) %>%
+  # remove duplicates
+  distinct()
+
+# combine attributes_FNV with res_FNV_PNA79_30m_vs_PNAscr_30m
+res_FNV_PNA79_30m_vs_PNAscr_30m_excel_ready <- inner_join( attributes_FNV, res_FNV_PNA79_30m_vs_PNAscr_30m, by = "id") %>%
+  arrange(PValue) %>%
+  # select only id, type, product, logCPM, logFC, PValue, FDR
+  select(id, type, product, logCPM, logFC, PValue, FDR) %>%
+  # remove duplicates
+  distinct()
+
+
+# write excel files. start with FNN23 PNA79 vs H2O 30min, then FNN23 PNA79 vs PNAscr 30min, then FNV PNA79 vs H2O 30min,
+# then FNV PNA79 vs PNAscr 30min, then FNN23 PNA79 vs H2O 16h, then FNN23 PNA79 vs PNAscr 16h, then FNV PNA79 vs H2O 16h,
+# then FNV PNA79 vs PNAscr 16h. all in one file, differeent sheets.
+# start with sheet FNV PNA79 vs PNAscr 30min:
+write.xlsx(as.data.frame(res_FNN_PNA79_30m_vs_H2O_30m_excel_ready), "analysis/Supplementary_Data_SD1.xlsx",
+                  sheetName = "FNN23_FUS79_vs_H2O_30min", row.names = F, col.names = T)
+write.xlsx(as.data.frame(res_FNN_PNA79_30m_vs_PNAscr_30m_excel_ready), "analysis/Supplementary_Data_SD1.xlsx",
+              sheetName = "FNN23_FUS79_vs_PNAscr_30min", row.names = F, col.names = T, append = T)
+write.xlsx(as.data.frame(res_FNV_PNA79_30m_vs_H2O_30m_excel_ready), "analysis/Supplementary_Data_SD1.xlsx",
+                sheetName = "FNV_FUS79_vs_H2O_30min", row.names = F, col.names = T, append = T)
+write.xlsx(as.data.frame(res_FNV_PNA79_30m_vs_PNAscr_30m_excel_ready), "analysis/Supplementary_Data_SD1.xlsx",
+                sheetName = "FNV_FUS79_vs_PNAscr_30min", row.names = F, col.names = T, append = T)
+write.xlsx(as.data.frame(res_FNN_PNA79_16h_vs_H2O_16h_excel_ready), "analysis/Supplementary_Data_SD1.xlsx",
+                sheetName = "FNN23_FUS79_vs_H2O_16h", row.names = F, col.names = T, append = T)
+write.xlsx(as.data.frame(res_FNN_PNA79_16h_vs_PNAscr_16h_excel_ready), "analysis/Supplementary_Data_SD1.xlsx",
+                sheetName = "FNN23_FUS79_vs_PNAscr_16h", row.names = F, col.names = T, append = T)
+write.xlsx(as.data.frame(res_FNV_PNA79_16h_vs_H2O_16h_excel_ready), "analysis/Supplementary_Data_SD1.xlsx",
+                sheetName = "FNV_FUS79_vs_H2O_16h", row.names = F, col.names = T, append = T)
+write.xlsx(as.data.frame(res_FNV_PNA79_16h_vs_PNAscr_16h_excel_ready), "analysis/Supplementary_Data_SD1.xlsx",
+                sheetName = "FNV_FUS79_vs_PNAscr_16h", row.names = F, col.names = T, append = T)
+
+
+
+
+
+
+a
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Now do kegg pathway analysis. First get the gene names of the DE genes:
 

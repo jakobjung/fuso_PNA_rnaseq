@@ -833,8 +833,7 @@ CP028109.1	manual	CDS	926186	926815	.	+	.	id=cds-C4N14_04430;Name=C4N14_04430;pr
 CP028109.1	manual	CDS	926928	927242	.	+	.	id=cds-C4N14_04435;Name=C4N14_04435;product=hypothetical protein;description= likely homolog to not found via blast
 CP028109.1	manual	CDS	927306	927524	.	+	.	id=cds-C4N14_04440;Name=C4N14_04440;product=CopG family transcriptional regulator;description= likely homolog to FN0210
 CP028109.1	manual	CDS	927532	927798	.	+	.	id=cds-C4N14_04445;Name=C4N14_04445;product=type II toxin-antitoxin system RelE/ParE family toxin;description= likely homolog to FN0211
-CP028109.1	manual	CDS	927943	928345	.	+	.	id=cds-C4N14_04450;Name=C4N14_04450;product=IS3 family transposase;description= likely homolog to not found via blast
-CP028109.1	manual	CDS	928345	929255	.	+	.	id=cds-C4N14_04450;Name=C4N14_04450;product=IS3 family transposase;description= likely homolog to not found via blast
+CP028109.1	manual	CDS	927943	929255	.	+	.	id=cds-C4N14_04450;Name=C4N14_04450;product=IS3 family transposase;description= likely homolog to not found via blast
 CP028109.1	manual	CDS	929306	929848	.	-	.	id=cds-C4N14_04455;Name=C4N14_04455;product=hypothetical protein;description= likely homolog to FN0212
 CP028109.1	manual	CDS	929875	930381	.	-	.	id=cds-C4N14_04460;Name=C4N14_04460;product=3-deoxy-D-manno-octulosonate 8-phosphate phosphatase;description= likely homolog to FN0213
 CP028109.1	manual	CDS	930391	930963	.	-	.	id=cds-C4N14_04465;Name=C4N14_04465;product=crossover junction endodeoxyribonuclease RuvC;description= likely homolog to FN0214
@@ -1291,8 +1290,7 @@ CP028109.1	manual	CDS	1406505	1406753	.	-	.	id=cds-C4N14_06730;Name=C4N14_06730;
 CP028109.1	manual	CDS	1406864	1407460	.	-	.	id=cds-C4N14_06735;Name=C4N14_06735;product=lysine exporter LysO family protein;description= likely homolog to FN1083
 CP028109.1	manual	CDS	1407457	1407732	.	-	.	id=cds-C4N14_06740;Name=C4N14_06740;product=hypothetical protein;description= likely homolog to FN1082
 CP028109.1	manual	CDS	1407939	1408148	.	+	.	id=cds-C4N14_06745;Name=C4N14_06745;product=hypothetical protein;description= likely homolog to FN1081
-CP028109.1	manual	CDS	1408276	1408678	.	+	.	id=cds-C4N14_06750;Name=C4N14_06750;product=IS3 family transposase;description= likely homolog to FN0786&FN1443
-CP028109.1	manual	CDS	1408678	1409588	.	+	.	id=cds-C4N14_06750;Name=C4N14_06750;product=IS3 family transposase;description= likely homolog to not found via blast
+CP028109.1	manual	CDS	1408276	1409588	.	+	.	id=cds-C4N14_06750;Name=C4N14_06750;product=IS3 family transposase;description= likely homolog to FN0786&FN1443
 CP028109.1	manual	CDS	1409642	1411336	.	-	.	id=cds-C4N14_06755;Name=C4N14_06755;product=ABC transporter ATP-binding protein;description= likely homolog to FN1080
 CP028109.1	manual	CDS	1411473	1411907	.	-	.	id=cds-C4N14_06760;Name=C4N14_06760;product=DNA starvation/stationary phase protection protein;description= likely homolog to FN1079
 CP028109.1	manual	CDS	1412170	1412715	.	-	.	id=cds-C4N14_06765;Name=C4N14_06765;product=toxin-antitoxin system YwqK family antitoxin;description= likely homolog to FN1078
@@ -1690,8 +1688,7 @@ CP028109.1	manual	CDS	1818408	1821113	.	-	.	id=cds-C4N14_08750;Name=C4N14_08750;
 CP028109.1	manual	CDS	1821106	1823796	.	-	.	id=cds-C4N14_08755;Name=C4N14_08755;product=DNA mismatch repair protein MutS;description= likely homolog to FN0693
 CP028109.1	manual	CDS	1823841	1824764	.	-	.	id=cds-C4N14_08760;Name=C4N14_08760;product=tRNA-dihydrouridine synthase;description= likely homolog to FN0692
 CP028109.1	manual	CDS	1824870	1825415	.	+	.	id=cds-C4N14_08765;Name=C4N14_08765;product=hypothetical protein;description= likely homolog to FN0691
-CP028109.1	manual	CDS	1825541	1825943	.	+	.	id=cds-C4N14_08770;Name=C4N14_08770;product=IS3-like element ISFnu6 family transposase;description= likely homolog to not found via blast
-CP028109.1	manual	CDS	1825943	1826853	.	+	.	id=cds-C4N14_08770;Name=C4N14_08770;product=IS3-like element ISFnu6 family transposase;description= likely homolog to not found via blast
+CP028109.1	manual	CDS	1825541	1826853	.	+	.	id=cds-C4N14_08770;Name=C4N14_08770;product=IS3-like element ISFnu6 family transposase;description= likely homolog to not found via blast
 CP028109.1	manual	CDS	1826988	1827497	.	-	.	id=cds-C4N14_08775;Name=C4N14_08775;product=DUF5105 domain-containing protein;description= likely homolog to FN0690
 CP028109.1	manual	CDS	1827520	1828032	.	-	.	id=cds-C4N14_08780;Name=C4N14_08780;product=DUF5105 domain-containing protein;description= likely homolog to FN0689
 CP028109.1	manual	CDS	1828110	1828622	.	-	.	id=cds-C4N14_08785;Name=C4N14_08785;product=DUF5105 domain-containing protein;description= likely homolog to FN0688
